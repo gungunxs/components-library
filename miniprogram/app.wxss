@@ -4,7 +4,6 @@
 @import "styles/shadow.wxss";
 @import "styles/slot.wxss";
 @import "styles/icon.wxss";
-@import "styles/tabbar.wxss";
 @import "styles/grid.wxss";
 @import "styles/photo.wxss";
 
