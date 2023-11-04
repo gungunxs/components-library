@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--Masking-color);
+  background: var(--Masking-Color);
   display: flex;
   justify-content: center;
   align-items: center;
