@@ -1,4 +1,8 @@
-/* photo插槽 */
+/* 
+  针对组件内插槽的样式 与组件插槽关联使用
+ */
+
+/* photo插槽 用于DYWH的excard和qacard*/
 .photo {
   display: flex;
   align-items: center;
@@ -6,7 +10,7 @@
   align-self: stretch;
 }
 
-/* label插槽 */
+/* label插槽 用于DYWH的excard和qacard*/
 .label {
   display: flex;
   align-items: center;
@@ -19,26 +23,6 @@
 }
 .fill-available {
   width: -webkit-fill-available;
-}
-
-.button-group-padding {
-  padding: 40rpx 0rpx;
-}
-
-.button-group-vertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32rpx;
-  align-self: stretch;
-}
-
-.button-group-horizen {
-  display: flex;
-  align-items: center;
-  gap: 28rpx;
-  align-self: stretch;
 }
 
 .tabs {

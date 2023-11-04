@@ -1,11 +1,36 @@
-/* flex布局常用对齐方式 */
+/*
+  grid.wxss 布局样式文件 所有涉及到以下布局的地方一律使用组件引入 不允许新建布局
+*/
+
+/* 
+  flex布局常用对齐方式 
+*/
+/* 水平竖直均居中 */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* 平均空间分布 */
 .flex-spacebetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+}
+/* 居左对齐 */
+.stretch {
+  align-items: stretch;
+}
+
+/* 
+  两种填充方式 
+*/
+/* 宽度百分百填充（可能出现溢出屏幕的现象） */
+.fill {
+  width: 100%;
+}
+/* 自适应内容填充（更保险 等同于UX的填充） */
+.fill-available {
+  width: -webkit-fill-available;
 }

@@ -1,3 +1,4 @@
+/* DYWH card中的图片样式 */
 .photoItem {
   width: 156rpx;
 height: 156rpx;

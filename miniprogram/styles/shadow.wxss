@@ -7,34 +7,11 @@
   box-shadow: 0rpx 8rpx 12rpx -4rpx rgba(0, 0, 0, 0.05), 0rpx 6rpx 30rpx -6rpx rgba(0, 0, 0, 0.05);
 }
 
-.tab-bar {
-  box-shadow: 0rpx 14rpx 58rpx 0rpx rgba(100, 100, 111, 0.20);
-}
-
-.illustion-shadow {
-  box-shadow: 0rpx 16rpx 48rpx 0rpx rgba(149, 157, 165, 0.20);
-}
-
 .toast-shadow {
   box-shadow: 0rpx 4rpx 16rpx 0rpx rgba(99, 99, 99, 0.20);
-}
-
-.mypage-shadow {
-  box-shadow: 0rpx 8rpx 12rpx -4rpx rgba(0, 0, 0, 0.05), 0rpx 6rpx 30rpx -6rpx rgba(0, 0, 0, 0.05);
 }
 
 .tabbar-shadow {
   box-shadow: 0rpx 14rpx 58rpx 0rpx rgba(100, 100, 111, 0.20);
 }
 
-.logo-shadow {
-  box-shadow: 0rpx 22.56230rpx 38rpx -11.28114rpx rgba(233, 140, 140, 0.19);
-}
-
-.cut-shadow {
-  fill: rgba(0, 0, 0, 0.40);
-  filter: drop-shadow(0px 1.5059055089950562px 4.517716407775879px rgba(60, 64, 67, 0.15)) drop-shadow(0px 1.5059055089950562px 3.0118110179901123px rgba(60, 64, 67, 0.30));
-}
-.float-switch-shadow {
-  box-shadow: 0rpx 6rpx 16rpx 0rpx rgba(0, 0, 0, 0.24);
-}
