@@ -18,12 +18,6 @@
   align-self: stretch;
 }
 
-.fill {
-  width: 100%;
-}
-.fill-available {
-  width: -webkit-fill-available;
-}
 
 .tabs {
   display: flex;

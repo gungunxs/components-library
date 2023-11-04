@@ -4,6 +4,7 @@
 @import "../../styles/shadow.wxss";
 @import "../../styles/slot.wxss";
 @import "../animations/animations.wxss";
+@import "../../styles/grid.wxss";
 
 .input {
   display: inline-flex;

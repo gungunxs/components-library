@@ -1,0 +1,24 @@
+/* 
+  button-group样式 横向排列和竖向两种方式
+ */
+
+ /* button组外边距 */
+ .button-group-padding {
+  padding: 40rpx 0rpx;
+}
+/* button组 竖向排列 */
+.button-group-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32rpx;
+  align-self: stretch;
+}
+/* button组 水平排列 */
+.button-group-horizen {
+  display: flex;
+  align-items: center;
+  gap: 28rpx;
+  align-self: stretch;
+}

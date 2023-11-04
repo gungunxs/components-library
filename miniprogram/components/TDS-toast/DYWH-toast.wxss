@@ -4,6 +4,7 @@
 @import "../../styles/shadow.wxss";
 @import "../animations/animations.wxss";
 @import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
 
 .mask{
   height: 100%;
