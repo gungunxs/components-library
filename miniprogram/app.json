@@ -1,6 +1,16 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/typography/typography",
+    "pages/color/color",
+    "pages/grid/grid",
+    "pages/button/button",
+    "pages/tag/tag",
+    "pages/card/card",
+    "pages/icon/icon",
+    "pages/input/input",
+    "pages/toast/toast",
+    "pages/tabs/tabs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,5 +20,4 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
-  
 }

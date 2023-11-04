@@ -16,5 +16,16 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+Page {
+  background: var(--Foreground-Low-Contrast);
+}
+
+.content {
+  padding: 42rpx;
+  gap: 32rpx;
+}
+.tips {
+  color: var(--Foreground-Negative);
+}
 
