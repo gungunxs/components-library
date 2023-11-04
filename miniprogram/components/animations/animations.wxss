@@ -33,27 +33,4 @@
   }
 }
 
-@keyframes pendingFadeInGrow {
-  0% {
-    width: 0;
-    opacity: 0;
-    display: none;
-  }
-  100% {
-    width: 106rpx;
-    opacity: 1;
-  }
-}
-
-@keyframes pendingFadeOutShrink {
-  0% {
-    width: 106rpx;
-    opacity: 1;
-  }
-  100% {
-    width: 0;
-    opacity: 0;
-   
-  }
-}
 
