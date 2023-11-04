@@ -7,8 +7,8 @@
   <!-- 获取胶囊的高度来设置胶囊所在行的高度 -->
   <view class="capsule-box" style="height:{{capsuleBoxHeight}}px;">
     <view class="barLineItem">
-      <view bindtap="returnPage" class="returnButton">
-        <image class="returnSvg" style="width: 24rpx;" src="{{BackIcon}}"></image>
+      <view bindtap="returnPage" class="returnButton" >
+        <image class="returnSvg" style="width: 24rpx;" src="{{BackIcon}}" wx:if="{{returnButton}}"></image>
       </view>
     </view>
 

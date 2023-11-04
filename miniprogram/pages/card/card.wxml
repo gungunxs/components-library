@@ -1,0 +1,6 @@
+<!--pages/card/card.wxml-->
+<TDS-topbar title="Card 卡片">
+  <view class="flex-center column content">
+    
+  </view>
+</TDS-topbar>

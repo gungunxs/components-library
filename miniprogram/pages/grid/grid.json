@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "TDS-topbar":"/components/TDS-topbar/TDS-topbar"
+  },
+  "navigationStyle": "custom"
+}

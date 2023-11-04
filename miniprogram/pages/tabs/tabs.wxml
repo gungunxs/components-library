@@ -1,0 +1,6 @@
+<!--pages/tabs/tabs.wxml-->
+<TDS-topbar title="Tabs 标签页" immersion="{{true}}">
+  <view class="flex-center column content">
+    
+  </view>
+</TDS-topbar>

@@ -54,6 +54,10 @@ Component({
     BackIcon:{ // 返回icon
       type:String,
       value:"/static/svg/direction/back.svg"
+    },
+    returnButton:{
+      type:Boolean,
+      value:true,
     }
   },
 

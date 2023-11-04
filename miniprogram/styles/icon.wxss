@@ -7,13 +7,16 @@
   height: 52rpx;
   flex-shrink: 0;
 }
-
 .large {
   width: 48rpx;
   height: 48rpx;
   flex-shrink: 0;
 }
-
+.medium-24 {
+  width: 48rpx;
+  height: 48rpx;
+  flex-shrink: 0;
+}
 .medium {
   width: 44rpx;
   height: 44rpx;

@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
-    "TDS-button":"/components/TDS-button/TDS-button"
+    "TDS-toast":"/components/TDS-toast/TDS-toast"
   },
   "navigationStyle": "custom"
 }

@@ -1,2 +1,5 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<TDS-topbar title="组件库样例及使用方法" returnButton="{{false}}" immersion="{{true}}">
+  <view class="flex-center column content">
+    <TDS-button class="fill" wx:for="{{buttonList}}" wx:key="index" buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.label}}" bind:tap="lookupExampleDetail" data-type="{{item.url}}"></TDS-button>
+  </view>
+</TDS-topbar>

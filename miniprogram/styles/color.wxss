@@ -2,10 +2,7 @@
   TDS全局颜色样式：所有的颜色必须从这里引用，不允许新建颜色样式
   注意：在web端开发中使用:root伪类选择器来设置全局样式，但是在小程序中采用page来作为顶层变量
  */
- /* [data-theme="DYWH"] {
-  --Primary: #001aff;
- } */
-page {
+ [data-theme="DYWH"] {
   --Primary: #545FBF;
   /* secondary */
   --Secondary-Lavender: #EAECFF;
@@ -22,21 +19,46 @@ page {
   --Foreground-White: #FFFFFF;
   --Foreground-Black: #000000;
   --Foreground-Negative: #F96262;
-  --Masking-color: rgba(0, 0, 0, 0.50);
-  /* border */
-  --Border-Natural: #D1D1D1;
-  /* placeholder color */
-  --Placeholder-color: rgba(255, 255, 255, 0.00);
   /* gradient */
   --Dialog-gradient: linear-gradient(180deg, #C3CBFF 0.25%, #F3F5FF 17.36%, #FFF 61.42%);
   --Mypage-gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
- 
+ }
+ /* TDS颜色 */
+page {
+  --Primary: #20C38C;
+  /* secondary */
+  --Secondary-Blue: #3EBAD0;
+  --Secondary-Yellow: #FBDE71;
+  --Secondary-Error: #F96262;
+  --Secondary-Highlight: #79DBBA;
+  /* foreground */
+  --Foreground-Primary: #20C38C;
+  --Foreground-High: #292945;
+  --Foreground-Medium: #7F7F8F;
+  --Foreground-Low: #BFBFC7;
+  --Foreground-Medium-Contrast: #E9E9E9;
+  --Foreground-Low-Contrast: #F5F5F5;
+  --Foreground-White: #FFFFFF;
+  --Foreground-Negative: #F96262;
+  /* border */
+  --Border-Natural: #D1D1D1;
+  /* placeholder color */
+  --Placeholder-Color: rgba(255, 255, 255, 0.00);
+  /* secondary opacity */
+  --Blue-10: rgba(62, 186, 208, 0.10);
+  --Yellow-10: rgba(251, 222, 113, 0.10);
+  --Red-10: rgba(249, 98, 98, 0.10);
+  --Green-10: rgba(32, 195, 140, 0.10);
+  --Masking-Color: rgba(0, 0, 0, 0.50);
+  /* gradient */
+  --Dialog-Gradient: linear-gradient(180deg, #C3CBFF 0.25%, #F3F5FF 17.36%, #FFF 61.42%);
+  --Mypage-Gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
 }
 
 .Thematic-gradient {
-  background: var(--Dialog-gradient);
+  background: var(--Dialog-Gradient);
 }
 
 .Mypage-gradient {
-  background: var(--Mypage-gradient);
+  background: var(--Mypage-Gradient);
 }

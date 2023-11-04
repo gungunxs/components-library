@@ -16,11 +16,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 /* 居左对齐 */
 .stretch {
   align-items: stretch;
+}
+/* 行排列 */
+.row {
+  flex-direction: row;
+}
+/* 列排列 */
+.column {
+  flex-direction: column;
 }
 
 /* 
