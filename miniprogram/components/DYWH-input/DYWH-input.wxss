@@ -1,0 +1,90 @@
+/* components/DYWH-input/DYWH-input.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../../styles/slot.wxss";
+@import "../animations/animations.wxss";
+
+.input {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rpx;
+}
+
+.input-title {
+  height: 36rpx;
+  animation: fadeInGrow 0.3s;
+}
+
+.input-title-default {
+  display: none;
+}
+
+.input-title-error {
+  display: none;
+}
+
+.input-title-active {
+  color: var(--Primary);
+}
+
+.input-title-filled {
+  color: var(--Foreground-High);
+}
+
+.input-title-readonly {
+  color: var(--Border-Natural);
+}
+
+.input-container {
+  display: flex;
+/* width: 670rpx; */
+height: 100rpx;
+padding: 0rpx 24rpx;
+justify-content: center;
+align-items: center;
+gap: 20rpx;
+flex-shrink: 0;
+border-radius: 12rpx;
+width: -webkit-fill-available;
+}
+
+.input-container-icon-leading {
+  flex-direction: row-reverse;
+}
+
+.input-container-default {
+  background: var(--Foreground-Low-Contrast);
+}
+
+.input-container-active {
+  border: 2rpx solid var(--Primary);
+  background: var(--Foreground-Low-Contrast);
+}
+
+.input-container-filled {
+  border: 2rpx solid var(--Border-Natural);
+  background: var(--Foreground-White);
+}
+
+.input-container-readonly {
+  background: var(--Foreground-Medium-Contrast);
+  color: var(--Foreground-Medium);
+}
+
+.input-container-error {
+  border: 2rpx solid var(--Secondary-Error);
+  background: var(--Foreground-Low-Contrast);
+  color: var(--Secondary-Error);
+}
+
+.input-hint {
+  align-self: stretch;
+  color: var(--Foreground-Medium);
+}
+
+.input-hint-error {
+  color: var(--Secondary-Error);
+}

@@ -1,0 +1,14 @@
+<!--components/DYWH-halfscreen-dialog/DYWH-halfscreen-dialog.wxml-->
+<view class="mask" wx:if="{{showOut}}" bindtap="close" style="animation-name: {{animationName}};" catchtouchmove="true">
+  <view class="halfscreen-dialog" catch:tap="catch">
+    <slot name="avatar"></slot>
+    <view class="halfscreen-dialog-text H3" wx:if="{{showLabel}}">
+      <text class="halfscreen-dialog-text-label">{{label}}</text>
+    </view>
+    <view class="halfscreen-dialog-text Paragraphs1" wx:if="{{showHint}}">
+      <text class="halfscreen-dialog-text-hint">{{hint}}</text>
+    </view>
+    <slot name="slot1" style="z-index:9999"></slot>
+    <slot name="slot2"></slot>
+  </view>
+</view>

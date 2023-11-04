@@ -1,0 +1,11 @@
+/* flex布局常用对齐方式 */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,62 @@
+/* components/DYWH-halfscreen-dialog/DYWH-halfscreen-dialog.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-duration: 0.3s;
+  background: var(--Masking-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 999999;
+}
+
+.halfscreen-dialog {
+  display: flex;
+  width: 100%;
+  padding: 60rpx 56rpx 68rpx 56rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 28rpx 28rpx 0rpx 0rpx;
+  animation-duration: 0.3s !important;
+  animation-name: popFromBottom !important;
+  background-color: var(--Foreground-White);
+}
+
+@keyframes popFromBottom {
+  0% {
+    transform: translate3d(0, -20%, 0) !important;
+    transform: translate3d(0, -20%, 0) !important;
+    opacity: 0 !important;
+  }
+
+  100% {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.halfscreen-dialog-text {
+  display: flex;
+  padding: 16rpx 0rpx;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20rpx;
+  align-self: stretch;
+}
+
+.halfscreen-dialog-text-label {
+  color: var(--Foreground-High);
+}
+
+.halfscreen-dialog-text-hint {
+  color: var(--Foreground-Medium);
+}

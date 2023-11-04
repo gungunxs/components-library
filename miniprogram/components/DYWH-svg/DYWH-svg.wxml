@@ -1,0 +1,5 @@
+<image
+    class="m-icon" style="width: {{ size }};"
+        src="{{ svgData }}"
+        mode="widthFix"
+    ></image>

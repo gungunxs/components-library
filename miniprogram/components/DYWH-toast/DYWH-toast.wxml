@@ -1,0 +1,11 @@
+<!--components/DYWH-toast/DYWH-toast.wxml-->
+<view class="mask fill" wx:if="{{showMask}}" catch:touchmove="true"></view>
+<view class="toast toast-shadow" wx:if="{{showToast}}" style="animation-name: {{animationName}};background-color: {{'var('+bgColor+')'}};align-items: {{showCaption&&(Caption!=='')?'flex-start':'center'}};">
+  <!-- svg -->
+  <image class="toast-svg" wx:if="{{Icon}}" src="/static/svg/{{Iconpath}}.svg"></image>
+  <!-- label -->
+  <view class="toast-label">
+    <text class="Paragraphs1 toast-label-message" style="color:{{'var('+messageColor+')'}}">{{Message}}</text>
+    <text class="Paragraphs1 toast-label-caption" wx:if="{{showCaption&&(Caption!=='')}}" style="color:{{'var('+captionColor+')'}}">{{Caption}}</text>
+  </view>
+</view>

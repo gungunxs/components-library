@@ -1,0 +1,101 @@
+/* components/DYWH-card/DYWH-card.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+
+.excard {
+  border-radius: 20rpx;
+  background: var(--Foreground-White);
+  display: flex;
+  width: 666rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.excard-head {
+  display: flex;
+  padding-left: 52rpx;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+  height: 56rpx;
+}
+
+.excard-head-text {
+  color: var(--Foreground-Medium);
+}
+
+.excard-head-book {
+  display: flex;
+  height: 100%;
+  padding: 0rpx 20rpx;
+  justify-content: center;
+  align-items: center;
+  gap: 20rpx;
+  border-radius: 0rpx 20rpx;
+  background: var(--Secondary-Lavender);
+}
+
+.excard-head-book-text {
+  color: var(--Primary);
+  text-align: right;
+}
+
+.excard-content {
+  display: flex;
+  padding: 30rpx 52rpx 0rpx 52rpx;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.excard-content-text {
+  flex: 1 0 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
+  color: var(--Foreground-High);
+}
+
+.excard-photo {
+  display: flex;
+  padding: 20rpx 52rpx 0rpx 52rpx;
+  align-items: center;
+  gap: 20rpx;
+  align-self: stretch;
+}
+
+.excard-label {
+  display: flex;
+  padding: 20rpx 52rpx;
+  align-items: center;
+  gap: 12rpx;
+  align-self: stretch;
+}
+
+.excard-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20rpx;
+  align-self: stretch;
+}
+
+.excard-tag-label {
+  display: flex;
+  padding: 12rpx 20rpx;
+  justify-content: center;
+  align-items: center;
+  gap: 20rpx;
+  border-radius: 20rpx 0rpx;
+  background: var(--Primary);
+}
+
+.excard-tag-label-text {
+  color: var(--Foreground-White);
+  text-align: right;
+}

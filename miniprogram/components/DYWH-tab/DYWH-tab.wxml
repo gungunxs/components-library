@@ -1,0 +1,11 @@
+<!--components/DYWH-tab/DYWH-tab.wxml-->
+<view class="tab">
+  <view class="tab-icon" wx:if="{{ShowIcon}}">
+    <image class="small" src="{{IconPath}}.svg"></image>
+    <view class="tab-icon-line fill"></view>
+  </view>
+  <view class="tab-label tab-label-{{State}}">
+    <text class="Paragraphs1">{{Label}}</text>
+    <view class="tab-label-line tab-label-line-{{State}} fill"> </view>
+  </view>
+</view>

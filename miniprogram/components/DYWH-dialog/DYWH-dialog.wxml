@@ -1,0 +1,14 @@
+<!--components/DYWH-dialog/DYWH-dialog.wxml-->
+<view class="mask" wx:if="{{showOut}}" bindtap="close" style="z-index: 99999;animation-name: {{maskAnimationName}};" catchtouchmove="true">
+  <view class="dialog Thematic-gradient duoduo-card-shadow" catchtap="catch" style="animation-name: {{animationName}};">
+    <!-- 标题区-->
+    <view class="dialog-title">
+      <!-- 一级标题-->
+      <text class="H3 dialog-title-head" wx:if="{{isHead}}">{{headTitle}}</text>
+      <!-- 二级标题-->
+      <text class="Paragraphs1 dialog-title-sub" wx:if="{{isSub&&(subTitle!='')}}">{{subTitle}}</text>
+    </view>
+    <!-- button group components-->
+    <slot></slot>
+  </view>
+</view>

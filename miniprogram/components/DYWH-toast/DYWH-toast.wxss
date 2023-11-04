@@ -1,0 +1,52 @@
+/* components/DYWH-toast/DYWH-toast.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+
+.mask{
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 999999;
+  opacity:0
+}
+
+.toast {
+  border-radius: 12rpx;
+  background: var(--Foreground-White);
+  display: flex;
+  width: 666rpx;
+  padding: 40rpx;
+  gap: 28rpx;
+  animation-duration: 0.5s;
+  box-sizing: border-box;
+  z-index: 99999;
+}
+
+.toast-svg {
+  width: 48rpx;
+  height: 48rpx;
+  flex-shrink: 0;
+}
+
+.toast-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.toast-label-message {
+  align-self: stretch;
+  color: var(--Foreground-High);
+}
+
+.toast-label-caption {
+  align-self: stretch;
+  color: var(--Foreground-Medium);
+}

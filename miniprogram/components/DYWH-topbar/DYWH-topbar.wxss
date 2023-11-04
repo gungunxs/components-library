@@ -1,0 +1,91 @@
+/* components/DYWH-topbar/DYWH-topbar.wxss */
+.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.btn-box {
+  display: flex;
+}
+
+.school-btn {
+  margin-top: 40rpx;
+}
+
+.btn {
+  border-radius: 75rpx;
+  width: 214rpx;
+  height: 84rpx;
+  /* font-size: 14px; */
+  font-weight: 500;
+  font-size: 32rpx;
+  padding: 0;
+  line-height: 84rpx;
+}
+
+.btn .button:not([size=mini]) {
+  width: 214rpx;
+  height: 84rpx;
+}
+
+.returnBox {
+  display: flex;
+  align-self: start;
+  width: 18rpx;
+  left: 1800rpx;
+  height: 34rpx;
+  color: var(--Foreground-Black);
+}
+
+.returnSvg {
+  width: 24rpx;
+  height: 48rpx;
+}
+
+
+/* 胶囊标题区 */
+
+.capsule-box {
+  /* display: inline; */
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.barLine {
+  width: 240rpx;
+  display: flex;
+  /* align-content:center ; */
+  align-items: center;
+}
+
+.barLineItem {
+  /* flex: 1; */
+  color: var(--Foreground-Black);
+}
+
+.returnButton {
+  /* transform: translateX(32rpx); */
+  padding-left: 32rpx;
+  /* width: 24rpx; */
+  width: 118rpx;
+  height: 48rpx;
+}
+
+.barText {
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34rpx;
+  line-height: 48rpx;
+  /* identical to box height */
+  text-align: center;
+  color: var(--Foreground-Black);
+  mix-blend-mode: normal;
+  letter-spacing: 2rpx;
+  opacity: 0.9;
+  align-self: center;
+}

@@ -1,0 +1,56 @@
+/* components/DYWH-tab/DYWH-tab.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/icon.wxss";
+@import "../../styles/slot.wxss";
+
+.tab {
+  display: inline-flex;
+  padding: 0 30rpx;
+  justify-content: center;
+  align-items: center;
+  gap: 10rpx;
+  height: 60rpx;
+}
+
+.tab-icon {
+  display: flex;
+  padding-top: 10rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rpx;
+  align-self: stretch;
+}
+
+.tab-icon-line {
+  height: 4rpx;
+}
+
+.tab-label {
+  display: flex;
+  padding-top: 8rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rpx;
+  width: max-content;
+}
+
+.tab-label-active {
+  color: var(--Foreground-High);
+}
+.tab-label-default {
+  color: var(--Foreground-Medium)
+}
+.tab-label-line {
+  height: 4rpx;
+  border-radius: 100rpx;
+}
+.tab-label-line-active {
+  background-color: var(--Primary);
+  transition: background-color 0.8s ease;
+ 
+}

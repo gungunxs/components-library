@@ -1,7 +1,9 @@
 // app.ts
+
 App<IAppOption>({
-  globalData: {},
+  globalData: {
+    themeMode:"DYWH",
+  },
   onLaunch() {
-    
   },
 })

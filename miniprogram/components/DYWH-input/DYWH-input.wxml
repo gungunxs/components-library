@@ -1,0 +1,9 @@
+<!--components/DYWH-input/DYWH-input.wxml-->
+<view class="input fill">
+  <text class="Paragraphs2 input-title input-title-{{State}}">{{Title}}</text>
+  <view class="Paragraphs1 input-container input-container-{{State}} input-container-icon-{{IconPlacement}} fill">
+    <slot name="input"></slot>
+    <slot name="icon" wx:if="{{IconPlacement!='none'}}"></slot>
+  </view>
+  <text class="Paragraphs3 input-hint input-hint-{{State}}" wx:if="{{showHint}}">{{Hint}}</text>
+</view>

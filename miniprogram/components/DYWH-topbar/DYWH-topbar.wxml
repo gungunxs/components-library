@@ -1,0 +1,36 @@
+<!--components/topbar/topbar.wxml-->
+<view class="top-bar" style=" background:rgba({{bgColor}},{{immersion?rgba:'1'}});">
+  <!-- 信号区 -->
+  <view style="height:{{statusBarHeight}}px;">
+  </view>
+  <!-- 胶囊区 -->
+  <!-- 获取胶囊的高度来设置胶囊所在行的高度 -->
+  <view class="capsule-box" style="height:{{capsuleBoxHeight}}px;">
+    <view class="barLineItem">
+      <view bindtap="returnPage" class="returnButton">
+        <image class="returnSvg" style="width: 24rpx;" src="{{BackIcon}}"></image>
+      </view>
+    </view>
+
+    <view class="barLineItem">
+      <view class="barText" style="{{'color:var('+titleColor+')'}}">{{title}}</view>
+    </view>
+    <view class="barLineItem">
+      <view style="width: 150rpx;"></view>
+    </view>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" bindscroll="scroll" style="height: {{screenHeight}}px;" wx:if="{{immersion}}">
+  <!-- 占位符 -->
+  <view style="height:{{statusBarHeight + capsuleBoxHeight}}px;width: 100%;"></view>
+  <!-- 放置页面主page -->
+  <slot></slot>
+</scroll-view>
+
+<block wx:else>
+  <!-- 占位符 -->
+  <view style="height:{{statusBarHeight + capsuleBoxHeight}}px;width: 100%;">
+  </view>
+  <slot></slot>
+</block>

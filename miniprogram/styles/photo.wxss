@@ -1,0 +1,5 @@
+.photoItem {
+  width: 156rpx;
+height: 156rpx;
+border-radius: 14rpx;
+}

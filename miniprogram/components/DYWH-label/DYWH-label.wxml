@@ -1,0 +1,4 @@
+<!--components/DYWH-label/DWYH-label.wxml-->
+<view class="Paragraphs2 label label-{{isSelected}}">
+  <text>{{Label}}</text>
+</view>

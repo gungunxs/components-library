@@ -1,0 +1,40 @@
+/* 
+  全局阴影投影样式
+  全局的阴影样式都来自于这里，只允许从这里引入或者添加，在别的页面不允许新建阴影样式
+  所有的全局样式（不同类型的）可以叠加使用，比如阴影和字体样式可以叠加使用
+*/
+.duoduo-card-shadow {
+  box-shadow: 0rpx 8rpx 12rpx -4rpx rgba(0, 0, 0, 0.05), 0rpx 6rpx 30rpx -6rpx rgba(0, 0, 0, 0.05);
+}
+
+.tab-bar {
+  box-shadow: 0rpx 14rpx 58rpx 0rpx rgba(100, 100, 111, 0.20);
+}
+
+.illustion-shadow {
+  box-shadow: 0rpx 16rpx 48rpx 0rpx rgba(149, 157, 165, 0.20);
+}
+
+.toast-shadow {
+  box-shadow: 0rpx 4rpx 16rpx 0rpx rgba(99, 99, 99, 0.20);
+}
+
+.mypage-shadow {
+  box-shadow: 0rpx 8rpx 12rpx -4rpx rgba(0, 0, 0, 0.05), 0rpx 6rpx 30rpx -6rpx rgba(0, 0, 0, 0.05);
+}
+
+.tabbar-shadow {
+  box-shadow: 0rpx 14rpx 58rpx 0rpx rgba(100, 100, 111, 0.20);
+}
+
+.logo-shadow {
+  box-shadow: 0rpx 22.56230rpx 38rpx -11.28114rpx rgba(233, 140, 140, 0.19);
+}
+
+.cut-shadow {
+  fill: rgba(0, 0, 0, 0.40);
+  filter: drop-shadow(0px 1.5059055089950562px 4.517716407775879px rgba(60, 64, 67, 0.15)) drop-shadow(0px 1.5059055089950562px 3.0118110179901123px rgba(60, 64, 67, 0.30));
+}
+.float-switch-shadow {
+  box-shadow: 0rpx 6rpx 16rpx 0rpx rgba(0, 0, 0, 0.24);
+}

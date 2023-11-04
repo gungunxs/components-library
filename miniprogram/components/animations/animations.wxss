@@ -1,0 +1,59 @@
+/* 淡入动画 */
+@keyframes fadeIn {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+/* 淡出动画 */
+@keyframes fadeOut {
+	0% { opacity: 1 }
+	100% { opacity: 0 }
+}
+
+/* 渐显放大动画 */
+@keyframes fadeInGrow {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 渐隐缩小动画 */
+@keyframes fadeOutShrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pendingFadeInGrow {
+  0% {
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    width: 106rpx;
+    opacity: 1;
+  }
+}
+
+@keyframes pendingFadeOutShrink {
+  0% {
+    width: 106rpx;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+   
+  }
+}
+

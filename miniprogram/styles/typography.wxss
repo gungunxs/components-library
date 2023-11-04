@@ -1,0 +1,110 @@
+/*
+   全局文本样式
+   所有的文本样式必须从这里面选取，不允许自己新建样式使用
+*/
+
+.H1-XXL {
+  font-family: PingFang SC;
+  font-size: 96rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112rpx;
+  /* 116.667% */
+  letter-spacing: 1.12rpx;
+}
+
+.H1-XL {
+  font-family: PingFang SC;
+  font-size: 64rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72rpx;
+  /* 112.5% */
+  letter-spacing: 0.72rpx;
+}
+
+.H1 {
+  font-family: PingFang SC;
+  font-size: 48rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56rpx;
+  /* 116.667% */
+  letter-spacing: 0.56rpx;
+}
+
+.H2 {
+  font-family: PingFang SC;
+  font-size: 40rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48rpx;
+  /* 120% */
+  letter-spacing: 0.48rpx;
+}
+
+.H3 {
+  font-family: PingFang SC;
+  font-size: 34rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44rpx;
+  /* 129.412% */
+  letter-spacing: 0.44rpx;
+}
+
+.Paragraphs1 {
+  /* Paragraphs 1 */
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40rpx;
+  /* 142.857% */
+  letter-spacing: 0.4rpx;
+}
+
+.Paragraphs2 {
+  font-family: PingFang SC;
+  font-size: 24rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36rpx;
+  /* 150% */
+  letter-spacing: 0.36rpx;
+}
+
+.Paragraphs3 {
+  font-family: PingFang SC;
+  font-size: 20rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32rpx;
+  /* 160% */
+  letter-spacing: 0.32rpx;
+}
+
+.Button-Label {
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40rpx;
+  /* 128.571% */
+  letter-spacing: 0.4rpx;
+}
+
+.Link {
+  color: var(--Secondary-Highlight);
+  font-family: PingFang SC;
+  font-size: 20rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32rpx;
+  /* 160% */
+  letter-spacing: 0.24rpx;
+}
+
+.placeholder {
+  color: var(--Foreground-Low);
+}

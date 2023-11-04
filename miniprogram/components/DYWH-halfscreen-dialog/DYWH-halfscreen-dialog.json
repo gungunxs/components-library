@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "DYWH-svg":"/components/DYWH-svg/DYWH-svg"
+  }
+}
