@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    iconList:[
+      {
+        sizeValue:"24px",
+        sizeName:"large",
+      },
+      {
+        sizeValue:"22px",
+        sizeName:"medium",
+      },
+      {
+        sizeValue:"18px",
+        sizeName:"small",
+      },
+      {
+        sizeValue:"16px",
+        sizeName:"mini",
+      }
+    ]
   },
 
   /**
