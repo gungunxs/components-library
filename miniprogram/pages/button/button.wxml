@@ -1,7 +1,8 @@
 <!--pages/button/button.wxml-->
 <TDS-topbar title="Button 按钮" immersion="{{true}}" Threshold="0.1" speed="2">
   <view class="flex-center column content">
-  <text class="tips Paragraphs1">tips:
+  <text class="tips Paragraphs1">tips: 
+  components/TDS-button
   1）Button按钮集合（最底层的button原子），如果需要使用button组，需要添加其他grid属性，详见"button group"类目。
   2）button所有的属性名均首字母大写（buttonStyle除外），属性值均小写。例如：{{'<TDS-button buttonStyle="secondary" State="disabled" Size="small" Label="secondary disabled small"></TDS-button>'}}
   3）button组件具有buttonStyle——按钮样式、State——状态、Size——大小，这三个重要属性用于控制button的样式，另外button组件还具有Label——button内文字内容、Background——背景颜色、buttonColor——边框色与内部Label颜色。具体默认值参照components目录下的TDS-button组件详细内容。一旦传值错误，button则会失效。

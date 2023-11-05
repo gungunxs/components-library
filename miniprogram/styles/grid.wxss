@@ -23,7 +23,7 @@
 /* 居左对齐 */
 .stretch {
   align-items: stretch;
-  justify-content: stretch;
+  /* justify-content: stretch; */
 }
 /* 行排列 */
 .row {
