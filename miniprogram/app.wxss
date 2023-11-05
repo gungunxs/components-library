@@ -21,6 +21,7 @@
 }
 Page {
   background: var(--Foreground-Low-Contrast);
+  overflow: hidden;
 }
 
 .content {
