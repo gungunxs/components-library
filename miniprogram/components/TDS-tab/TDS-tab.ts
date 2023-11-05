@@ -21,7 +21,7 @@ Component({
     },
     IconPath:{
       type:String,
-      value:"/static/svg/loading"
+      value:"loading-primary"
     }
   },
 

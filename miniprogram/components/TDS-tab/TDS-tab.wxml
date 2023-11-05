@@ -1,7 +1,7 @@
 <!--components/DYWH-tab/DYWH-tab.wxml-->
 <view class="tab">
   <view class="tab-icon" wx:if="{{ShowIcon}}">
-    <image class="small" src="{{IconPath}}.svg"></image>
+    <image class="small" src="/static/svg/{{IconPath}}.svg"></image>
     <view class="tab-icon-line fill"></view>
   </view>
   <view class="tab-label tab-label-{{State}}">

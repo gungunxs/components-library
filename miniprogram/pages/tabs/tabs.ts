@@ -5,9 +5,61 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tabListKey:[
+      "default","active"
+    ],
+    tabList:{
+      "default":[
+        {
+          showIcon:true,
+          state:"default",
+          iconPath:"loading-primary",
+        },
+        {
+          showIcon:true,
+          state:"default",
+          iconPath:"setting",
+        },
+        {
+          showIcon:false,
+          state:"default",
+          iconPath:"loading-primary",
+        },
+      ],
+      "active":[
+        {
+          showIcon:true,
+          state:"active",
+          iconPath:"loading-primary",
+        },
+        {
+          showIcon:true,
+          state:"active",
+          iconPath:"setting",
+        },
+        {
+          showIcon:false,
+          state:"active",
+          iconPath:"loading-primary",
+        },
+      ]
+    },
+    tabSelected:0,
+    tabsList:[
+      '','','','','','','','','','','','','','','','',
+    ]
   },
-
+    /**
+   * tabs切换函数
+   */
+  switchTabs(e: any) {
+    var switchData = e.currentTarget.dataset
+    var tabSelected = this.data.tabSelected
+    tabSelected = switchData.tabindex
+    this.setData({
+      tabSelected: tabSelected,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
