@@ -6,6 +6,8 @@
 @import "styles/icon.wxss";
 @import "styles/grid.wxss";
 @import "styles/photo.wxss";
+@import "styles/button.wxss";
+@import "styles/tabs.wxss";
 
 
 .container {
@@ -22,7 +24,7 @@ Page {
 }
 
 .content {
-  padding: 42rpx;
+  padding: 20rpx 42rpx;
   gap: 32rpx;
 }
 .tips {
