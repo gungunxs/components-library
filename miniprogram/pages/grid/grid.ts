@@ -5,7 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    cardList:['','',''], // 用于控制卡片的个数
+    gridList:[
+      {
+        gridName:"flex flex布局",
+        gridValue:"flex"
+      },
+     {
+      gridName:"flex-center flex布局+水平竖直居中",
+      gridValue:"flex-center"
+     },
+     {
+      gridName:"flex-spacebetween flex布局+平均分空间",
+      gridValue:"flex-spacebetween fill-available"
+     },
+     {
+      gridName:"stretch 居左对齐 需要配合flex布局以及fill-available使用",
+      gridValue:"flex-center stretch fill-available"
+     },
+     {
+      gridName:"row flex行排列 需要配合flex布局使用",
+      gridValue:"flex row"
+     },
+     {
+      gridName:"column flex列排列 需要配合flex布局使用",
+      gridValue:"flex column"
+     },
+     {
+      gridName:"fill 宽度百分百填充",
+      gridValue:"fill"
+     },
+     {
+      gridName:"fill-available 宽度自适应填充容器",
+      gridValue:"fill-available"
+     },
+    ]
   },
 
   /**

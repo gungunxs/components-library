@@ -1,6 +1,17 @@
 <!--pages/grid/grid.wxml-->
 <TDS-topbar title="Grid 布局格式" immersion="{{true}}">
   <view class="flex-center column content">
+  <text class="tips Paragraphs1">
     
+  </text>
+    <view wx:for="{{gridList}}" wx:key="index" class="flex-center column fill" style="padding: 5rpx;background-color: var(--Primary);">
+      <text class="Paragraphs1">{{item.gridName}}</text>
+      <view class="{{item.gridValue}}" style="background-color: var(--Foreground-Low);" wx:if="{{item.gridValue!='fill'&&item.gridValue!='fill-available'}}">
+        <view wx:for="{{cardList}}" wx:key="index" class="photoItem duoduo-card-shadow" style="background-color: var(--Secondary-Highlight);"></view>
+      </view>
+      <view wx:else class="{{item.gridValue}}" style="background-color: var(--Foreground-Low);height: 156rpx;">
+        
+      </view>
+    </view>
   </view>
 </TDS-topbar>

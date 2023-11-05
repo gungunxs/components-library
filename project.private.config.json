@@ -9,6 +9,13 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/grid/grid",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/index/index",
           "query": "",
           "launchMode": "default",
