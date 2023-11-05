@@ -21,7 +21,7 @@ Page({
      },
      {
       gridName:"stretch 居左对齐 需要配合flex布局以及fill-available使用",
-      gridValue:"flex-center stretch fill-available"
+      gridValue:"flex stretch fill-available"
      },
      {
       gridName:"row flex行排列 需要配合flex布局使用",
