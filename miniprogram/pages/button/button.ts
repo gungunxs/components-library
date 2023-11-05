@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    buttonList:[
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
+      },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
+      },
+    ]
   },
 
   /**

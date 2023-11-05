@@ -1,6 +1,9 @@
 <!--pages/button/button.wxml-->
 <TDS-topbar title="Button 按钮" immersion="{{true}}">
   <view class="flex-center column content">
-    
+    <view wx:for="{{buttonList}}" wx:key="index">
+      <text class="Paragraphs1"></text>
+      <TDS-button class="fill" buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="按钮文字"></TDS-button>
+    </view>
   </view>
 </TDS-topbar>
