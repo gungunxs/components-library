@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    theme:"",
     colorList:{
       "Primary":[
         {colorVariable:"--Primary",colorName:"Primary"}
@@ -14,6 +15,7 @@ Page({
         {colorVariable:"--Secondary-Yellow",colorName:"Secondary Yellow"},
         {colorVariable:"--Secondary-Error",colorName:"Secondary Error"},
         {colorVariable:"--Secondary-Highlight",colorName:"Secondary Highlight"},
+        // {colorVariable:"--Secondary-Lavender",colorName:"Secondary Lavender"},
       ],
       "Foreground":[
         {colorVariable:"--Foreground-Primary",colorName:"Foreground Primary"},
@@ -24,6 +26,7 @@ Page({
         {colorVariable:"--Foreground-Low-Contrast",colorName:"Foreground Low Contrast"},
         {colorVariable:"--Foreground-White",colorName:"Foreground White"},
         {colorVariable:"--Foreground-Negative",colorName:"Foreground Negative"},
+        // {colorVariable:"--Foreground-Black",colorName:"Foreground Black"},
       ],
       "Border-Natural":[
         {colorVariable:"--Border-Natural",colorName:"Border Natural"},

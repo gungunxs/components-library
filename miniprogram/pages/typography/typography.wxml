@@ -1,7 +1,8 @@
 <!--pages/typography/typography.wxml-->
 <TDS-topbar title="Typography 字体排印" immersion="{{true}}">
   <view class="flex-center column content stretch">
+    <text class="tips Paragraphs1">tips：
+    在app.wxss已经注册过typography.wxss的前提下，直接在页面元素的class选择器值里面写入对应文字格式即可（例如：class="H1"），另外需要注意UX的文字格式名称中间可能出空格，我这里使用"-"连接，避免出现class选择器识别错误，具体内容参照styles里的typography.wxss文件</text>
     <text class="{{item.class}}" wx:for="{{typographyList}}" wx:key="index">{{item.text}}</text>
-    <text class="tips Paragraphs1">tips：在app.wxss已经注册过typography.wxss的前提下，直接在页面元素的class选择器值里面写入对应文字格式即可（例如：class="H1"），另外需要注意UX的文字格式名称中间可能出空格，我这里使用"-"连接，避免出现class选择器识别错误，具体内容参照styles里的typography.wxss文件</text>
   </view>
 </TDS-topbar>

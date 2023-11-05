@@ -1,15 +1,17 @@
 <!--pages/color/color.wxml-->
-<TDS-topbar title="Color 颜色" immersion="{{true}}">
+<TDS-topbar title="Color 颜色" immersion="{{true}}" data-theme="{{theme}}">
   <view class="flex-center column content stretch">
-    <text class="tips Paragraphs1">tips:1）在app.wxss注册过color.wxss的前提下，直接在相应的颜色参数（例如color或者background、background-color）使用var(变量名)的方式引用全局颜色变量（例如：color:var(--Primary)），注意所有的变量名必须是全局颜色变量文件color.wxss中所有，一旦出现变量名错误，该颜色则应用失效。2）不同的小程序有不同的颜色库，因此应用不同颜色库时需要根据颜色库匹配（详见颜色主题切换）3）这里展示的名字只是UX中展示的名字，其变量的真实值为"--Primary"或者"--Secondary-Blue"，和文字格式变量名一致，UX中的空格这里使用"-"替换</text>
+    <text class="tips Paragraphs1">tips:
+    1）在app.wxss注册过color.wxss的前提下，直接在相应的颜色参数（例如color或者background、background-color）使用var(变量名)的方式引用全局颜色变量（例如：color:var(--Primary)），注意所有的变量名必须是全局颜色变量文件color.wxss中所有，一旦出现变量名错误，该颜色则应用失效。
+    2）不同的小程序有不同的颜色库，因此应用不同颜色库时需要根据颜色库匹配（详见颜色主题切换）
+    3）这里展示的名字只是UX中展示的名字，其变量的真实值为"--Primary"或者"--Secondary-Blue"，和文字格式变量名一致，UX中的空格这里使用"-"替换 
+    4）更多具体细节参考styles目录下的color.wxss文件</text>
     <view wx:for="{{colorListKey}}" wx:key="index" class="flex-spacebetween stretch row fill-available" style="flex-wrap: wrap;align-items: baseline;">
-      <view class="H3 fill" style="padding-bottom: 10px;color: var(--Foreground-Negative);">{{item}}</view>
+      <view class="H3 fill" style="padding-bottom: 10px;">{{item}}</view>
       <view wx:for="{{colorList[item]}}" wx:key="index" class="flex-center column stretch" style="width: 156rpx;">
         <view class="photoItem duoduo-card-shadow" style="background:var({{item.colorVariable}});"></view>
         <text class="Paragraphs2">{{item.colorName}}</text>
       </view>
-      
     </view>
-   
   </view>
 </TDS-topbar>
