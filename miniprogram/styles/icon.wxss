@@ -12,18 +12,19 @@
   height: 48rpx;
   flex-shrink: 0;
 }
-.medium-24 {
-  width: 48rpx;
-  height: 48rpx;
-  flex-shrink: 0;
-}
+
 .medium {
   width: 44rpx;
   height: 44rpx;
   flex-shrink: 0;
 }
 .small {
-  width: 36rpx;
-  height: 36rpx;
+  width: 36rpx !important; 
+  height: 36rpx !important;
+  flex-shrink: 0;
+}
+.mini {
+  width: 32rpx;
+  height: 32rpx;
   flex-shrink: 0;
 }
