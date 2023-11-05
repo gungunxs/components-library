@@ -5,6 +5,9 @@
 /* 
   flex布局常用对齐方式 
 */
+.flex {
+  display: flex;
+}
 /* 水平竖直均居中 */
 .flex-center {
   display: flex;
@@ -20,6 +23,7 @@
 /* 居左对齐 */
 .stretch {
   align-items: stretch;
+  justify-content: stretch;
 }
 /* 行排列 */
 .row {
