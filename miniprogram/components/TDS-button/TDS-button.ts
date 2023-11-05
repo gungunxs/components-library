@@ -32,6 +32,10 @@ Component({
     buttonColor:{
       type:String,
       value:""
+    },
+    theme:{
+      type:String,
+      value:""
     }
   },
 
@@ -46,6 +50,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    disabled(){
+      
+    }
   }
 })
