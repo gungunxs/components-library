@@ -38,6 +38,13 @@ Page({
         buttonStyle:"primary",
         size:"large",
         state:"default",
+        label:"ButtonGroup 按钮组",
+        url:"pages/buttonGroup/buttonGroup"
+      },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
         label:"Tag 标签",
         url:"pages/tag/tag"
       },

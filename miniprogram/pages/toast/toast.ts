@@ -12,7 +12,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    let toast = this.selectComponent("#toast");
+    toast.showToast("哈哈哈哈哈哈哈哈哈哈哈","棍棍棍棍棍棍","loading-primary")
   },
 
   /**

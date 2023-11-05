@@ -1,6 +1,6 @@
 <!--pages/toast/toast.wxml-->
-<TDS-topbar title="Typography 字体排印" immersion="{{true}}">
+<TDS-topbar title="Toast 矩形弹窗" immersion="{{true}}">
   <view class="flex-center column content">
-    
+    <TDS-toast id="toast" showToast="{{true}}"></TDS-toast>
   </view>
 </TDS-topbar>

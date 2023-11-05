@@ -1,6 +1,6 @@
 <!--pages/input/input.wxml-->
 <TDS-topbar title="Input 输入框" immersion="{{true}}">
-  <view class="flex-center column content">
-    
+  <view class="flex-center column content" style="background-color: var(--Foreground-White);">
+    <TDS-input></TDS-input>
   </view>
 </TDS-topbar>
