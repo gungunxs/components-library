@@ -31,6 +31,7 @@ page {
   --Secondary-Yellow: #FBDE71;
   --Secondary-Error: #F96262;
   --Secondary-Highlight: #79DBBA;
+  --Secondary-Lavender: #EAECFF;
   /* foreground */
   --Foreground-Primary: #20C38C;
   --Foreground-High: #292945;
@@ -51,8 +52,9 @@ page {
   --Green-10: rgba(32, 195, 140, 0.10);
   --Masking-Color: rgba(0, 0, 0, 0.50);
   /* gradient */
-  --Dialog-Gradient: linear-gradient(180deg, #C3CBFF 0.25%, #F3F5FF 17.36%, #FFF 61.42%);
+  --Dialog-Gradient: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
   --Mypage-Gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
+  --Foreground-Black: #000000;
 }
 
 .Thematic-gradient {
