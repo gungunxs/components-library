@@ -5,6 +5,7 @@
     "pages/color/color",
     "pages/grid/grid",
     "pages/button/button",
+    "pages/buttonGroup/buttonGroup",
     "pages/tag/tag",
     "pages/card/card",
     "pages/icon/icon",

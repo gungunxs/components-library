@@ -1,0 +1,42 @@
+<!--pages/buttonGroup/buttonGroup.wxml-->
+<TDS-topbar title="buttonGroup 按钮组" immersion="{{true}}" Threshold="0.1" speed="2">
+  <view class="flex-center column content">
+    <text class="tips Paragraphs1">tips: 
+      1）Button按钮组具有两种排列方式，分别为button-group-horizen和button-group-vertical两种。使用方法与typography字体排印一致，只需要在class的选择器值里写入即可。（例如：{{'<view class="button-group-horizen"></view>'}}）。一旦值写错，该样式不会生效！！（前提：button.wxss全局注册在app.wxss和组件内部的.wxss文件中）
+      2）Button按钮组经常配合padding使用，使用方法同上。这里的展示均给每一个button组加上了背景，仅为方便看出padding和button组而已，真实使用时不需要加背景和其他内容（例如：{{'<view class="button-group-horizen"><TDS-button></TDS-button></view>'}}），前提是必须先引入button的组件！！
+      3）这里我只展示了最多数量为3的button组，可以根据需求自行循环添加。
+      4）button组件在使用时必须加上填充样式fill或者fill-available！！
+    </text>
+    <view wx:key="index" wx:for="{{buttonGroupList}}" class="fill">
+      <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">{{item.buttonGroupStyle+' '+item.styleName}}</text>
+    <view class="fill Paragraphs1">一个button</view>
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+      <TDS-button class="fill"></TDS-button>
+    </view>
+    <view class="fill" style="padding-bottom: 20rpx;"></view>
+
+    <view class="fill Paragraphs1">两个button</view>
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+      <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
+      <TDS-button class="fill"></TDS-button>
+    </view>
+    <view class="fill" style="padding-bottom: 20rpx;"></view>
+
+    <view class="fill Paragraphs1">三个button</view>
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+      <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
+      <TDS-button class="fill" buttonStyle="secondary"></TDS-button>
+      <TDS-button class="fill"></TDS-button>
+    </view>
+    <view class="fill" style="padding-bottom: 20rpx;"></view>
+
+    <view class="fill Paragraphs1">三个button+button组的padding</view>
+    <view class="{{item.buttonGroupStyle}} fill button-group-padding" style="background-color:var(--Border-Natural)">
+      <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
+      <TDS-button class="fill" buttonStyle="secondary"></TDS-button>
+      <TDS-button class="fill"></TDS-button>
+    </view>
+    <view class="fill" style="padding-bottom: 20rpx;"></view>
+    </view>
+  </view>
+</TDS-topbar>
