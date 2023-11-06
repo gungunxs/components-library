@@ -45,7 +45,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    disabled(){
+      
+    }
   },
   // 启用插槽功能
   options: {

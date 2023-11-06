@@ -25,10 +25,10 @@ Component({
       type:Boolean,
       value:false
     },
-    // 
+    // icon路径
     Iconpath: {
       type:String,
-      value:"loading"
+      value:"loading-primary"
     },
     //显示蒙版
     showMask: {
@@ -49,6 +49,10 @@ Component({
     captionColor:{
       type:String,
       value:"--Foreground-Medium"
+    },
+    showToast:{
+      type:Boolean,
+      value:false
     }
   },
 
@@ -81,7 +85,7 @@ Component({
         that.setData({
           showToast: false
         })
-      }, 0.2 * 1000)
+      }, 0.25 * 1000)
     },
     /**
      * 打开弹窗

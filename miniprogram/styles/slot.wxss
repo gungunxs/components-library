@@ -35,3 +35,14 @@ textarea{
   color:var(--Foreground-High);
   width:-webkit-fill-available;
 }
+
+input {
+  color: var(--Foreground-High);
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40rpx;
+  /* 142.857% */
+  letter-spacing: 0.4rpx;
+}

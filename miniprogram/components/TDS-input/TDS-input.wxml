@@ -1,5 +1,5 @@
 <!--components/DYWH-input/DYWH-input.wxml-->
-<view class="input fill">
+<view class="input fill" catch:tap="{{State=='readonly'?'disabled':''}}">
   <text class="Paragraphs2 input-title input-title-{{State}}">{{Title}}</text>
   <view class="Paragraphs1 input-container input-container-{{State}} input-container-icon-{{IconPlacement}} fill">
     <slot name="input"></slot>
