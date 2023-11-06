@@ -1,6 +1,26 @@
 <!--pages/tag/tag.wxml-->
 <TDS-topbar title="Tag 标签" immersion="{{true}}">
-  <view class="flex-center column content">
-    <TDS-tag></TDS-tag>
+  <view class="flex-center column content" style="background: var(--Foreground-White);">
+    <text class="tips Paragraphs2">tips:
+      1）TDS-tag为原子tag组件，此组件经常嵌套在card中配合使用。原子tag使用方法很简单，只需在需要使用的page的.json文件中引入后，即可在页面进行使用。但是需要注意的是！！close.svg必须存在于static/svg下，否则该icon不会显示，甚至产生报错。
+      2）tab组件具有八大组件属性，具体内容如下：
+        Color——tab的主题颜色，一共有十种颜色。具体值详见TDS-tag组件内部代码说明。需要特别说明的是，属性值必须正确，否则样式不会生效，我这里对UX的color值进行了处理，将两个不同元素锁着及到的颜色之间用下划线_连接，颜色变量本身之间的空格用-连接，以避免class选择器错误。
+        showIcon——是否展示icon（默认值为true）。需要注意的是，如果showIcon的属性值为true，而IconPath为空，tag组件会理解此时icon为空即不显示icon。因此需要显示icon时，需要showIcon和IconPath都存在。
+        IconPath——icon路径（默认为loading-primary）。需要注意的是icon路径只需要传/static/svg之后.svg之前的部分。
+        FixedWidth——是否显示固定宽度区域（默认值为true）。固定宽度区域一旦元素内容超出范围则自动隐藏。
+        FixedLabel——固定宽度区域的内容（默认为"22"）。显示改内容的前提是FixedWidth值为true。
+        AdaptiveWidth——是否显示自适应宽度（不定长）区域（默认值为false）。
+        AdaptiveLabel——自适应宽度（不定长）区域的内容（默认为"这是一个不定长文本区"）。和上面类似，显示该内容的前提为AdaptiveWidth的值为true。
+        Closeable——是否具有关闭按钮（默认值为false）。
+      3）更多具体细节可参考components目录下的TDS-tag组件代码。
+    </text>
+    <view wx:for="{{tagListKey}}" wx:key="index" class="flex column fill">
+      <text class="Paragraphs1 fill" style="background-color: var(--Border-Natural);">{{item}}</text>
+      <view class="fill" style="height: 10rpx;"></view>
+      <view class="fill" wx:for="{{tagList[item]}}" wx:key="index">
+        <view class="fill" style="height: 10rpx;"></view>
+        <TDS-tag Color="{{item.color}}" showIcon="{{item.showIcon}}" IconPath="{{item.iconPath}}" FixedWidth="{{item.fixedWidth}}" FixedLabel="{{item.fixedLabel}}" AdaptiveWidth="{{item.adaptiveWidth}}" AdaptiveLabel="{{item.adaptiveLabel}}" Closeable="{{item.closeable}}"></TDS-tag>
+      </view>
+    </view>
   </view>
 </TDS-topbar>

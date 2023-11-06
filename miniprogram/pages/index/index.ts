@@ -87,7 +87,7 @@ Page({
         buttonStyle:"primary",
         size:"large",
         state:"default",
-        label:"dialog 弹窗",
+        label:"Dialog 弹窗",
         url:"pages/dialog/dialog"
       },
     ]

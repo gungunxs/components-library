@@ -1,1 +1,61 @@
 /* components/TDS-tag/TDS-tag.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
+@import "../../styles/icon.wxss";
+
+.tag {
+  width: fit-content;
+  height: 42rpx;
+  padding: 4rpx 12rpx;
+  gap: 8rpx;
+  border-radius: 10rpx;
+}
+.tag-fixed {
+  width: 30rpx;
+  height: 34rpx;
+  overflow: hidden;
+}
+
+.tag-color-Foreground-Low-Contrast_Foreground-High {
+  background: var(--Foreground-Low-Contrast);
+  color: var(--Foreground-High);
+}
+.tag-color-Foreground-Low-Contrast_Foreground-Medium {
+  background: var(--Foreground-Low-Contrast);
+  color: var(--Foreground-Medium);
+}
+.tag-color-Green-10_Foreground-Primary {
+  background: var(--Green-10);
+  color: var(--Foreground-Primary);
+}
+.tag-color-Blue-10_Secondary-Blue {
+  background: var(--Blue-10);
+  color: var(--Secondary-Blue);
+}
+.tag-color-Red-10_Secondary-Error {
+  background: var(--Red-10);
+  color: var(--Secondary-Error);
+}
+.tag-color-Yellow-10_Secondary-Yellow {
+  background: var(--Yellow-10);
+  color: var(--Secondary-Yellow);
+}
+.tag-color-Foreground-Primary_Foreground-Low-Contrast {
+  background: var(--Foreground-Primary);
+  color: var(--Foreground-Low-Contrast);
+}
+.tag-color-Secondary-Blue_Foreground-Low-Contrast {
+  background: var(--Secondary-Blue);
+  color: var(--Foreground-Low-Contrast);
+}
+.tag-color-Secondary-Error_Foreground-Low-Contrast {
+  background: var(--Secondary-Error);
+  color: var(--Foreground-Low-Contrast);
+}
+.tag-color-Secondary-Yellow_Foreground-Low-Contrast {
+  background: var(--Secondary-Yellow);
+  color: var(--Foreground-Low-Contrast);
+}

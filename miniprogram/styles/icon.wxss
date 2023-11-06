@@ -28,3 +28,9 @@
   height: 32rpx;
   flex-shrink: 0;
 }
+
+.close {
+  width: 20rpx;
+  height: 20rpx;
+  flex-shrink: 0;
+}
