@@ -1,5 +1,5 @@
 <!--pages/card/card.wxml-->
-<TDS-topbar title="Card 卡片">
+<TDS-topbar title="Card 卡片" immersion="{{true}}">
   <view class="flex-center column content">
     
   </view>

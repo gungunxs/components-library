@@ -1,2 +1,3 @@
 <!--components/TDS-tag/TDS-tag.wxml-->
-<text>components/TDS-tag/TDS-tag.wxml</text>
+<view class="tag">
+</view>

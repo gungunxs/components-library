@@ -11,7 +11,8 @@
     "pages/icon/icon",
     "pages/input/input",
     "pages/toast/toast",
-    "pages/tabs/tabs"
+    "pages/tabs/tabs",
+    "pages/dialog/dialog"
   ],
   "window": {
     "backgroundTextStyle": "light",

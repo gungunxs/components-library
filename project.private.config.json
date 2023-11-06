@@ -9,6 +9,20 @@
       "list": [
         {
           "name": "",
+          "pathName": "pages/tag/tag",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/dialog/dialog",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
           "pathName": "pages/input/input",
           "query": "",
           "launchMode": "default",
