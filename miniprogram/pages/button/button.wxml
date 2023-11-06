@@ -1,25 +1,25 @@
 <!--pages/button/button.wxml-->
 <TDS-topbar title="Button 按钮" immersion="{{true}}" Threshold="0.1" speed="2">
   <view class="flex-center column content">
-  <text class="tips Paragraphs1">tips: 
-  components/TDS-button
-  1）Button按钮集合（最底层的button原子），如果需要使用button组，需要添加其他grid属性，详见"button group"类目。
-  2）button所有的属性名均首字母大写（buttonStyle除外），属性值均小写。例如：{{'<TDS-button buttonStyle="secondary" State="disabled" Size="small" Label="secondary disabled small"></TDS-button>'}}
-  3）button组件具有buttonStyle——按钮样式、State——状态、Size——大小，这三个重要属性用于控制button的样式，另外button组件还具有Label——button内文字内容、Background——背景颜色、buttonColor——边框色与内部Label颜色。具体默认值参照components目录下的TDS-button组件详细内容。一旦传值错误，button则会失效。
-  4）buttonStyle——按钮样式，对应UX中的Style，分别有primary、secondary、tertiary、text四种值，其中默认值为primary。
-  5）State——状态，与UX中的属性名一致，分别有default、disabled、loading三种值，其中默认值为default。
-  6）Size——大小，与UX中的属性名一致，分别由large、medium、small三种值，其中默认值为large。
-  7）需要注意Size="small"时，loading状态不存在。
-  8）button组件未设置宽度，所以在不做任何宽度限制时，宽度是自适应内容的。但是！！一般button都是填充容器，所以配合class="fill"或者class="fill-available"使用。
-  9）使用button组件时如需绑定方法，正常使用bindtap即可。但是需要注意，当State="disabled"时，按钮为禁用状态，因此点击事件无效。  下面的样例则是对每种button的列举。"</text>
-  <text class="H3 fill flex-center" style="background-color: var(--Border-Natural);">button上面及内部为当前button属性值，格式为buttonStyle State Size</text>
+    <text class="tips Paragraphs2">tips:
+      components/TDS-button
+      1）Button按钮集合（最底层的button原子），如果需要使用button组，需要添加其他grid属性，详见"button group"类目。
+      2）button所有的属性名均首字母大写（buttonStyle除外），属性值均小写。例如：{{'<TDS-button buttonStyle="secondary" State="disabled" Size="small" Label="secondary disabled small"></TDS-button>'}}
+      3）button组件具有buttonStyle——按钮样式、State——状态、Size——大小，这三个重要属性用于控制button的样式，另外button组件还具有Label——button内文字内容、Background——背景颜色、buttonColor——边框色与内部Label颜色。具体默认值参照components目录下的TDS-button组件详细内容。一旦传值错误，button则会失效。
+      4）buttonStyle——按钮样式，对应UX中的Style，分别有primary、secondary、tertiary、text四种值，其中默认值为primary。
+      5）State——状态，与UX中的属性名一致，分别有default、disabled、loading三种值，其中默认值为default。
+      6）Size——大小，与UX中的属性名一致，分别由large、medium、small三种值，其中默认值为large。
+      7）需要注意Size="small"时，loading状态不存在。
+      8）button组件未设置宽度，所以在不做任何宽度限制时，宽度是自适应内容的。但是！！一般button都是填充容器，所以配合class="fill"或者class="fill-available"使用。
+      9）使用button组件时如需绑定方法，正常使用bindtap即可。但是需要注意，当State="disabled"时，按钮为禁用状态，因此点击事件无效。 下面的样例则是对每种button的列举。"</text>
+    <text class="H3 fill flex-center" style="background-color: var(--Border-Natural);">button上面及内部为当前button属性值，格式为buttonStyle State Size</text>
     <view wx:for="{{buttonListKey}}" wx:key="index" class="fill flex-center column">
       <text class="H2 fill flex-center" style="background-color: var(--Border-Natural);">{{item}}</text>
       <view wx:for="{{buttonList[item]}}" wx:key="index" style="width: fit-content;">
-      <text class="Paragraphs1">{{item.buttonStyle}} {{item.state}} {{item.size}}</text>
-      <TDS-button buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.buttonStyle+' '+item.state+' '+item.size}}"></TDS-button>
-    </view>
-    <view class="fill" style="height: 20rpx;"></view>
+        <text class="Paragraphs1">{{item.buttonStyle}} {{item.state}} {{item.size}}</text>
+        <TDS-button buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.buttonStyle+' '+item.state+' '+item.size}}"></TDS-button>
+      </view>
+      <view class="fill" style="height: 20rpx;"></view>
     </view>
   </view>
 </TDS-topbar>

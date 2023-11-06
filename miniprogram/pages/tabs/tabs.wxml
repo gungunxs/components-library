@@ -1,7 +1,7 @@
 <!--pages/tabs/tabs.wxml-->
 <TDS-topbar title="Tabs 标签页" immersion="{{true}}" Threshold="0.02" speed="2">
   <view class="flex-center column content">
-    <text class="tips Paragraphs1">tips:
+    <text class="tips Paragraphs2">tips:
     1）TDS-tab为原子tab组件，tabs为组合的tab组。原子tab使用方法很简单，只需在需要使用的page的.json文件中引入后，即可在页面进行使用。
     2）tab组件具有四个属性，分别是ShowIcon——icon是否展示（这里UX的属性名为showIcon，我这里组件属性名均为大写）、State——选中状态（分为选中——active和未选中——default两种状态）、IconPath——icon的路径（需要注意，icon只需要传"/static/svg/"后面".svg"前面的内容即可，默认值为loading，例如IconPath="loading-primary"）、Label——tabs文字。
     3）当选择不显示icon时，传icon的值也不会显示icon。需要使用icon时，则需要相应传值，ShowIcon="true"，组件内部icon的默认为loading，如需自定义则执行按照规范传值即可。

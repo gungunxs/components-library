@@ -1,7 +1,7 @@
 <!--pages/icon/icon.wxml-->
 <TDS-topbar title="Icon 图标格式" immersion="{{true}}">
   <view class="flex-center column content">
-    <text class="tips Paragraphs1">tips:
+    <text class="tips Paragraphs2">tips:
     1）Icon图标格式也称图标尺寸，一般是四种常用尺寸大小，分别为large——24px、medium——22px、small——18rpx、mini——16rpx。用法与typography字体排印一致，在class的值中直接添加即可。（前提：icon.wxss全局注册在app.wxss和组件内部的.wxss文件中）一旦选择器值写错，该样式不生效。
     2）要求凡是涉及到icon图标的尺寸时，严禁新建样式，全部使用全局的icon尺寸。具体代码可查看styles文件下的icon.wxss文件。
   </text>

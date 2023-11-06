@@ -1,6 +1,43 @@
 <!--pages/toast/toast.wxml-->
-<TDS-topbar title="Toast 矩形弹窗" immersion="{{true}}">
+<TDS-topbar title="Toast 矩形弹窗" immersion="{{true}}" Threshold="0.1" speed="2">
   <view class="flex-center column content">
-    <TDS-toast id="toast" showToast="{{true}}"></TDS-toast>
+    <text class="tips Paragraphs2 fill-available">tips:
+      components/TDS-toast
+      1）TDS-toast组件和其他组件使用方法一致，在需要使用的page文件夹下的.json引入即可
+      2）toast组件有以下属性：
+      Message——信息文字（Message默认显示，即必填项，因此必须传值，否则样式会与实际不符合）Caption——解释文字（需要显示Caption时，必须给showCaption赋值为true）
+      showCaption——是否显示Caption（默认值为false）
+      Icon——是否显示icon（某认值为true）
+      Iconpath——icon的路径（前提是Icon属性值为true，否则无效）
+      showToast——是否显示toast组件，此属性非常重要，需要通过对showToast进行赋值来改变toast的显示状态
+      showMask——是否显示mask蒙版，默认值为false，一般与该属性绑定值与showToast绑定值一致，以保证mask与toast同步出现。mask一旦添加，整个page将会被锁定，即不可进行任何操作（比如滑动、点击、触摸事件都不会有返回值，这里的mask默认颜色为透明色）
+      bgColor——toast背景色，通过传递全局变量参数名切换toast的背景颜色
+      messageColor——message文字的颜色，通过传递全局变量参数名切换message颜色
+      captionColor——caption文字的颜色，通过传递全局变量参数名切换caption的颜色
+      3）toast组件除非一直是position：absolute;否则需要通过showToast的值来判断是否需要绝对定位。
+      （例如：style＝"position:｛｛showToast?'':'absolute'｝｝当toast不显示的时候，使用绝对定位让toast脱离文档流来达到不显示空的树节点的效果）。
+      （原因：toast如果用wx:if在组件外层控制，会出现toast消失时不会出现动画，因为wx:if会直接销毁树节点，因此后续的动画不会出现。）
+      4）toast组件具有三种组件方法，分别为showToast（手动触发）、hiddenToast（手动关闭）、showToastAuto（自动触发与关闭）。这三种方法均需要结合showToast来控制。关闭弹窗时，需要给showToast的赋值逻辑增加延时（延时为持续时间+0.25）*1000，因为Toast组件内部设置的动画时长为0.25秒。
+      showToast(Message,Caption,Iconpath)
+      hiddenToast()
+      showToastAuto(Message,Caption,Iconpath,
+      duration)
+      这里需要注意，Message为必填项，不需要Caption时传空字符串即可。关于这三种方法中的变量（除duration外），也可以在wxml中组件标签中进行添加。
+      5）具体细节内容可参照components文件下的TDS-toast组件
+    </text>
+    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast自动触发与消失 showToastAuto</text>
+    <TDS-toast id="autoToast" showToast="{{showToast1}}" style="position: {{showToast1?'':'absolute'}};"></TDS-toast>
+    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast手动触发与自动消失 showToast hiddenToast</text>
+    <TDS-toast id="mannerToast" showToast="{{showToast}}" style="position: {{showToast?'':'absolute'}};"></TDS-toast>
+    <view class="button-group-horizen">
+      <TDS-button Label="点击关闭" class="fill" buttonStyle="tertiary" bind:tap="hiddenToast"></TDS-button>
+      <TDS-button Label="点击触发" class="fill" bind:tap="showToast"></TDS-button>
+    </view>
+    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">Message为必填属性，默认显示</text>
+    <view wx:for="{{toastListKey}}" wx:key="index" class="fill flex-center column button-group-vertical">
+      <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">{{item=="icon"?'Message显示 icon显示':'Message显示 icon不显示'}}</text>
+      <TDS-toast wx:for="{{toastList[item]}}" wx:key="index" showToast="{{true}}" Message="{{item.message}}" showCaption="{{item.showCaption}}" Caption="{{item.message}}" Icon="{{item.Icon}}" Iconpath="{{item.iconPath}}"></TDS-toast>
+    </view>
+    <view class="fill" style="height: 50rpx;"></view>
   </view>
 </TDS-topbar>
