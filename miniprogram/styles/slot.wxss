@@ -46,3 +46,13 @@ input {
   /* 142.857% */
   letter-spacing: 0.4rpx;
 }
+.placeholder{
+  color: var(--Foreground-Low);
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40rpx;
+  /* 142.857% */
+  letter-spacing: 0.4rpx;
+}
