@@ -83,6 +83,13 @@ Page({
         label:"Tabs 标签页",
         url:"pages/tabs/tabs"
       },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
+        label:"dialog 弹窗",
+        url:"pages/dialog/dialog"
+      },
     ]
   },
   /**

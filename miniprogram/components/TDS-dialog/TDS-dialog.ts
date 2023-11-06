@@ -8,19 +8,19 @@ Component({
     // 一级标题
     headTitle: {
       type:String,
-      value:""
+      value:"一级标题"
     },
-    // 一级标题
+    // 二级标题
     subTitle: {
       type:String,
-      value:""
+      value:"二级标题二级标题二级标题二级标题二级标题"
     },
-    // 一级标题
+    // 一级标题是否显示
     isHead: {
       type:Boolean,
       value:true
     },
-    // 一级标题
+    // 二级标题是否显示
     isSub: {
       type:Boolean,
       value:true
@@ -30,6 +30,11 @@ Component({
       type: Boolean,
       value: false
     },
+    // 是否主题渐变
+    gradient:{
+      type:Boolean,
+      value:true
+    }
   },
 
   /**
@@ -97,4 +102,8 @@ Component({
 
     },
   },
+  // 启用插槽功能
+  options: {
+    multipleSlots:true
+  }
 })

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
+    "TDS-dialog":"/components/TDS-dialog/TDS-dialog",
+    "TDS-input":"/components/TDS-input/TDS-input",
+    "TDS-button":"/components/TDS-button/TDS-button"
+  },
+  "navigationStyle": "custom"
+}
