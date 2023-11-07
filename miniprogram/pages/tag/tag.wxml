@@ -14,11 +14,19 @@
         Closeable——是否具有关闭按钮（默认值为false）。
       3）更多具体细节可参考components目录下的TDS-tag组件代码。
     </text>
+    <text class="Paragraphs1 fill" style="background-color: var(--Border-Natural);">每个tag原子组件上方文字格式对应属性值格式
+      Color/showIcon/IconPath/FixedWidth/
+      FixedLabel/AdaptiveWidth/m.AdaptiveLabel/
+      Closeable
+    </text>
+    <!-- 标准用法-->
+    <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" IconPath="setting" FixedLabel="11" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本" Closeable="{{true}}"></TDS-tag>
     <view wx:for="{{tagListKey}}" wx:key="index" class="flex column fill">
       <text class="Paragraphs1 fill" style="background-color: var(--Border-Natural);">{{item}}</text>
       <view class="fill" style="height: 10rpx;"></view>
       <view class="fill" wx:for="{{tagList[item]}}" wx:key="index">
         <view class="fill" style="height: 10rpx;"></view>
+        <text class="Paragraphs3">{{item.color+'/'+item.showIcon+'/'+item.iconPath+'/'+item.fixedWidth+'/'+item.fixedLabel+'/'+item.adaptiveWidth+'/'+item.adaptiveLabel+'/'+item.closeable}}</text>
         <TDS-tag Color="{{item.color}}" showIcon="{{item.showIcon}}" IconPath="{{item.iconPath}}" FixedWidth="{{item.fixedWidth}}" FixedLabel="{{item.fixedLabel}}" AdaptiveWidth="{{item.adaptiveWidth}}" AdaptiveLabel="{{item.adaptiveLabel}}" Closeable="{{item.closeable}}"></TDS-tag>
       </view>
     </view>

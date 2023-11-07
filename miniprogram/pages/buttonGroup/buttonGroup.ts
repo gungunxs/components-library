@@ -7,7 +7,7 @@ Page({
   data: {
     buttonGroupList:[
       {
-        buttonGroupStyle:"button-group-horizen",
+        buttonGroupStyle:"button-group-horizon",
         styleName:"水平排列",
       },
       {

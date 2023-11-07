@@ -9,11 +9,11 @@
     5）tabs的点击切换效果如下，可以参考相应逻辑与源码。当然tabs切换时，具有细微过渡动画，来源于组件内部，因此更多细节内容可以查看components文件下的TDS-tab。
   </text>
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">最底层的原子化tab</text>
-    <view class="flex-spacebetween row ">
-      <view style="width: 100rpx;"></view>
-      <text class="Paragraphs1" style="padding: 0 24rpx;">原始icon</text>
-      <text class="Paragraphs1" style="padding: 0 24rpx;">自定义icon</text>
-      <text class="Paragraphs1" style="padding: 0 24rpx;">无icon</text>
+    <view class="flex row">
+      <TDS-tab IconPath="setting" State="active" Label="示例"></TDS-tab>
+      <TDS-tab IconPath="setting" Label="原始icon"></TDS-tab>
+      <TDS-tab IconPath="setting" State="active" Label="自定icon"></TDS-tab>
+      <TDS-tab IconPath="setting" Label="无icon"></TDS-tab>
     </view>
     <view wx:key="index" wx:for="{{tabListKey}}" class="flex-center row">
       <text class="Paragraphs1">{{item}}</text>

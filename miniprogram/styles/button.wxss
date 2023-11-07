@@ -16,7 +16,7 @@
   align-self: stretch;
 }
 /* button组 水平排列 */
-.button-group-horizen {
+.button-group-horizon {
   display: flex;
   align-items: center;
   gap: 28rpx;

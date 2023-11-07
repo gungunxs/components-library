@@ -7,6 +7,16 @@
       3）这里我只展示了最多数量为3的button组，可以根据需求自行循环添加。
       4）button组件在使用时必须加上填充样式fill或者fill-available！！
     </text>
+    <!--标准用法-->
+    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">标准用法（附代码用例）</text>
+    <view class="button-group-horizon fill">
+      <TDS-button class="fill" buttonStyle="tertiary" Label="取消"></TDS-button>
+      <TDS-button class="fill" Label="确认"></TDS-button>
+    </view>
+    <view class="button-group-vertical fill">
+      <TDS-button class="fill" Label="确认"></TDS-button>
+      <TDS-button class="fill" buttonStyle="tertiary" Label="取消"></TDS-button>
+    </view>
     <view wx:key="index" wx:for="{{buttonGroupList}}" class="fill">
       <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">{{item.buttonGroupStyle+' '+item.styleName}}</text>
     <view class="fill Paragraphs1">一个button</view>
