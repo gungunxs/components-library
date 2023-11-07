@@ -37,7 +37,7 @@ textarea{
 }
 
 input {
-  color: var(--Foreground-High);
+  /* color: var(--Foreground-High); */
   font-family: PingFang SC;
   font-size: 28rpx;
   font-style: normal;
