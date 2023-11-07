@@ -1,6 +1,13 @@
 <!--pages/card/card.wxml-->
 <TDS-topbar title="Card 卡片" immersion="{{true}}">
   <view class="flex-center column content">
-    
+    <TDS-card>
+      <view slot="swap1">
+        <TDS-button Label="swap1"></TDS-button>
+      </view>
+      <view slot="swap2">
+        <TDS-button Label="swap2"></TDS-button>
+      </view>
+    </TDS-card>
   </view>
 </TDS-topbar>

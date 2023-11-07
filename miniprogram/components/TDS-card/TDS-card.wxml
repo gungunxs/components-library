@@ -1,2 +1,13 @@
 <!--components/TDS-card/TDS-card.wxml-->
-<text>components/TDS-card/TDS-card.wxml</text>
+<view class="card">
+  <image class="card-coverImg" src="{{CoverImgUrl}}"></image>
+  <view class="card-title">  
+    <view class="card-title-main">
+      <slot name="swap1"></slot>
+      <view class="card-title-main-content">
+        <text></text>
+      </view>
+    </view>
+    <slot name="swap2"></slot>
+  </view>
+</view>

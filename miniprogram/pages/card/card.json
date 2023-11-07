@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
-    "TDS-card":"/components/TDS-card/TDS-card"
+    "TDS-card":"/components/TDS-card/TDS-card",
+    "TDS-button":"/components/TDS-button/TDS-button"
   },
   "navigationStyle": "custom"
 }
