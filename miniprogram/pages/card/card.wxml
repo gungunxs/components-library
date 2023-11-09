@@ -2,11 +2,28 @@
 <TDS-topbar title="Card 卡片" immersion="{{true}}" Threshold="0.05" speed="2">
   <view class="flex-center column content">
     <text class="tips Paragraphs2">tips:
-    1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
+    整个卡片的默认状态为只有序号和标题（Text1和Text2）
+    1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可（使用前提是TDS组件库的loading-primary需要移植过去，否则会导致默认的icon路径错误）。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
+
     2）TDS-card组件具有以下属性：
+    ShadowType——卡片阴影属性（默认没有投影），default（默认黑色投影），theme（主题颜色投影）
     showCoverImg——是否显示封面图片（默认值为false）。如需使用，赋值为true即可。
     CoverImgUrl——封面图片url（默认为棍棍先生头像地址）。使用网络图片时建议使用DYWH中对于图片上传的优化方式，加快图片加载速度和体验。
-    showText1——是否显示Text1
+    showText1——是否显示Text1（默认值为true）。组件内部对Text1设置了初始值，因此会默认展示默认值Text1。
+    Text1Color——Text1的字体颜色（默认值为Primary，即主题色），常用颜色为Foreground-High，Secondary-Error。
+    Text1——Text1的内容（默认值为01）。这里需要注意的是最好不要超过三位数字，否则会出现超出固定宽度裁剪问题。
+    showText2——是否显示Text2（默认值为true）。组件内部对Text2设置了初始值，因此会默认展示默认值Text2。
+    Text2——Text2的内容（默认值为棍棍先生棍棍先生）。此处文字设置了超过一行后自动省略效果。
+    showSubTitle——是否显示副标题区域（默认值为false）。此属性用于控制副标题区域（包括副标题文字以及副标题包含的图片）是否显示。
+    SubTitle——副标题文字内容（默认值为一大串文字）。此处文字设置了超过四行自动截断省略效果。
+    showSubImg——是否显示副标题区域中的图片（默认值为false）。
+    SubImgUrl——副标题区域中的图片地址（默认值为棍棍先生的头像地址）。
+
+    3）组件内方法（特别注意必须按照此方法配合使用，否则会出现严重的点击冒泡）：
+    title——配合bind使用（bind:title=""），此函数出发区域为整个卡片组件。但是不包含一些有点击事件的元素。此方法通常用于编辑修改卡片的标题文字
+    sub——配合catch使用（catch:sub=""），此函数触发区域为副标题区域。此方法通常用于点击副标题进行一些操作
+    （如果组件的插槽要使用点击事件，一律需要使用catch:tap=""，否则会导致父事件冒泡）
+    4）这里我只展示了共同课表中会经常遇到的几种样式和一些特殊情况，没有涉及到的自行根据需求调整即可。
     </text>
     <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" ShadowType="theme" class="fill">
       <view slot="swap1" class="flex fit">
@@ -26,6 +43,8 @@
         <!-- <DYWH-label></DYWH-label> -->
       </view>
     </TDS-card>
+    <TDS-card class="fill" ShadowType="theme"></TDS-card>
+    <TDS-card class="fill" ShadowType="default"></TDS-card>
     <TDS-card class="fill" Text1Color="--Secondary-Error">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
