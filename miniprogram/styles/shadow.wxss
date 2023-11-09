@@ -14,4 +14,9 @@
 .tabbar-shadow {
   box-shadow: 0rpx 14rpx 58rpx 0rpx rgba(100, 100, 111, 0.20);
 }
-
+.card-default-shadow {
+  box-shadow: 0rpx 16rpx 48rpx 0rpx rgba(149, 157, 165, 0.20);
+}
+.card-theme-shadow {
+  box-shadow: 0rpx 8rpx 24rpx 0rpx rgba(32, 195, 140, 0.18);
+}

@@ -45,3 +45,9 @@
 .fill-available {
   width: -webkit-fill-available;
 }
+.fit {
+  width: fit-content;
+}
+.wrap {
+  flex-wrap: wrap;
+}

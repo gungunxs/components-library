@@ -18,6 +18,13 @@
   height: 34rpx;
   overflow: hidden;
 }
+.tag-adaptive {
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+text-overflow: ellipsis;
+overflow: hidden;
+}
 
 .tag-color-Foreground-Low-Contrast_Foreground-High {
   background: var(--Foreground-Low-Contrast);

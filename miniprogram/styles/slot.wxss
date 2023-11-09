@@ -56,3 +56,14 @@ input {
   /* 142.857% */
   letter-spacing: 0.4rpx;
 }
+.gap8 {
+  gap:16rpx
+}
+
+.ellipsis-1 {
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+text-overflow: ellipsis;
+overflow: hidden;
+}

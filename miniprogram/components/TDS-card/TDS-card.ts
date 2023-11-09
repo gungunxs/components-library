@@ -5,6 +5,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // shadow
+    ShadowType:{
+      type:String,
+      value:"" // default theme 空
+    },
     // 是否显示封面图片 默认不显示
     showCoverImg:{
       type:Boolean,
@@ -15,10 +20,15 @@ Component({
       type:String,
       value:"https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
     },
-    // 是否显示Text2
+    // 是否显示Text1
     showText1:{
       type:Boolean,
       value:true
+    },
+    // Text1颜色
+    Text1Color:{
+      type:String,
+      value:"--Primary"
     },
     // 标题文字text1 该元素宽度固定 用于展示序号 最多三位数
     Text1:{
@@ -33,7 +43,7 @@ Component({
     // 标题文字Text2
     Text2:{
       type:String,
-      value:"棍棍先生棍棍先生棍棍"
+      value:"棍棍先生棍棍先生"
     },
     // 是否显示副标题 默认不显示
     showSubTitle:{
@@ -46,15 +56,15 @@ Component({
       value:"这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题这是副标题"
     },
     // 是否显示副标题中的图片
-    showImg:{
+    showSubImg:{
       type:Boolean,
       value:false
     },
     // 副标题中的图片url
-    ImgUrl:{
+    SubImgUrl:{
       type:String,
       value:"https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
-    }
+    },
   },
 
   /**
@@ -68,7 +78,18 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+     /**
+     * 点击副标题区域触发 不会触发整体卡片的事件 使用时用catch:sub
+     */
+    tapSubTitle() {
+      this.triggerEvent('sub')
+    },
+    /**
+     * 点击整个卡片区域触发 不会触发单个按钮事件 使用时用bind:title
+     */
+    tapTitle() {
+      this.triggerEvent('title')
+    }
   },
   // 启用插槽功能
   options: {

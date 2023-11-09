@@ -29,7 +29,7 @@
     <TDS-toast id="autoToast" showToast="{{showToast1}}" style="position: {{showToast1?'':'absolute'}};"></TDS-toast>
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast手动触发与自动消失 showToast hiddenToast</text>
     <TDS-toast id="mannerToast" showToast="{{showToast}}" style="position: {{showToast?'':'absolute'}};"></TDS-toast>
-    <view class="button-group-horizen">
+    <view class="button-group-horizon">
       <TDS-button Label="点击关闭" class="fill" buttonStyle="tertiary" bind:tap="hiddenToast"></TDS-button>
       <TDS-button Label="点击触发" class="fill" bind:tap="showToast"></TDS-button>
     </view>
