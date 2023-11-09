@@ -13,7 +13,7 @@
       </view>
     </TDS-input>
       </view>
-      <view slot="button" class="button-group-horizen fill">
+      <view slot="button" class="button-group-horizon fill">
         <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
         <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
       </view>
