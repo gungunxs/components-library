@@ -27,6 +27,7 @@
     title——配合bind使用（bind:title=""），此函数出发区域为整个卡片组件。但是不包含一些有点击事件的元素。此方法通常用于编辑修改卡片的标题文字
     sub——配合catch使用（catch:sub=""），此函数触发区域为副标题区域。此方法通常用于点击副标题进行一些操作
     （如果组件的插槽要使用点击事件，一律需要使用catch:tap=""，否则会导致父事件冒泡）
+    
     4）这里我只展示了共同课表中会经常遇到的几种样式和一些特殊情况，没有涉及到的自行根据需求调整即可。
     </text>
     <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" ShadowType="theme" class="fill">
