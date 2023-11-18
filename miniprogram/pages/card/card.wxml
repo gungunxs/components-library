@@ -2,6 +2,10 @@
 <TDS-topbar title="Card 卡片" immersion="{{true}}" Threshold="0.05" speed="2">
   <view class="flex-center column content">
     <text class="tips Paragraphs2">tips:
+    ------------------需要注意------------------
+    1.当前card组件Text2文本最大宽度为一行文本，如果开启第二个tag插槽，会出现换行，这是正常现象。
+    2.针对需要点击卡片实现一些逻辑（比如跳转），要求触发区域为整个卡片时，将组件的两个点击事件（bind:title catch:sub）绑定为同一个函数即可。
+    ------------------------------------------
     整个卡片的默认状态为只有序号和标题（Text1和Text2）
     1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可（使用前提是TDS组件库的loading-primary需要移植过去，否则会导致默认的icon路径错误）。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
 
@@ -41,6 +45,11 @@
         <TDS-tag class="fit"></TDS-tag>
         <TDS-tag class="fit"></TDS-tag>
         <!-- <DYWH-label></DYWH-label> -->
+      </view>
+    </TDS-card>
+    <TDS-card class="fill" ShadowType="theme" showText1="{{false}}" Text2="棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍">
+      <view slot="swap2" class="flex-center fit gap8">
+        <TDS-tag class="fit"></TDS-tag>
       </view>
     </TDS-card>
     <TDS-card class="fill" ShadowType="theme"></TDS-card>
