@@ -4,7 +4,15 @@ interface IAppOption {
   globalData: {
     themeMode:string,
   }
-  userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback
+  router:router
+}
+
+// router类型
+interface router {
+  pages:{[k: string]: any},
+  require($uri:string):any,
+  register(name:string, router:string):void,
+  navigateTo(name:string):void
 }
 
 interface IResult<T> {
