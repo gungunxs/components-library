@@ -3,6 +3,13 @@
  * 防止修改页面结构时，需要到处修改相对路径
  * 所有的页面路径均存放在utils下的path.ts文件下
  * 但是需要注意的是，需要实时更新此文件内的内容，否则会出现信息对应不上的问题
+ * 
+ * routerUtil有三种方法 
+ * @navigateTo 导航到某个页面
+ *  需要注意的是必须在myRouteList里面按照格式添加相应数据
+ *  const app = getApp() as IAppOption
+    app.router.navigateTo("index")
+ * @require 按需引入（@/）
  */
 // 这里的interface需要和index.d.ts中一一对应，否则在使用时，可能会出现编辑器不提示函数等问题！
 

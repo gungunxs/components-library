@@ -7,7 +7,10 @@ Page({
   data: {
 
   },
-
+  redirect() {
+    const app = getApp() as IAppOption
+    app.router.navigateTo("index")
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -30,7 +30,7 @@
     
     4）这里我只展示了共同课表中会经常遇到的几种样式和一些特殊情况，没有涉及到的自行根据需求调整即可。
     </text>
-    <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" ShadowType="theme" class="fill">
+    <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" ShadowType="theme" class="fill" bind:title="redirect">
       <view slot="swap1" class="flex fit">
         <TDS-tag class="fit"></TDS-tag>
       </view>
