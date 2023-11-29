@@ -12,93 +12,152 @@
  * @require 按需引入（@/）
  */
 // 这里的interface需要和index.d.ts中一一对应，否则在使用时，可能会出现编辑器不提示函数等问题！
+// 在小程序页面或组件中
+/**
+ *   redirect() {
+    const app = getApp() as IAppOption
+    app.router.navigateTo("dialog",
+      // 成功的回调
+      () => {
+        this.success()
+      },
+      // 失败的回调
+      () => {
+        this.error()
+      }
+    )
+  },
+  success() {
+    console.log("返回成功")
+  },
+  error() {
+    console.log("返回失败")
+  },
+ */
 
-interface routerItem{
-  name:string,
-  router:string
+// 声明 __wxConfig 全局变量
+declare const __wxConfig: {
+  pages: string[]
+};
+
+interface routerItem {
+  name: string,
+  router: string
 }
 
-export interface router{
-  pages:{[k: string]: any},
-  require($uri:string):any,
-  register(name:string, router:string):void,
-  navigateTo(name:string):void
+export interface router {
+  pages: { [k: string]: any },
+  require($uri: string): any,
+  register(name: string, router: string): void,
+  navigateTo(name: string, successCallback?: () => void, failCallback?: (error?: any) => void): void
+  redictTo(name: string, successCallback?: () => void, failCallback?: (error?: any) => void): void
 }
 
 export class router implements router {
-    pages:{
-      [k: string]: any
+  pages: {
+    [k: string]: any
+  }
+  constructor() {
+    this.pages = {}
+  }
+  /**
+   * 绝对路径导入(@符号开头)
+   * @param $uri 
+   */
+  require($uri: string) {
+    if ($uri[0] == "@") {
+      $uri = $uri.replace("@", "..");
     }
-    constructor() {
-      this.pages = {}
-    }
-    /**
-     * 绝对路径导入(@符号开头)
-     * @param $uri 
-     */
-    require($uri:string){
-      if($uri[0] == "@"){
-        $uri = $uri.replace("@","..");
-      }
-      return require($uri)
-    }
-    /**
-     * 注册路由
-     * @param name 路由别名
-     * @param router 实际路径（与app.json中一样）
-     */
-    register(name:string, router:string) {
-      this.pages[name] = "/" + router;
-    }
+    return require($uri)
+  }
+  /**
+   * 注册路由
+   * @param name 路由别名
+   * @param router 实际路径（与app.json中一样）
+   */
+  register(name: string, router: string) {
+    this.pages[name] = "/" + router;
+  }
 
-    /**
-     * 注册路由列表
-     * @param routerList 路由列表
-     */
-    registerList(routerList:Array<routerItem>) {
-      for(let item of routerList){
-        this.register(item.name, item.router);
-      }
+  /**
+   * 注册路由列表
+   * @param routerList 路由列表
+   */
+  registerList(routerList: Array<routerItem>) {
+    for (let item of routerList) {
+      this.register(item.name, item.router);
     }
-
-    /**
-     * 自封装页面跳转
-     * @param name 目标页面别名
-     */
-    navigateTo(name:string){
-      wx.navigateTo({
-        url:this.pages[name],
-        fail(e){
-          console.log(e)
+  };
+  /**
+   * 自封装页面跳转
+   * @param name 目标页面别名
+   * @param successCallback 成功回调函数
+   * @param failCallback 失败回调函数
+   */
+  navigateTo(name: string, successCallback?: () => void, failCallback?: (error?: any) => void) {
+    wx.navigateTo({
+      url: this.pages[name],
+      success: () => {
+        if (successCallback) {
+          successCallback();
         }
-      })
-    }
-
-    /**
-     * 自封装页面重定向
-     * @param name 目标路径别名
-     */
-    redictTo(name:string){
-      wx.redirectTo({
-        url:this.pages[name],
-        fail(e){
-          console.log(e)
+      },
+      fail: (error) => {
+        console.error(error);
+        if (failCallback) {
+          failCallback(error);
         }
-      })
-    }
+      }
+    });
+  };
+
+  /**
+   * 自封装页面重定向
+   * @param name 目标路径别名
+   * @param successCallback 成功回调函数
+   * @param failCallback 失败回调函数
+   */
+  redictTo(name: string, successCallback?: () => void, failCallback?: (error?: any) => void) {
+    wx.redirectTo({
+      url: this.pages[name],
+      success: () => {
+        if (successCallback) {
+          successCallback();
+        }
+      },
+      fail: (error) => {
+        console.error(error);
+        if (failCallback) {
+          failCallback(error);
+        }
+      }
+    });
+  };
 }
-// 注册路由
+/**
+ * 自动注册路由列表
+ */
 const routerUtil = new router;
-// TODO 自动添加别名的默认名称为最后一个/后的内容
-const myRouteList:Array<routerItem> = [
-  {name:"index", router:"pages/index/index"},
-  {name:"userAgreement", router:"pages/userAgreement/userAgreement"},
-  {name:"loginErro", router:"pages/loginError/loginErro"},
-  {name:"versionStatementPage", router:"pages/versionStatement/versionStatementPage/versionStatementPage"},
-  {name:"login", router:"pages/login/login"}
-]
-routerUtil.registerList(myRouteList);
+const registerRouteAuto = () => {
+  // 注册路由
+  var routerList:Array<routerItem> = [];
+  __wxConfig.pages.map((path:string)=>{
+    let newPath = path.split("/")
+    let routerListItem:routerItem = {
+      name: newPath[newPath.length - 1],
+      router: path
+    }
+    routerList.push(routerListItem)
+  })
+  console.log(routerList)
+  routerUtil.registerList(routerList)
+}
+registerRouteAuto()
 
-export{
+
+
+
+
+export {
   routerUtil
 }

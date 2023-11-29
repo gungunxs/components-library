@@ -9,7 +9,22 @@ Page({
   },
   redirect() {
     const app = getApp() as IAppOption
-    app.router.navigateTo("index")
+    app.router.navigateTo("dialog",
+      // 成功的回调
+      () => {
+        this.success()
+      },
+      // 失败的回调
+      () => {
+        this.error()
+      }
+    )
+  },
+  success() {
+    console.log("返回成功")
+  },
+  error() {
+    console.log("返回失败")
   },
   /**
    * 生命周期函数--监听页面加载

@@ -9,10 +9,11 @@ interface IAppOption {
 
 // router类型
 interface router {
-  pages:{[k: string]: any},
-  require($uri:string):any,
-  register(name:string, router:string):void,
-  navigateTo(name:string):void
+  pages: { [k: string]: any },
+  require($uri: string): any,
+  register(name: string, router: string): void,
+  navigateTo(name: string,successCallback?:() => void,failCallback?: (error?: any) => void): void
+  redictTo(name: string,successCallback?:() => void,failCallback?: (error?: any) => void): void
 }
 
 interface IResult<T> {
