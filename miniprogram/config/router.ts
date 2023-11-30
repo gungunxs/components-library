@@ -12,6 +12,11 @@
  * @require 按需引入（@/）
  */
 // 这里的interface需要和index.d.ts中一一对应，否则在使用时，可能会出现编辑器不提示函数等问题！
+/**
+ * "ignoreDevUnusedFiles": false
+    在project.private.config.json的setting里添加此行代码，避免出现微信自己开一个它自己的依赖分析，检测到我没有用这个模块而导致的报错信息。
+ */
+
 // 在小程序页面或组件中
 /**
  *   redirect() {
