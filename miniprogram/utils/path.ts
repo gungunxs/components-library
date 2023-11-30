@@ -16,8 +16,8 @@
   }
 
   在其他文件夹 使用路由组件时
-  import { pages } from '../../utils/path' // 首先需要引入这个路径文件
   const app = getApp() as IAppOption
+  const { pages } = app.router.require('@/utils/path') // 首先需要引入这个路径文件
   var testRouter = app.router.require('@/'+pages.utils.Base64)
  */
 

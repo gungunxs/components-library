@@ -149,7 +149,7 @@ const registerRouteAuto = () => {
     }
     routerList.push(routerListItem)
   })
-  console.log(routerList)
+  // console.log(routerList)
   routerUtil.registerList(routerList)
 }
 registerRouteAuto()
