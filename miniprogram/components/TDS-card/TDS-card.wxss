@@ -12,6 +12,7 @@
   padding: 20rpx 16rpx;
   gap:12rpx;
   border-radius: 10rpx;
+  z-index: 0;
 }
 .card-coverImg {
   height: 300rpx;
@@ -34,6 +35,7 @@ flex-wrap: wrap;
   color:var(--Primary);
   width: 36rpx;
   overflow: hidden;
+  height: 40rpx;
 }
 .card-title-main-content-text1 text {
   word-wrap: normal;

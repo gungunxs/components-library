@@ -13,7 +13,7 @@
     </view>
     <slot name="swap2"></slot>
   </view>
-  <view class="card-subTitle Paragraphs2 flex fill-available stretch" wx:if="{{showSubTitle}}" catch:tap="tapSubTitle">
+  <view class="card-subTitle Paragraphs2 flex fill-available stretch" wx:if="{{showSubTitle&&SubTitle}}" catch:tap="tapSubTitle">
     <view class="fill-available">  
       <text class="card-subTitle-text fill-available">{{SubTitle}}</text>
     </view>

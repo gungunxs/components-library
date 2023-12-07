@@ -12,6 +12,12 @@
       7）需要注意Size="small"时，loading状态不存在。
       8）button组件未设置宽度，所以在不做任何宽度限制时，宽度是自适应内容的。但是！！一般button都是填充容器，所以配合class="fill"或者class="fill-available"使用。
       9）使用button组件时如需绑定方法，正常使用bindtap即可。但是需要注意，当State="disabled"时，按钮为禁用状态，因此点击事件无效。 下面的样例则是对每种button的列举。"</text>
+    <text class="Paragraphs1">button支持换颜色</text>
+    <TDS-button class="fill-available" Background="--Secondary-Error" borderColor="--Secondary-Error"></TDS-button>
+    <TDS-button class="fill-available" Background="--Secondary-Blue" borderColor="--Secondary-Blue"></TDS-button>
+    <TDS-button class="fill-available" Background="--Secondary-Yellow" borderColor="--Secondary-Yellow"></TDS-button>
+    <TDS-button class="fill-available" Background="--Secondary-Highlight" borderColor="--Secondary-Highlight"></TDS-button>
+    <TDS-button class="fill-available" buttonStyle="tertiary" buttonColor="--Secondary-Error" borderColor="--Secondary-Error"></TDS-button>
     <text class="H3 fill flex-center" style="background-color: var(--Border-Natural);">button上面及内部为当前button属性值，格式为buttonStyle State Size</text>
     <view wx:for="{{buttonListKey}}" wx:key="index" class="fill flex-center column">
       <text class="H2 fill flex-center" style="background-color: var(--Border-Natural);">{{item}}</text>

@@ -48,6 +48,7 @@
         <!-- <DYWH-label></DYWH-label> -->
       </view>
     </TDS-card>
+    <TDS-card class="fill" Text1Color="--Secondary-Error" showText2="{{true}}" Text2="这是一个showSubTitle为true但值为空的卡片" SubTitle=" "></TDS-card>
     <TDS-card class="fill" ShadowType="theme" showText1="{{false}}" Text2="棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag class="fit"></TDS-tag>
@@ -55,7 +56,11 @@
     </TDS-card>
     <TDS-card class="fill" ShadowType="theme"></TDS-card>
     <TDS-card class="fill" ShadowType="default"></TDS-card>
-    <TDS-card class="fill" Text1Color="--Secondary-Error">
+    <TDS-card class="fill" Text1Color="--Secondary-Blue" showText2="{{true}}" Text2="这是一个Text1颜色为Secondary Blue的卡片"></TDS-card>
+    <TDS-card class="fill" Text1Color="--Secondary-Yellow" showText2="{{true}}" Text2="这是一个Text1颜色为Secondary Yellow的卡片"></TDS-card>
+    <TDS-card class="fill" Text1Color="--Secondary-Error" showText2="{{true}}" Text2="这是一个Text1颜色为Secondary Error的卡片"></TDS-card>
+    <TDS-card class="fill" Text1Color="--Secondary-Highlight" showText2="{{true}}" Text2="这是一个Text1颜色为Secondary Highlight的卡片"></TDS-card>
+    <TDS-card class="fill">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
         <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="line_smile_gray" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>

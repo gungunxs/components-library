@@ -79,7 +79,7 @@ transition: background-color ease 0.2s;
 }
 
 .button-style-text-disabled {
-  color: var(--Secondary-Highlight);
+  color: var(--Foreground-Low);
 }
 
 .button-style-text-loading {

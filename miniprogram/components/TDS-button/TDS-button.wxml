@@ -1,5 +1,5 @@
 <!--components/DYWH-button/DYWH-button.wxml-->
-<view class="button button-style-{{buttonStyle}}-{{State}} button-size-{{Size}}" style="{{(State == 'loading' && Size == 'small') ? 'display:none' :''}}; background-color:{{'var('+Background+')'}};color:{{'var('+buttonColor+')'}};border-color:{{'var('+buttonColor+')'}}" data-theme="{{theme}}" catch:tap="{{State=='disabled'?'disabled':''}}">
+<view class="button button-style-{{buttonStyle}}-{{State}} button-size-{{Size}}" style="{{(State == 'loading' && Size == 'small') ? 'display:none' :''}}; background-color:{{'var('+Background+')'}};color:{{'var('+buttonColor+')'}};border-color:{{'var('+borderColor+')'}}" data-theme="{{theme}}" catch:tap="{{State=='disabled'?'disabled':''}}">
   <view class="button-label">
     <text class="Button-Label" wx:if="{{State != 'loading'}}">{{Label}}</text>
     <image class="button-loading" wx:else src="/static/svg/loading{{buttonStyle=='tertiary'||buttonStyle=='text'?'-primary':''}}.svg"></image>

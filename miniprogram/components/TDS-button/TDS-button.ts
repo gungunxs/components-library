@@ -33,6 +33,10 @@ Component({
       type:String,
       value:""
     },
+    borderColor:{
+      type:String,
+      value:""
+    },
     theme:{
       type:String,
       value:""

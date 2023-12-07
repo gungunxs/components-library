@@ -25,6 +25,11 @@
       这里需要注意，Message为必填项，不需要Caption时传空字符串即可。关于这三种方法中的变量（除duration外），也可以在wxml中组件标签中进行添加。
       5）具体细节内容可参照components文件下的TDS-toast组件
     </text>
+    <text class="Paragraphs1">toast可以自定义颜色</text>
+    <TDS-toast showToast="{{true}}" bgColor="--Secondary-Error" Iconpath="loading" Message="这是一个背景色为Secondary Error，message颜色为Foreground White，loading为白色主题的toast" messageColor="--Foreground-White"></TDS-toast>
+    <TDS-toast showToast="{{true}}" bgColor="--Primary" Iconpath="loading" Message="这是一个背景色为Primary，message颜色为Foreground White，loading为白色主题的toast" messageColor="--Foreground-White"></TDS-toast>
+    <TDS-toast showToast="{{true}}" bgColor="--Secondary-Highlight" Iconpath="loading" Message="这是一个背景色为Secondary Highlight，message颜色为Foreground High，loading为白色主题的toast" showCaption="{{true}}" Caption="caption颜色为Foreground High" messageColor="--Foreground-High" captionColor="--Secondary-Error"></TDS-toast>
+
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast自动触发与消失 showToastAuto</text>
     <TDS-toast id="autoToast" showToast="{{showToast1}}" style="position: {{showToast1?'':'absolute'}};"></TDS-toast>
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast手动触发与自动消失 showToast hiddenToast</text>

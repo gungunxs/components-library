@@ -106,7 +106,7 @@ Page({
       this.setData({
         showToast1:false
       })
-    },5.25*1000)
+    },10.25*1000)
   },
 
   /**
