@@ -13,6 +13,11 @@
       8）button组件未设置宽度，所以在不做任何宽度限制时，宽度是自适应内容的。但是！！一般button都是填充容器，所以配合class="fill"或者class="fill-available"使用。
       9）使用button组件时如需绑定方法，正常使用bindtap即可。但是需要注意，当State="disabled"时，按钮为禁用状态，因此点击事件无效。 下面的样例则是对每种button的列举。"</text>
     <text class="Paragraphs1">button支持换颜色</text>
+    <!--
+      1）Background button背景色
+      2）buttonColor button label颜色
+      3）borderColor button边框颜色
+    -->
     <TDS-button class="fill-available" Background="--Secondary-Error" borderColor="--Secondary-Error"></TDS-button>
     <TDS-button class="fill-available" Background="--Secondary-Blue" borderColor="--Secondary-Blue"></TDS-button>
     <TDS-button class="fill-available" Background="--Secondary-Yellow" borderColor="--Secondary-Yellow"></TDS-button>
