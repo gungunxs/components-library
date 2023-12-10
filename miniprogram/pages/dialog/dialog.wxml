@@ -5,13 +5,13 @@
     <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog">
       <view slot="swap" class="fill">
         <TDS-input bind:tap="focusInput" State="{{isFocus?(meetLength?'active':'error'):(inputValue?(meetLength?'filled':'error'):'default')}}" showHint="{{false}}">
-      <view slot="input" class="input fill">
-        <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInputValue" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder"/>
-      </view>
-      <view slot="icon" class="large">
-        <image src="/static/svg/setting.svg" class="large"></image>
-      </view>
-    </TDS-input>
+          <view slot="input" class="input fill">
+            <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInputValue" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder" />
+          </view>
+          <view slot="icon" class="large">
+            <image src="/static/svg/setting.svg" class="large"></image>
+          </view>
+        </TDS-input>
       </view>
       <view slot="button" class="button-group-horizon fill">
         <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>

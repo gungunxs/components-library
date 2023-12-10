@@ -60,6 +60,7 @@ color: var(--Foreground-High) !important;
 .input-container-default {
   border: 2rpx solid var(--Foreground-Low-Contrast) !important;
   background: var(--Foreground-Low-Contrast) !important;
+  color: var(--Foreground-Low) !important;
 }
 
 .input-container-active {
