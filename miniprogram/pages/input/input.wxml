@@ -34,7 +34,7 @@
         <view class="fill" style="height: 20rpx;"></view>
         <TDS-input Title="{{item.title}}" Hint="{{item.hint}}" showHint="{{item.showHint}}" IconPlacement="{{item.iconPlacement}}" State="{{item.state}}">
           <view slot="input" class="gray fill">
-            <input value="Label" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder"/>
+            <input value="{{item.state=='default'?null:'Label'}}" placeholder="默认状态的提示文字" placeholder-class="placeholder"/>
           </view>
           <view slot="icon" class="medium gray"></view>
         </TDS-input>
