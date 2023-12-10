@@ -24,6 +24,12 @@ align-content: center;
 row-gap:16rpx;
 flex-wrap: wrap;
 }
+.card-title2 {
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap:16rpx;
+  flex-wrap: wrap;
+  }
 .card-title-main {
   align-items: center;
   align-content: center;

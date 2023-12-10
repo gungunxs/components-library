@@ -30,6 +30,24 @@
     
     4）这里我只展示了共同课表中会经常遇到的几种样式和一些特殊情况，没有涉及到的自行根据需求调整即可。
     </text>
+    <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" showSubTitle2="{{true}}" showSubImg2="{{true}}" ShadowType="theme" class="fill">
+      <view slot="swap1" class="flex fit">
+        <TDS-tag class="fit"></TDS-tag>
+      </view>
+      <view slot="swap2" class="flex-center fit gap8">
+        <TDS-tag class="fit"></TDS-tag>
+        <TDS-tag class="fit"></TDS-tag>
+      </view>
+      <view slot="swap3" class="flex fill-available gap8">
+        <TDS-tag class="fit"></TDS-tag>
+        <TDS-tag class="fit"></TDS-tag>
+      </view>
+      <view slot="swap4" class="flex fill-available stretch gap8">
+        <TDS-tag class="fit"></TDS-tag>
+        <TDS-tag class="fit"></TDS-tag>
+        <!-- <DYWH-label></DYWH-label> -->
+      </view>
+    </TDS-card>
     <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" ShadowType="theme" class="fill" bind:title="redirect">
       <view slot="swap1" class="flex fit">
         <TDS-tag class="fit"></TDS-tag>
