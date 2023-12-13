@@ -31,6 +31,11 @@ Component({
       type:String,
       value:"default",
       // 默认为default：默认状态；active：输入状态；filled：完成状态；readonly：只读状态；error：错误状态
+    },
+    // 是否显示input标题
+    showTitle:{
+      type:Boolean,
+      value:true
     }
   },
 

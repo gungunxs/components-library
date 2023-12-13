@@ -53,7 +53,7 @@ Component({
     // 是否展示二级标题区域
     showTitleList2:{
       type:Boolean,
-      value:true
+      value:false
     },
     // Text1颜色
     Title2Text1Color:{
