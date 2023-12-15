@@ -1,5 +1,5 @@
 <!--pages/input/input.wxml-->
-<TDS-topbar title="Input 输入框" immersion="{{true}}" Threshold="0.1" speed="2">
+<TDS-topbar title="Input 输入框" immersion="{{true}}" Threshold="0.1" speed="2" data-theme="{{theme}}">
   <view class="flex-center column content" style="background-color: var(--Foreground-White);">
     <text class="tips Paragraphs2 fill">tips:
       1）TDS-input组件和其他组件使用方法一致，在需要使用的page文件夹的.json文件中引入即可。但需要注意的是input组件有两个插槽（与UX不太一样，并没有把输入框与icon写死，而是采用了灵活的前端插槽，可以在input所在的slot中插入任何组件，比如输入框、下拉框、选择器等常用form表单组件。另外icon也采用了slot形式，在插槽中插入icon相应的代码即可）

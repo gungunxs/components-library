@@ -1,5 +1,5 @@
 <!--components/TDS-card/TDS-card.wxml-->
-<view class="card flex-center column card-{{ShadowType}}-shadow" bind:tap="tapTitle">
+<view class="card flex-center column card-{{ShadowType}}-shadow" bind:tap="tapTitle" data-theme="{{theme}}">
   <image class="card-coverImg fill" src="{{CoverImgUrl}}" wx:if="{{showCoverImg}}" mode="aspectFill"></image>
   <view class="card-title Button-Label flex-spacebetween stretch fill-available" wx:if="{{showTitleList1}}">  
     <view class="card-title-main flex stretch">

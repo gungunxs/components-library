@@ -1,10 +1,12 @@
 // pages/index/index.ts
+var app = getApp() as IAppOption
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    theme:"",
     buttonList:[
       {
         buttonStyle:"secondary",
@@ -93,6 +95,15 @@ Page({
     ]
   },
   /**
+   * switchMode 切换皮肤
+   */
+  switchMode() {
+    app.globalData.themeMode = app.globalData.themeMode == 'DYWH' ? '' :'DYWH'
+    this.setData({
+      theme:app.globalData.themeMode
+    })
+  },
+  /**
    * 跳转至组件使用说明详情页
    */
   lookupExampleDetail(e: { currentTarget: { dataset: { type: string } } }) {
@@ -104,14 +115,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    
   },
 
   /**

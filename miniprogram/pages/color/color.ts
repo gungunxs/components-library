@@ -1,4 +1,5 @@
 // pages/color/color.ts
+var app = getApp() as IAppOption
 Page({
 
   /**
@@ -56,7 +57,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    this.setData({
+      theme:app.globalData.themeMode
+    })
   },
 
   /**

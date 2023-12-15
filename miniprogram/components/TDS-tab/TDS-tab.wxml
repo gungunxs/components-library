@@ -1,5 +1,5 @@
 <!--components/DYWH-tab/DYWH-tab.wxml-->
-<view class="tab">
+<view class="tab" data-theme="{{theme}}">
   <view class="tab-icon" wx:if="{{ShowIcon}}">
     <image class="small" src="/static/svg/{{IconPath}}.svg"></image>
     <view class="tab-icon-line fill"></view>

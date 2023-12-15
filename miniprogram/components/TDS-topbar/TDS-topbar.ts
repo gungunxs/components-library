@@ -18,11 +18,16 @@
  *      </view>
  *    
  */
+var app = getApp() as IAppOption
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     title: {
       type: String,  //属性类型
       value: ''  // 默认值

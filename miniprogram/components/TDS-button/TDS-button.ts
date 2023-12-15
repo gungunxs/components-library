@@ -1,6 +1,7 @@
 // components/DYWH-button/DYWH-button.ts
-Component({
+var app = getApp() as IAppOption
 
+Component({
   /**
    * 组件的属性列表
    */
@@ -39,7 +40,7 @@ Component({
     },
     theme:{
       type:String,
-      value:""
+      value:app.globalData.themeMode
     }
   },
 
@@ -47,7 +48,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    theme:""
   },
 
   /**
@@ -56,6 +57,13 @@ Component({
   methods: {
     disabled(){
       
-    }
+    },
+  },
+  lifetimes:{
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
+    },
   }
 })

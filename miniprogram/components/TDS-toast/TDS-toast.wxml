@@ -1,6 +1,6 @@
 <!--components/DYWH-toast/DYWH-toast.wxml-->
-<view class="mask fill" wx:if="{{showMask}}" catch:touchmove="true"></view>
-<view class="toast toast-shadow" wx:if="{{showToast}}" style="animation-name: {{animationName}};background-color: {{'var('+bgColor+')'}};align-items: {{showCaption&&(Caption!=='')?'flex-start':'center'}};">
+<view class="mask fill" wx:if="{{showMask}}" catch:touchmove="true" data-theme="{{theme}}"></view>
+<view class="toast toast-shadow" wx:if="{{showToast}}" style="animation-name: {{animationName}};background-color: {{'var('+bgColor+')'}};align-items: {{showCaption&&(Caption!=='')?'flex-start':'center'}};" data-theme="{{theme}}">
   <!-- svg -->
   <image class="toast-svg" wx:if="{{Icon}}" src="/static/svg/{{Iconpath}}.svg"></image>
   <!-- label -->

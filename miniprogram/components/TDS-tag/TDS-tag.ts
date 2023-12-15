@@ -1,10 +1,15 @@
 // components/TDS-tag/TDS-tag.ts
+var app = getApp() as IAppOption
 Component({
 
   /**
    * 组件的属性列表
    */
   properties: {
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     /*
       颜色模式:背景色 文字色
       Foreground-Low-Contrast_Foreground-High
@@ -71,5 +76,12 @@ Component({
    */
   methods: {
 
+  },
+  lifetimes:{
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
+    },
   }
 })

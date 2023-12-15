@@ -1,10 +1,12 @@
 // pages/input/input.ts
+var app = getApp() as IAppOption
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    theme:app.globalData.themeMode,
     isFocus:false,
     inputValue:null,
     // State属性值
@@ -253,6 +255,7 @@ Page({
       ]
     },
   },
+  
   /**
    * 聚焦事件
    */
@@ -274,7 +277,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    console.log(app.globalData.themeMode)
+    this.setData({
+      theme:app.globalData.themeMode
+    })
   },
 
   /**

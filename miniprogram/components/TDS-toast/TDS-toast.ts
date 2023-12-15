@@ -1,10 +1,14 @@
 // components/DYWH-toast/DYWH-toast.ts
+var app = getApp() as IAppOption
 Component({
-
   /**
    * 组件的属性列表
    */
   properties: {
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     // 提示文字
     Message: {
       type:String,
@@ -61,6 +65,7 @@ Component({
    */
   data: {
     animationName:"fadeInGrow",
+    theme:""
   },
 
   /**
@@ -141,5 +146,12 @@ Component({
       }
     }
   },
+  lifetimes:{
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
+    },
+  }
   }
 )

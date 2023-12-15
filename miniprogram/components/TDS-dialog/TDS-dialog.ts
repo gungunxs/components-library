@@ -1,10 +1,15 @@
 // components/DYWH-dialog/DYWH-dialog.ts
+var app = getApp() as IAppOption
 Component({
 
   /**
    * 组件的属性列表
    */
   properties: {
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     // 一级标题
     headTitle: {
       type:String,
@@ -43,7 +48,8 @@ Component({
   data: {
     animationName:"fadeInGrow",
     maskAnimationName:"fadeIn",
-    showOut:false
+    showOut:false,
+    theme:""
   },
 
   /**
@@ -101,9 +107,14 @@ Component({
     ready: function() {
 
     },
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
+    },
   },
   // 启用插槽功能
   options: {
     multipleSlots:true
-  }
+  },
 })

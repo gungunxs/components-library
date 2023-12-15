@@ -1,10 +1,14 @@
 // components/TDS-card/TDS-card.ts
+var app = getApp() as IAppOption
 Component({
-
   /**
    * 组件的属性列表
    */
   properties: {
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     // shadow
     ShadowType:{
       type:String,
@@ -117,7 +121,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    theme:""
   },
 
   /**
@@ -140,5 +144,12 @@ Component({
   // 启用插槽功能
   options: {
     multipleSlots:true
+  },
+  lifetimes:{
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
+    },
   }
 })
