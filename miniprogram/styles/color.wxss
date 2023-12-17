@@ -23,7 +23,23 @@
   --Dialog-gradient: linear-gradient(180deg, #C3CBFF 0.25%, #F3F5FF 17.36%, #FFF 61.42%);
   --Mypage-gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
  }
- /* TDS颜色 */
+[data-theme="Cat"] {
+  --Primary: #FBDE71;
+  /* secondary */
+  --Secondary-Blue: #A4E181;
+  --Secondary-Yellow: #C2F3A4;
+  --Secondary-Error: #D0F173;
+  --Secondary-Highlight: #79DBBA;
+  --Secondary-Lavender: #01CCA7;
+  /* foreground */
+  --Foreground-Primary: #FBDE71;
+  /* secondary opacity */
+  --Blue-10: #D3F4EE;
+  --Yellow-10: #FFF8E9;
+  --Red-10: #B5F0E5;
+  --Green-10: #E5F6DB;
+}
+/* TDS颜色 */
 page {
   --Primary: #20C38C;
   /* secondary */

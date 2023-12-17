@@ -7,6 +7,8 @@ Page({
    */
   data: {
     theme:"",
+    themeList:['','DYWH','Cat'],
+    themeNum:0,
     screenHeight:0,
     screenWidth:0,
     buttonList:[
@@ -100,8 +102,12 @@ Page({
    * switchMode 切换皮肤
    */
   switchMode() {
-    app.globalData.themeMode = app.globalData.themeMode == 'DYWH' ? '' :'DYWH'
+    let themeNum = this.data.themeNum
+    let themeList = this.data.themeList
+    themeNum++
+    app.globalData.themeMode = themeList[themeNum%3]
     this.setData({
+      themeNum:themeNum,
       theme:app.globalData.themeMode
     })
   },
