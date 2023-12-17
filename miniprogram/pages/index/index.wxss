@@ -1,5 +1,9 @@
 /* pages/index/index.wxss */
+page {
+  position: relative;
+}
 .switch {
-  position: absolute;
+  position: fixed;
+  left: 42rpx;
   z-index: 999999;
 }

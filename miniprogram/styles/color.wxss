@@ -34,9 +34,9 @@
   /* foreground */
   --Foreground-Primary: #FBDE71;
   /* secondary opacity */
-  --Blue-10: #D3F4EE;
+  --Blue-10: #B5F0E5;
   --Yellow-10: #FFF8E9;
-  --Red-10: #B5F0E5;
+  --Red-10: #D3F4EE;
   --Green-10: #E5F6DB;
 }
 /* TDS颜色 */

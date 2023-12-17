@@ -9,8 +9,7 @@ Page({
     theme:"",
     themeList:['','DYWH','Cat'],
     themeNum:0,
-    screenHeight:0,
-    screenWidth:0,
+    menuButtonTop:0,
     buttonList:[
       {
         buttonStyle:"secondary",
@@ -124,14 +123,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-      // 获取设备的信息  
-      let systemInfo = wx.getSystemInfoSync()
-      // 获得屏幕高度
-      let screenHeight = systemInfo['screenHeight'];
-      let screenWidth = systemInfo['screenWidth'];
+    const menuButton = wx.getMenuButtonBoundingClientRect()
+      const menuButtonTop = menuButton.top;
       this.setData({
-        screenHeight:screenHeight,
-        screenWidth:screenWidth
+        menuButtonTop:menuButtonTop,
       })
   },
 
