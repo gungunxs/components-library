@@ -1,4 +1,4 @@
-<TDS-button class="switch" Size="small" Label="{{'切换'+((themeList[(themeNum+1)%3])?(themeList[(themeNum+1)%3]):'TDS')}}" style="top:{{menuButtonTop}}px" bindtap="switchMode" data-theme="{{theme}}"></TDS-button>
+<TDS-button class="switch" Size="small" Label="{{'切换'+((themeList[(themeNum+1)%3])?(themeList[(themeNum+1)%3]):'TDS')}}" style="top:{{menuButtonTop-1}}px" bindtap="switchMode" data-theme="{{theme}}"></TDS-button>
 <TDS-topbar title="TDS CL说明文档" returnButton="{{false}}" immersion="{{true}}" speed="3" Threshold="0.05" data-theme="{{theme}}">
   <view class="flex-center column content">
     <TDS-button class="fill" wx:for="{{buttonList}}" wx:key="index" buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.label}}" bind:tap="lookupExampleDetail" data-type="{{item.url}}"></TDS-button>
