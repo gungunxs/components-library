@@ -1,4 +1,4 @@
-<TDS-button class="switch" Size="small" Label="切换皮肤" bindtap="switchMode" data-theme="{{theme}}"></TDS-button>
+<TDS-button class="switch" Size="small" Label="切换主题" bindtap="switchMode" data-theme="{{theme}}" style="top:{{(50/812)*screenHeight*2}}rpx;left:{{(20/375)*screenWidth*2}}rpx"></TDS-button>
 <TDS-topbar title="组件库样例及使用方法" returnButton="{{false}}" immersion="{{true}}" speed="3" Threshold="0.05" data-theme="{{theme}}">
   <view class="flex-center column content">
     <TDS-button class="fill" wx:for="{{buttonList}}" wx:key="index" buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.label}}" bind:tap="lookupExampleDetail" data-type="{{item.url}}"></TDS-button>

@@ -2,10 +2,10 @@
 <TDS-topbar title="Card 卡片" immersion="{{true}}" Threshold="0.05" speed="2">
   <view class="flex-center column content">
     <text class="tips Paragraphs2">tips:
-    ------------------需要注意------------------
+    ------------------需要注意---------------
     1.当前card组件Text2文本最大宽度为一行文本，如果开启第二个tag插槽，会出现换行，这是正常现象。
     2.针对需要点击卡片实现一些逻辑（比如跳转），要求触发区域为整个卡片时，将组件的两个点击事件（bind:title catch:sub）绑定为同一个函数即可。
-    ------------------------------------------
+    ----------------------------------------
     整个卡片的默认状态为只有序号和标题（Text1和Text2）
     1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可（使用前提是TDS组件库的loading-primary需要移植过去，否则会导致默认的icon路径错误）。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
 
@@ -13,6 +13,7 @@
     ShadowType——卡片阴影属性（默认没有投影），default（默认黑色投影），theme（主题颜色投影）
     showCoverImg——是否显示封面图片（默认值为false）。如需使用，赋值为true即可。
     CoverImgUrl——封面图片url（默认为棍棍先生头像地址）。使用网络图片时建议使用DYWH中对于图片上传的优化方式，加快图片加载速度和体验。
+    showTitleList1——是否展示一级标题（默认为true）
     showText1——是否显示Text1（默认值为true）。组件内部对Text1设置了初始值，因此会默认展示默认值Text1。
     Text1Color——Text1的字体颜色（默认值为Primary，即主题色），常用颜色为Foreground-High，Secondary-Error。
     Text1——Text1的内容（默认值为01）。这里需要注意的是最好不要超过三位数字，否则会出现超出固定宽度裁剪问题。
@@ -23,6 +24,14 @@
     showSubImg——是否显示副标题区域中的图片（默认值为false）。
     SubImgUrl——副标题区域中的图片地址（默认值为棍棍先生的头像地址）。
 
+    showTitleList2——是否显示二级标题（二级标题为没有tag的部分，只是一个简单的用于展示序号和文字的区域）
+    Title2Text1——titleList2中的"01"，二级标题文本字数不限
+    Title2Text2——titleList2中的文本文字，文本文字不限字数，自适应换行
+    showSubTitle2——是否显示二级副标题（文本文字不限制截断），默认值为false
+    SubTitle2——二级副标题中的文字，文字不限字数，高度自适应变化
+    showSubImg2——是否显示二级副标题中的图片（默认值为true，不显示副标题时，即使该属性值为true也不显示）
+    SubImgUrl2——二级标题中图片地址（默认地址同一级副标题中图片地址）
+
     3）组件内方法（特别注意必须按照此方法配合使用，否则会出现严重的点击冒泡）：
     title——配合bind使用（bind:title=""），此函数出发区域为整个卡片组件。但是不包含一些有点击事件的元素。此方法通常用于编辑修改卡片的标题文字
     sub——配合catch使用（catch:sub=""），此函数触发区域为副标题区域。此方法通常用于点击副标题进行一些操作
@@ -30,7 +39,7 @@
     
     4）这里我只展示了共同课表中会经常遇到的几种样式和一些特殊情况，没有涉及到的自行根据需求调整即可。
     </text>
-    <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" showSubTitle2="{{true}}" showSubImg2="{{true}}" ShadowType="theme" class="fill">
+    <TDS-card showCoverImg="{{true}}" showSubTitle="{{true}}" showSubImg="{{true}}" showTitleList2="{{true}}" showSubTitle2="{{true}}" showSubImg2="{{true}}" ShadowType="theme" class="fill">
       <view slot="swap1" class="flex fit">
         <TDS-tag class="fit"></TDS-tag>
       </view>

@@ -7,6 +7,8 @@ Page({
    */
   data: {
     theme:"",
+    screenHeight:0,
+    screenWidth:0,
     buttonList:[
       {
         buttonStyle:"secondary",
@@ -111,11 +113,20 @@ Page({
       url:'/'+e.currentTarget.dataset.type
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-    
+      // 获取设备的信息  
+      let systemInfo = wx.getSystemInfoSync()
+      // 获得屏幕高度
+      let screenHeight = systemInfo['screenHeight'];
+      let screenWidth = systemInfo['screenWidth'];
+      this.setData({
+        screenHeight:screenHeight,
+        screenWidth:screenWidth
+      })
   },
 
   /**
