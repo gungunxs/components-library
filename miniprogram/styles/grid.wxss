@@ -22,7 +22,7 @@
 }
 /* 居左对齐 */
 .stretch {
-  align-items: stretch !important;
+  align-items: stretch;
   /* justify-content: stretch; */
 }
 /* 行排列 */

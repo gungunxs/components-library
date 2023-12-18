@@ -1,5 +1,5 @@
 <!--components/TDS-radio/TDS-radio.wxml-->
-<view class="radio {{LabelPlacement}} {{showCaption&&Caption?'stretch':''}} {{LabelPlacement=='leading'?'row':(LabelPlacement=='trailing'?'row-reverse':'row')}} {{(!(showCaption&&Caption)&&LabelPlacement=='leading')?'flex-spacebetween':'caption'}} flex" bind:tap="tap" style="justify-content: {{LabelPlacement=='trailing'?'flex-end':''}};" data-theme="{{theme}}"> 
+<view class="radio {{LabelPlacement}} {{showCaption&&Caption?'stretch':''}} {{LabelPlacement=='leading'?'row':(LabelPlacement=='trailing'?'row-reverse':'row')}} {{(!(showCaption&&Caption)&&LabelPlacement=='leading')?'flex-spacebetween':'caption'}} flex" bind:tap="tap" style="justify-content: {{LabelPlacement=='trailing'?'flex-end':''}};align-items: {{showCaption&&Caption?'stretch':'center'}};" data-theme="{{theme}}"> 
   <view class="radio-text Paragragphs1 column flex {{(showCaption&&Caption)?'fill-available':''}}" wx:if="{{LabelPlacement!=='without'}}">
     <text class="radio-text-label">{{Label}}</text>
     <text class="radio-text-caption" wx:if="{{showCaption&&Caption}}">{{Caption}}</text>

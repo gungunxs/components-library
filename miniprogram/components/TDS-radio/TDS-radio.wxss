@@ -10,7 +10,6 @@
 
 .radio {
   padding: 28rpx 0;
-  align-items: center;
 }
 
 .caption {
