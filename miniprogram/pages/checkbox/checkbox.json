@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
-    "TDS-checkbox":"/components/TDS-checkbox/TDS-checkbox"
+    "TDS-checkbox":"/components/TDS-checkbox/TDS-checkbox",
+    "TDS-card":"/components/TDS-card/TDS-card",
+    "TDS-tag":"/components/TDS-tag/TDS-tag"
   },
   "navigationStyle": "custom"
 }
