@@ -1,0 +1,58 @@
+/* components/TDS-radio/TDS-radio.wxss */
+/* components/TDS-radio/TDS-radio.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
+@import "../../styles/icon.wxss";
+
+.radio {
+  padding: 28rpx 0;
+  align-items: center;
+}
+
+.caption {
+  gap: 24rpx;
+}
+
+.without {
+  padding: 0 !important;
+}
+.radio-text {
+  gap: 8rpx;
+}
+.radio-text-label {
+  color: var(--Foreground-High);
+}
+.radio-text-caption {
+  color: var(--Foreground-Medium);
+}
+
+.radio-check {
+  width: 40rpx;
+  height: 40rpx;
+  flex-shrink: 0;
+  border-radius: 100rpx;
+}
+
+.radio-check-default {
+  border: 4rpx solid var(--Foreground-Low);
+  transition: ease-in 0.2s;
+}
+.radio-check-selected {
+  border: 4rpx solid var(--Primary);
+  transition: all ease-in 0.2s;
+}
+.radio-check-error {
+  border: 4rpx solid var(--Secondary-Error);
+  transition: all ease 0.2s;
+}
+.radio-check-icon-circle {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 100rpx;
+  background-color: var(--Primary);
+  animation: fadeInGrow 0.1s;
+}

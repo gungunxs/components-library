@@ -12,7 +12,9 @@
     "pages/input/input",
     "pages/toast/toast",
     "pages/tabs/tabs",
-    "pages/dialog/dialog"
+    "pages/dialog/dialog",
+    "pages/checkbox/checkbox",
+    "pages/radio/radio"
   ],
   "window": {
     "backgroundTextStyle": "light",

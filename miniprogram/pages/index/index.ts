@@ -78,6 +78,20 @@ Page({
         buttonStyle:"primary",
         size:"large",
         state:"default",
+        label:"Checkbox 多选框",
+        url:"pages/checkbox/checkbox"
+      },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
+        label:"Radio 单选框",
+        url:"pages/radio/radio"
+      },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
         label:"Toast 矩形弹窗",
         url:"pages/toast/toast"
       },

@@ -1,0 +1,56 @@
+/* components/TDS-checkbox/TDS-checkbox.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
+@import "../../styles/icon.wxss";
+
+.checkbox {
+  padding: 28rpx 0;
+  align-items: center;
+}
+
+.caption {
+  gap: 24rpx;
+}
+
+.without {
+  padding: 0 !important;
+}
+.checkbox-text {
+  gap: 8rpx;
+}
+.checkbox-text-label {
+  color: var(--Foreground-High);
+}
+.checkbox-text-caption {
+  color: var(--Foreground-Medium);
+}
+
+.checkbox-check {
+  width: 40rpx;
+  height: 40rpx;
+  flex-shrink: 0;
+  border-radius: 6rpx;
+}
+
+.checkbox-check-default {
+  border: 4rpx solid var(--Foreground-Low);
+  transition: ease-in 0.2s;
+}
+.checkbox-check-selected {
+  border: 4rpx solid var(--Primary);
+  background-color: var(--Primary);
+  animation: fadeInGrow 0.2s;
+}
+.checkbox-check-error {
+  border: 4rpx solid var(--Secondary-Error);
+  transition: all ease 0.2s;
+}
+.checkbox-icon-selected {
+  transition: all ease 0.2s;
+  width: 24rpx;
+  height: 20rpx;
+}

@@ -1,0 +1,10 @@
+<!--components/TDS-checkbox/TDS-checkbox.wxml-->
+<view class="checkbox {{LabelPlacement}} {{showCaption&&Caption?'stretch':''}} {{LabelPlacement=='leading'?'row':(LabelPlacement=='trailing'?'row-reverse':'row')}} {{(!(showCaption&&Caption)&&LabelPlacement=='leading')?'flex-spacebetween':'caption'}} flex" bind:tap="tap" style="justify-content: {{LabelPlacement=='trailing'?'flex-end':''}};" data-theme="{{theme}}"> 
+  <view class="checkbox-text Paragragphs1 column flex {{(showCaption&&Caption)?'fill-available':''}}" wx:if="{{LabelPlacement!=='without'}}">
+    <text class="checkbox-text-label">{{Label}}</text>
+    <text class="checkbox-text-caption" wx:if="{{showCaption&&Caption}}">{{Caption}}</text>
+  </view>
+  <view class="checkbox-check checkbox-check-{{State}} flex-center">
+    <image class="checkbox-icon-selected" wx:if="{{State=='selected'}}" src="/static/svg/yeah-white.svg"></image>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
+    "TDS-checkbox":"/components/TDS-checkbox/TDS-checkbox"
+  },
+  "navigationStyle": "custom"
+}

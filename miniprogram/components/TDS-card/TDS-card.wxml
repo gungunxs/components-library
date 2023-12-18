@@ -14,7 +14,7 @@
     <slot name="swap2"></slot>
   </view>
   <view class="card-title2 Button-Label flex stretch fill-available gap8" wx:if="{{showTitleList2}}">  
-    <view class="card-title-main-content-text1">
+    <view class="card-title-main-content-text1" wx:if="{{showTitle2Text1}}">
       <text class="stretch" style="color:var({{Title2Text1Color}})">{{Title2Text1}}</text>
     </view>
     <text style="flex:1 0 0;">{{Title2Text2}}</text>

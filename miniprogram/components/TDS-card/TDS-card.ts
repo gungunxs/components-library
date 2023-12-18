@@ -59,6 +59,10 @@ Component({
       type:Boolean,
       value:false
     },
+    showTitle2Text1:{
+      type: Boolean,
+      value: false
+    },
     // Text1颜色
     Title2Text1Color:{
       type:String,

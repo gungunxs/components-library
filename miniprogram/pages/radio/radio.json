@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
+    "TDS-radio":"/components/TDS-radio/TDS-radio",
+    "TDS-card":"/components/TDS-card/TDS-card",
+    "TDS-tag":"/components/TDS-tag/TDS-tag"
+  },
+  "navigationStyle": "custom"
+}

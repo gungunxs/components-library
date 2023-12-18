@@ -31,4 +31,7 @@ Page {
 .tips {
   color: var(--Foreground-Negative);
 }
+.gray {
+  background-color: var(--Foreground-Low);
+}
 

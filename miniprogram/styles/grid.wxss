@@ -22,12 +22,15 @@
 }
 /* 居左对齐 */
 .stretch {
-  align-items: stretch;
+  align-items: stretch !important;
   /* justify-content: stretch; */
 }
 /* 行排列 */
 .row {
   flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
 }
 /* 列排列 */
 .column {
