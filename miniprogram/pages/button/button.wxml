@@ -26,9 +26,11 @@
     <text class="H3 fill flex-center" style="background-color: var(--Border-Natural);">button上面及内部为当前button属性值，格式为buttonStyle State Size</text>
     <view wx:for="{{buttonListKey}}" wx:key="index" class="fill flex-center column">
       <text class="H2 fill flex-center" style="background-color: var(--Border-Natural);">{{item}}</text>
-      <view wx:for="{{buttonList[item]}}" wx:key="index" style="width: fit-content;">
+      <view wx:for="{{buttonList[item]}}" wx:key="index" class="fill-available">
         <text class="Paragraphs1">{{item.buttonStyle}} {{item.state}} {{item.size}}</text>
-        <TDS-button buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}" Label="{{item.buttonStyle+' '+item.state+' '+item.size}}"></TDS-button>
+        <view style="width: {{item.size=='large'?'333px':(item.size=='medium'?'110px':'70px')}};">
+          <TDS-button class="fill" buttonStyle="{{item.buttonStyle}}" State="{{item.state}}" Size="{{item.size}}"></TDS-button>
+        </view>
       </view>
       <view class="fill" style="height: 20rpx;"></view>
     </view>
