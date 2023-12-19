@@ -24,7 +24,7 @@ Page({
     smpLabel:"寻宝之旅\n与SMP一同导航", // 首义地图卡片文本
     appidList:{
       'sc':'wx28a857959bc0b0fe',
-      'smp':'wx1d9b853729e905df'
+      'smp':'wx24f7b6c19ab5ab2a'
     }, // appid对应值
     pagepathList:{
       'bless':"button"
