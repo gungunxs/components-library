@@ -109,6 +109,13 @@ Page({
         label:"Dialog 弹窗",
         url:"pages/dialog/dialog"
       },
+      {
+        buttonStyle:"primary",
+        size:"large",
+        state:"default",
+        label:"mypage 新功能",
+        url:"pages/mypage/mypage"
+      },
     ]
   },
   /**

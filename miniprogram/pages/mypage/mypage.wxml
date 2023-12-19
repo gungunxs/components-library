@@ -1,0 +1,66 @@
+<!--pages/mypage/mypage.wxml-->
+<view class="featureArea flex column stretch">
+  <text class="featureArea-title H3 fill-available">{{featureTitle}}</text>
+  <!-- 南李路-->
+  <view class="featureArea-cardGroup flex-spacebetween gap8 stretch wrap">
+    <view class="featureArea-cardGroup-cardItem featureArea-cardGroup-cardItem_nanlilu flex-center">
+      <view class="flex-spacebetween fill-available">
+        <view class="featureArea-cardGroup-cardItem-text flex column stretch">
+        <view class="featureArea-cardGroup-cardItem-text-main flex row">
+          <image class="featureArea-cardGroup-cardItem-text-main-nanlilu" src="{{baseUrl+nanliluChineseUrl}}"></image>
+          <view class="featureArea-cardGroup-cardItem-text-main-badge flex row">
+            <text class="featureArea-cardGroup-cardItem-text-main-badge-num">{{badgeNum}}</text>
+            <text class="featureArea-cardGroup-cardItem-text-main-badge-text flex">枚徽章</text>
+          </view>
+        </view>
+        <text class="featureArea-cardGroup-cardItem-text-sub Paragraphs3">{{nanliluLabel}}</text>
+      </view>
+      <image class="featureArea-cardGroup-cardItem-logo" src="{{baseUrl+nanlilu22LogoUrl}}"></image>
+      </view>
+    </view>
+    <!-- 首上喵喵-->
+    <view class="featureArea-cardGroup-cardItem featureArea-cardGroup-cardItem_sc flex-center" data-type="sc" bindtap="jumpToMini">
+      <view class="fill-available flex column" style="gap:20rpx">
+        <view class="featureArea-cardGroup-cardItem-main flex-spacebetween row">
+        <view class="featureArea-cardGroup-cardItem-main-text flex-spacebetween column">
+          <image class="featureArea-cardGroup-cardItem-main-text-sc" src="{{baseUrl+sccChineseUrl}}"></image>
+          <text class="featureArea-cardGroup-cardItem-main-text-label">{{scLabel}}</text>
+        </view>
+        <image class="featureArea-cardGroup-cardItem-main-logo" src="{{baseUrl+scLogoUrl}}"></image>
+      </view>
+      <view class="featureArea-cardGroup-cardItem-enter flex-spacebetween fill-available row">
+        <text class="Paragraphs3 fill-available">{{enterLabel}}</text>
+        <image class="featureArea-cardGroup-cardItem-enter-icon" src="{{baseUrl+rightUrl}}"></image>
+      </view>
+      </view>
+    </view>
+    <!-- 首义祝福-->
+    <view class="featureArea-cardGroup-cardItem featureArea-cardGroup-cardItem_bless flex-center" data-type="bless" bindtap="jumpToPage">
+      <view class="flex-spacebetween fill-available">
+        <view class="featureArea-cardGroup-cardItem-text flex column stretch">
+        <view class="featureArea-cardGroup-cardItem-text-main flex row">
+          <image class="featureArea-cardGroup-cardItem-text-main-bless" src="{{baseUrl+newyearBlessingChineseUrl}}"></image>
+        </view>
+        <text class="featureArea-cardGroup-cardItem-text-sub Paragraphs3">{{blessLabel}}</text>
+      </view>
+      <image class="featureArea-cardGroup-cardItem-logo" src="{{baseUrl+spBlessingUrl}}"></image>
+      </view>
+    </view>
+    <!-- 首义地图-->
+    <view class="featureArea-cardGroup-cardItem featureArea-cardGroup-cardItem_smp flex-center" data-type="smp" bindtap="jumpToMini">
+      <view class="fill-available flex column" style="gap:20rpx">
+        <view class="featureArea-cardGroup-cardItem-main flex-spacebetween row">
+        <view class="featureArea-cardGroup-cardItem-main-text flex-spacebetween column">
+          <image class="featureArea-cardGroup-cardItem-main-text-sc" src="{{baseUrl+smpChineseUrl}}"></image>
+          <text class="featureArea-cardGroup-cardItem-main-text-label fill-available">{{smpLabel}}</text>
+        </view>
+        <image class="featureArea-cardGroup-cardItem-main-logo" src="{{baseUrl+smpLogoUrl}}"></image>
+      </view>
+      <view class="featureArea-cardGroup-cardItem-enter flex-spacebetween fill-available row">
+        <text class="Paragraphs3 fill-available">{{enterLabel}}</text>
+        <image class="featureArea-cardGroup-cardItem-enter-icon" src="{{baseUrl+rightUrl}}"></image>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

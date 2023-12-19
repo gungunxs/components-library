@@ -1,0 +1,122 @@
+/* pages/mypage/mypage.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--Foreground-White);
+}
+
+.featureArea {
+  padding: 0 36rpx;
+  position: absolute;
+  top: 480rpx;
+}
+.featureArea-title {
+  color: var(--Foreground-High);
+}
+.featureArea-cardGroup {
+  padding: 40rpx 0 0;
+  width: 678rpx;
+}
+.featureArea-cardGroup-cardItem {
+  border-radius: 10rpx;
+  box-shadow: 0 6rpx 10rpx 0 rgba(0, 0, 0, 0.04);
+  padding: 32rpx 20rpx;
+  height: 132rpx;
+  flex-shrink: 0;
+}
+.featureArea-cardGroup-cardItem_nanlilu {
+  background: linear-gradient(180deg, #FFF0F0 0%, #FFF 100%);
+  width: 364rpx;
+  gap: 20rpx;
+}
+.featureArea-cardGroup-cardItem_sc {
+  background: linear-gradient(180deg, #FFFEEB 0%, #FFF 100%);
+  width: 216rpx;
+  gap: 12rpx;
+}
+.featureArea-cardGroup-cardItem_bless {
+  background: linear-gradient(180deg, #F0FFF1 0%, #FFF 100%);
+  width: 364rpx;
+  gap: 20rpx;
+}
+.featureArea-cardGroup-cardItem_smp {
+  background: linear-gradient(180deg, #F0FFFF 0%, #FFF 100%);
+  width: 216rpx;
+  gap: 12rpx;
+}
+.featureArea-cardGroup-cardItem-text {
+  gap:36rpx
+}
+.featureArea-cardGroup-cardItem-text-main {
+  gap:8rpx;
+  align-items: center;
+}
+.featureArea-cardGroup-cardItem-text-main-nanlilu {
+  width: 108rpx;
+  height: 42rpx;
+}
+.featureArea-cardGroup-cardItem-text-main-bless {
+  width: 144rpx;
+  height: 42rpx;
+}
+.featureArea-cardGroup-cardItem-text-main-badge {
+  color: var(--Foreground-High);
+  font-family: PingFang SC;
+  line-height: normal;
+  font-style: normal;
+  align-items: flex-end;
+}
+.featureArea-cardGroup-cardItem-text-main-badge-num {
+font-size: 25.482rpx;
+font-weight: 600;
+height: 32rpx;
+}
+.featureArea-cardGroup-cardItem-text-main-badge-text {
+font-size: 16rpx;
+font-weight: 300;
+height: 32rpx;
+align-items: flex-end;
+width: max-content;
+}
+.featureArea-cardGroup-cardItem-text-sub {
+  color: var(--Foreground-Medium);
+}
+
+.featureArea-cardGroup-cardItem-logo {
+  width: 140rpx;
+  height: 140rpx;
+}
+.featureArea-cardGroup-cardItem-main {
+  height: 100%;
+}
+.featureArea-cardGroup-cardItem-main-text {
+  height: 88rpx;
+}
+
+.featureArea-cardGroup-cardItem-main-logo {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.featureArea-cardGroup-cardItem-main-text-sc {
+  width: 112rpx;
+  height: 34rpx;
+}
+.featureArea-cardGroup-cardItem-main-text-label {
+  color: var(--Foreground-Medium);
+font-family: PingFang SC;
+font-size: 16rpx;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.featureArea-cardGroup-cardItem-enter {
+  color: var(--Foreground-High);
+}
+.featureArea-cardGroup-cardItem-enter-icon {
+  width: 33rpx;
+  height: 38rpx;
+}
+
