@@ -2,7 +2,7 @@
 <TDS-topbar title="Dialog 弹窗" immersion="{{true}}">
   <view class="flex-center column content">
     <TDS-button Label="触发居中输入弹窗" bind:tap="openDialog"></TDS-button>
-    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog" >
+    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog" gradient="{{fasle}}">
       <view slot="swap" class="fill">
         <TDS-input bind:tap="focusInput" State="{{isFocus?(meetLength?'active':'error'):(inputValue?(meetLength?'filled':'error'):'default')}}" showHint="{{false}}">
           <view slot="input" class="input fill">
@@ -37,7 +37,7 @@
         <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽2"></TDS-button>
         <TDS-button class="fill" Label="这个button组是插槽2"></TDS-button>
       </view>
-      <view slot="slot2" class="button-group-horizon button-group-padding fill">
+      <view slot="slot2" class="button-group-vertical button-group-padding fill">
         <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽3"></TDS-button>
         <TDS-button class="fill" Label="这个button组是插槽3"></TDS-button>
       </view>
