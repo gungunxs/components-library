@@ -22,7 +22,7 @@
     <TDS-button class="fill-available" Background="--Foreground-Secondary" borderColor="--Foreground-Secondary"></TDS-button>
     <TDS-button class="fill-available" Background="--Foreground-Tertiary" borderColor="--Foreground-Tertiary"></TDS-button>
     <TDS-button class="fill-available" Background="--Foreground-Disabled" borderColor="--Foreground-Disabled"></TDS-button>
-    <TDS-button class="fill-available" buttonStyle="tertiary" buttonColor="--Secondary-Error" borderColor="--Secondary-Error"></TDS-button>
+    <TDS-button class="fill-available" buttonStyle="tertiary" buttonColor="--Foreground-Error" borderColor="--Foreground-Error"></TDS-button>
     <text class="H3 fill flex-center" style="background-color: var(--Border-Bounds);">button上面及内部为当前button属性值，格式为buttonStyle State Size</text>
     <view wx:for="{{buttonListKey}}" wx:key="index" class="fill flex-center column">
       <text class="H2 fill flex-center" style="background-color: var(--Border-Bounds);">{{item}}</text>
