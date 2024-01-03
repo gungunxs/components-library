@@ -1,4 +1,1 @@
 /* pages/input/input.wxss */
-.gray {
-  background-color: var(--Border-Natural);
-}

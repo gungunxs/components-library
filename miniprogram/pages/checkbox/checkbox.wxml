@@ -1,30 +1,30 @@
 <!--pages/checkbox/checkbox.wxml-->
-<TDS-topbar title="checkbox 多选框" immersion="{{true}}">
+<TDS-topbar title="Checkbox 多选框" immersion="{{true}}">
   <view class="flex stretch column content fill-available">
     <TDS-card ShadowType="default" showTitleList1="{{false}}" showTitleList2="{{true}}" Title2Text2="checkbox组件一共有五种属性 LabelPlacement State showCaption Caption Label">
       <view slot="swap3" class="flex column stretch fill-available">
-        <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="01" AdaptiveWidth="{{true}}" AdaptiveLabel="State 选择器状态 有三种属性值 默认default"></TDS-tag>
+        <TDS-tag Color="Foreground-Primary_Foreground-Low" showIcon="{{false}}" FixedLabel="01" AdaptiveWidth="{{true}}" AdaptiveLabel="State 选择器状态 有三种属性值 默认default"></TDS-tag>
         <text class="Paragraphs2">default 默认状态，即未选中状态
           selected 选中状态
           error 错误状态，点击会打印错误信息（组件内方法）
         </text>
-        <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="LabelPlacement Label位置 三种值 默认without"></TDS-tag>
+        <TDS-tag Color="Foreground-Primary_Foreground-Low" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="LabelPlacement Label位置 三种值 默认without"></TDS-tag>
         <text class="Paragraphs2">without 没有Label，即纯选择框icon
           leading Label处于前置状态 Label前Icon后
           trailing Label处于后置状态 Label后Icon前
         </text>
-        <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="03" AdaptiveWidth="{{true}}" AdaptiveLabel="showCaption 是否显示Caption 默认值为false"></TDS-tag>
+        <TDS-tag Color="Foreground-Primary_Foreground-Low" showIcon="{{false}}" FixedLabel="03" AdaptiveWidth="{{true}}" AdaptiveLabel="showCaption 是否显示Caption 默认值为false"></TDS-tag>
         <text class="Paragraphs2">只有当Caption不为空且showCaption为true才显示Caption</text>
-        <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="04" AdaptiveWidth="{{true}}" AdaptiveLabel="Caption Caption内容 默认值为Caption"></TDS-tag>
+        <TDS-tag Color="Foreground-Primary_Foreground-Low" showIcon="{{false}}" FixedLabel="04" AdaptiveWidth="{{true}}" AdaptiveLabel="Caption Caption内容 默认值为Caption"></TDS-tag>
         <text class="Paragraphs2">只有当Caption不为空且showCaption为true才显示Caption，可自定义传值</text>
-        <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="05" AdaptiveWidth="{{true}}" AdaptiveLabel="Label Label内容 默认值为Label 可自定义传值"></TDS-tag>
+        <TDS-tag Color="Foreground-Primary_Foreground-Low" showIcon="{{false}}" FixedLabel="05" AdaptiveWidth="{{true}}" AdaptiveLabel="Label Label内容 默认值为Label 可自定义传值"></TDS-tag>
       </view>
     </TDS-card>
     <TDS-card ShadowType="default" showTitleList1="{{false}}"  showTitleList2="{{true}}" Title2Text2="组件使用注意点与参考示例（如下）">
       <view slot="swap3" class="flex column stretch fill-available gap8">
-        <TDS-tag Color="Secondary-Blue_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="01" AdaptiveWidth="{{true}}" AdaptiveLabel="组件内抛出方法bind:check，触发区域为整个组件"></TDS-tag>
-        <TDS-tag Color="Secondary-Blue_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="checkbox为多选框（示例见末尾）若需单选用radio"></TDS-tag>
-        <TDS-tag Color="Secondary-Blue_Foreground-Low-Contrast" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="组件配合class='fill-available'使用 自适应填充容器"></TDS-tag>
+        <TDS-tag Color="Foreground-Secondary_Foreground-Low" showIcon="{{false}}" FixedLabel="01" AdaptiveWidth="{{true}}" AdaptiveLabel="组件内抛出方法bind:check，触发区域为整个组件"></TDS-tag>
+        <TDS-tag Color="Foreground-Secondary_Foreground-Low" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="checkbox为多选框（示例见末尾）若需单选用radio"></TDS-tag>
+        <TDS-tag Color="Foreground-Secondary_Foreground-Low" showIcon="{{false}}" FixedLabel="02" AdaptiveWidth="{{true}}" AdaptiveLabel="组件配合class='fill-available'使用 自适应填充容器"></TDS-tag>
       </view>
     </TDS-card>
     <view class="flex column fill-available">

@@ -8,7 +8,9 @@ Page({
     isFocus:false,
     inputValue:null,
     showDialog:false,
-    meetLength:true
+    meetLength:true,
+    showNormalDialog: false,
+    showHalfScreenDialog: false,
   },
 
   /**
@@ -47,6 +49,26 @@ Page({
   openDialog() {
     this.setData({
       showDialog:true
+    })
+  },
+  closeNormalDialog(){
+    this.setData({
+      showNormalDialog:false
+    })
+  },
+  openNormalDialog() {
+    this.setData({
+      showNormalDialog:true
+    })
+  },
+  closeHalfScreenDialog(){
+    this.setData({
+      showHalfScreenDialog:false
+    })
+  },
+  openHalfScreenDialog() {
+    this.setData({
+      showHalfScreenDialog:true
     })
   },
   /**

@@ -7,7 +7,7 @@
   </text>
    <view class="flex-spacebetween row fill">
     <view wx:for="{{iconList}}" wx:key="index" class="flex column">
-    <view class="{{item.sizeName}} duoduo-card-shadow" style="background:var(--Primary);"></view>
+    <view class="{{item.sizeName}} duoduo-card-shadow" style="background:var(--Foreground-Primary);"></view>
     <text class="Paragraphs3">{{item.sizeName}}</text>
     <text class="Paragraphs3">{{item.sizeValue}}</text>
    </view>

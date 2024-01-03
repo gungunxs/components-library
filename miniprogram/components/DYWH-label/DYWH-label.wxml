@@ -1,4 +1,0 @@
-<!--components/DYWH-label/DWYH-label.wxml-->
-<view class="Paragraphs2 label label-{{isSelected}}" data-theme="DYWH">
-  <text>{{Label}}</text>
-</view>

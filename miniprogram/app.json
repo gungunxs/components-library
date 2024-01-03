@@ -14,8 +14,7 @@
     "pages/tabs/tabs",
     "pages/dialog/dialog",
     "pages/checkbox/checkbox",
-    "pages/radio/radio",
-    "pages/mypage/mypage"
+    "pages/radio/radio"
   ],
   "window": {
     "backgroundTextStyle": "light",

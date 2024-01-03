@@ -12,20 +12,20 @@ Component({
     },
     /*
       颜色模式:背景色 文字色
-      Foreground-Low-Contrast_Foreground-High
-      Foreground-Low-Contrast_Foreground-Medium
-      Green-10_Foreground-Primary
-      Blue-10_Secondary-Blue
-      Red-10_Secondary-Error
-      Yellow-10_Secondary-Yellow
-      Foreground-Primary_Foreground-Low-Contrast
-      Secondary-Blue_Foreground-Low-Contrast
-      Secondary-Error_Foreground-Low-Contrast
-      Secondary-Yellow_Foreground-Low-Contrast
+      Background-Medium_Foreground-High
+      Background-Medium_Foreground-Medium
+      Background-Primary_Foreground-Primary
+      Background-Secondary_Foreground-Secondary
+      Background-Error_Foreground-Error
+      Background-Tertiary_Foreground-Tertiary
+      Foreground-Primary_Foreground-Low
+      Foreground-Secondary_Foreground-Low
+      Foreground-Error_Foreground-Low
+      Foreground-Tertiary_Foreground-Low
      */ 
     Color:{
       type:String,
-      value:"Foreground-Low-Contrast_Foreground-High"
+      value:"Background-Medium_Foreground-High"
     }, 
     // 是否显示icon
     showIcon:{

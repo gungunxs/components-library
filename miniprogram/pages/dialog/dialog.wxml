@@ -1,12 +1,12 @@
 <!--pages/dialog/dialog.wxml-->
 <TDS-topbar title="Dialog 弹窗" immersion="{{true}}">
   <view class="flex-center column content">
-    <TDS-button Label="触发弹窗" bind:tap="openDialog"></TDS-button>
-    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog">
+    <TDS-button Label="触发居中输入弹窗" bind:tap="openDialog"></TDS-button>
+    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog" >
       <view slot="swap" class="fill">
         <TDS-input bind:tap="focusInput" State="{{isFocus?(meetLength?'active':'error'):(inputValue?(meetLength?'filled':'error'):'default')}}" showHint="{{false}}">
           <view slot="input" class="input fill">
-            <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInputValue" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder" />
+            <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInputValue" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder"/>
           </view>
           <view slot="icon" class="large">
             <image src="/static/svg/setting.svg" class="large"></image>
@@ -18,5 +18,29 @@
         <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
       </view>
     </TDS-dialog>
+
+    <TDS-button Label="触发居中普通弹窗" Background="--Foreground-Tertiary" borderColor="--Foreground-Tertiary" bind:tap="openNormalDialog"></TDS-button>
+    <TDS-dialog showDialog="{{showNormalDialog}}" bind:tap="closeNormalDialog" gradient="{{true}}">
+      <view slot="button" class="button-group-horizon fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
+        <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
+      </view>
+    </TDS-dialog>
+
+    <TDS-button Label="触发底部半屏弹窗" Background="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openHalfScreenDialog" ></TDS-button>
+    <TDS-halfscreen-dialog showDialog="{{showHalfScreenDialog}}" bind:tap="closeHalfScreenDialog" >
+      <view slot="avatar" class="button-group-vertical button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽1"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽1"></TDS-button>
+      </view>
+      <view slot="slot1" class="button-group-vertical button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽2"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽2"></TDS-button>
+      </view>
+      <view slot="slot2" class="button-group-horizon button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽3"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽3"></TDS-button>
+      </view>
+    </TDS-halfscreen-dialog>
   </view>
 </TDS-topbar>

@@ -28,15 +28,15 @@
 }
 
 .input-title-active {
-  color: var(--Primary);
+  color: var(--Foreground-Primary);
 }
 
 .input-title-filled {
-  color: var(--Foreground-High) !important;
+  color: var(--Foreground-Medium) !important;
 }
 
 .input-title-readonly {
-  color: var(--Border-Natural);
+  color: var(--Foreground-Medium);
 }
 
 .input-container {
@@ -58,31 +58,31 @@ color: var(--Foreground-High) !important;
 }
 
 .input-container-default {
-  border: 2rpx solid var(--Foreground-Low-Contrast) !important;
-  background: var(--Foreground-Low-Contrast) !important;
-  color: var(--Foreground-Low) !important;
-}
-
-.input-container-active {
-  border: 2rpx solid var(--Primary) !important;
-  background: var(--Foreground-Low-Contrast) !important;
-}
-
-.input-container-filled {
-  border: 2rpx solid var(--Border-Natural) !important;
-  background: var(--Foreground-White) !important;
-}
-
-.input-container-readonly {
-  border: 2rpx solid var(--Foreground-Medium-Contrast) !important;
-  background: var(--Foreground-Medium-Contrast) !important;
+  border: 2rpx solid var(--Background-Medium) !important;
+  background: var(--Background-Medium) !important;
   color: var(--Foreground-Medium) !important;
 }
 
+.input-container-active {
+  border: 2rpx solid var(--Border-Focus) !important;
+  background: var(--Background-Medium) !important;
+}
+
+.input-container-filled {
+  border: 2rpx solid var(--Border-Bounds) !important;
+  background: var(--Background-High) !important;
+}
+
+.input-container-readonly {
+  border: 2rpx solid var(--Background-Low) !important;
+  background: var(--Background-Low) !important;
+  color: var(--Foreground-High) !important;
+}
+
 .input-container-error {
-  border: 2rpx solid var(--Secondary-Error) !important;
-  background: var(--Foreground-Low-Contrast) !important;
-  color: var(--Secondary-Error) !important;
+  border: 2rpx solid var(--Foreground-Error) !important;
+  background: var(--Background-Medium) !important;
+  color: var(--Foreground-Error) !important;
 }
 
 .input-hint {
@@ -91,5 +91,5 @@ color: var(--Foreground-High) !important;
 }
 
 .input-hint-error {
-  color: var(--Secondary-Error);
+  color: var(--Foreground-Error);
 }

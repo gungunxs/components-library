@@ -26,43 +26,44 @@ text-overflow: ellipsis;
 overflow: hidden;
 }
 
-.tag-color-Foreground-Low-Contrast_Foreground-High {
-  background: var(--Foreground-Low-Contrast);
+.tag-color-Background-Medium_Foreground-High {
+  background: var(--Background-Medium);
   color: var(--Foreground-High);
 }
-.tag-color-Foreground-Low-Contrast_Foreground-Medium {
-  background: var(--Foreground-Low-Contrast);
+.tag-color-Background-Medium_Foreground-Medium {
+  background: var(--Background-Medium);
   color: var(--Foreground-Medium);
 }
-.tag-color-Green-10_Foreground-Primary {
-  background: var(--Green-10);
+.tag-color-Background-Primary_Foreground-Primary {
+  background: var(--Background-Primary);
   color: var(--Foreground-Primary);
 }
-.tag-color-Blue-10_Secondary-Blue {
-  background: var(--Blue-10);
-  color: var(--Secondary-Blue);
+.tag-color-Background-Secondary_Foreground-Secondary {
+  background: var(--Background-Secondary);
+  color: var(--Foreground-Secondary);
 }
-.tag-color-Red-10_Secondary-Error {
-  background: var(--Red-10);
-  color: var(--Secondary-Error);
+.tag-color-Background-Error_Foreground-Error {
+  background: var(--Background-Error);
+  color: var(--Foreground-Error);
 }
-.tag-color-Yellow-10_Secondary-Yellow {
-  background: var(--Yellow-10);
-  color: var(--Secondary-Yellow);
+.tag-color-Background-Tertiary_Foreground-Tertiary {
+  background: var(--Background-Teriary);
+  color: var(--Foreground-Tertiary);
 }
-.tag-color-Foreground-Primary_Foreground-Low-Contrast {
+
+.tag-color-Foreground-Primary_Foreground-Low {
   background: var(--Foreground-Primary);
-  color: var(--Foreground-Low-Contrast);
+  color: var(--Foreground-Low);
 }
-.tag-color-Secondary-Blue_Foreground-Low-Contrast {
-  background: var(--Secondary-Blue);
-  color: var(--Foreground-Low-Contrast);
+.tag-color-Foreground-Secondary_Foreground-Low {
+  background: var(--Foreground-Secondary);
+  color: var(--Foreground-Low);
 }
-.tag-color-Secondary-Error_Foreground-Low-Contrast {
-  background: var(--Secondary-Error);
-  color: var(--Foreground-Low-Contrast);
+.tag-color-Foreground-Error_Foreground-Low {
+  background: var(--Foreground-Error);
+  color: var(--Foreground-Low);
 }
-.tag-color-Secondary-Yellow_Foreground-Low-Contrast {
-  background: var(--Secondary-Yellow);
-  color: var(--Foreground-Low-Contrast);
+.tag-color-Foreground-Tertiary_Foreground-Low {
+  background: var(--Foreground-Tertiary);
+  color: var(--Foreground-Low);
 }

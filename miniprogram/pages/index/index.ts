@@ -7,7 +7,7 @@ Page({
    */
   data: {
     theme:"",
-    themeList:['','DYWH','Cat'],
+    themeList:['','Cat','SL'],
     themeNum:0,
     menuButtonTop:0,
     buttonList:[
@@ -108,13 +108,6 @@ Page({
         state:"default",
         label:"Dialog 弹窗",
         url:"pages/dialog/dialog"
-      },
-      {
-        buttonStyle:"primary",
-        size:"large",
-        state:"default",
-        label:"mypage 新功能",
-        url:"pages/mypage/mypage"
       },
     ]
   },

@@ -10,7 +10,7 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 100rpx;
-color: var(--Foreground-White);
+color: var(--Foreground-Low);
 transition: background-color ease 0.2s;
 }
 
@@ -30,18 +30,18 @@ transition: background-color ease 0.2s;
 
 /* 样式 primary */
 .button-style-primary-default {
-  background: var(--Primary);
-  border: 2rpx solid var(--Primary);
+  background: var(--Foreground-Primary);
+  border: 2rpx solid var(--Foreground-Primary);
 }
 
 .button-style-primary-disabled {
-  background: var(--Secondary-Highlight);
-  border: 2rpx solid var(--Secondary-Highlight);
+  background: var(--Foreground-Disabled);
+  border: 2rpx solid var(--Foreground-Disabled);
 }
 
 .button-style-primary-loading {
-  background: var(--Primary);
-  border: 2rpx solid var(--Primary);
+  background: var(--Foreground-Primary);
+  border: 2rpx solid var(--Foreground-Primary);
 }
 
 /* 样式 secondary */
@@ -50,40 +50,40 @@ transition: background-color ease 0.2s;
 }
 
 .button-style-secondary-disabled {
-  background: var(--Foreground-Low);
+  background: var(--Background-Low);
 }
 
 .button-style-secondary-loading {
-  background: var(--Foreground-Low);
+  background: var(--Background-Low);
 }
 
 /* 样式 tertiary */
 .button-style-tertiary-default {
-  border: 2rpx solid var(--Primary);
-  color: var(--Primary);
+  border: 2rpx solid var(--Foreground-Primary);
+  color: var(--Foreground-Primary);
 }
 
 .button-style-tertiary-disabled {
-  border: 2rpx solid var(--Secondary-Highlight);
-  color: var(--Secondary-Highlight);
+  border: 2rpx solid var(--Foreground-Disabled);
+  color: var(--Foreground-Disabled);
 }
 
 .button-style-tertiary-loading {
-  border: 2rpx solid var(--Primary);
-  color:  var(--Primary);
+  border: 2rpx solid var(--Foreground-Primary);
+  color:  var(--Foreground-Primary);
 }
 
 /* 样式text 此处button没有额外的样式 具体差别在label中*/
 .button-style-text-default {
-  color: var(--Primary);
+  color: var(--Foreground-Primary);
 }
 
 .button-style-text-disabled {
-  color: var(--Foreground-Low);
+  color: var(--Foreground-Disabled);
 }
 
 .button-style-text-loading {
-  color: var(--Primary);
+  color: var(--Foreground-Primary);
 }
 
 /* 尺寸 */
@@ -95,9 +95,9 @@ padding: 28rpx 16rpx;
 .button-size-medium {
   /* width: 220rpx; */
   padding: 18rpx 16rpx;
-  }
-  .button-size-small {
-    /* width: 140rpx; */
-    padding: 10rpx 16rpx;
-    flex-shrink: 0;
-    }
+}
+.button-size-small {
+  /* width: 140rpx; */
+  padding: 10rpx 16rpx;
+  flex-shrink: 0;
+}

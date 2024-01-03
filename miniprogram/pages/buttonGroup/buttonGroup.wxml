@@ -8,7 +8,7 @@
       4）button组件在使用时必须加上填充样式fill或者fill-available！！
     </text>
     <!--标准用法-->
-    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">标准用法（附代码用例）</text>
+    <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">标准用法（附代码用例）</text>
     <view class="button-group-horizon fill">
       <TDS-button class="fill" buttonStyle="tertiary" Label="取消"></TDS-button>
       <TDS-button class="fill" Label="确认"></TDS-button>
@@ -18,22 +18,22 @@
       <TDS-button class="fill" buttonStyle="tertiary" Label="取消"></TDS-button>
     </view>
     <view wx:key="index" wx:for="{{buttonGroupList}}" class="fill">
-      <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">{{item.buttonGroupStyle+' '+item.styleName}}</text>
+      <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">{{item.buttonGroupStyle+' '+item.styleName}}</text>
     <view class="fill Paragraphs1">一个button</view>
-    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Background-Low)">
       <TDS-button class="fill"></TDS-button>
     </view>
     <view class="fill" style="padding-bottom: 20rpx;"></view>
 
     <view class="fill Paragraphs1">两个button</view>
-    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Background-Low)">
       <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
       <TDS-button class="fill"></TDS-button>
     </view>
     <view class="fill" style="padding-bottom: 20rpx;"></view>
 
     <view class="fill Paragraphs1">三个button</view>
-    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Border-Natural)">
+    <view class="{{item.buttonGroupStyle}} fill" style="background-color:var(--Background-Low)">
       <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
       <TDS-button class="fill" buttonStyle="secondary"></TDS-button>
       <TDS-button class="fill"></TDS-button>
@@ -41,7 +41,7 @@
     <view class="fill" style="padding-bottom: 20rpx;"></view>
 
     <view class="fill Paragraphs1">三个button+button组的padding</view>
-    <view class="{{item.buttonGroupStyle}} fill button-group-padding" style="background-color:var(--Border-Natural)">
+    <view class="{{item.buttonGroupStyle}} fill button-group-padding" style="background-color:var(--Background-Low)">
       <TDS-button class="fill" buttonStyle="tertiary"></TDS-button>
       <TDS-button class="fill" buttonStyle="secondary"></TDS-button>
       <TDS-button class="fill"></TDS-button>

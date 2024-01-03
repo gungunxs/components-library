@@ -3,8 +3,7 @@
     "TDS-topbar":"/components/TDS-topbar/TDS-topbar",
     "TDS-card":"/components/TDS-card/TDS-card",
     "TDS-button":"/components/TDS-button/TDS-button",
-    "TDS-tag":"/components/TDS-tag/TDS-tag",
-    "DYWH-label":"/components/DYWH-label/DYWH-label"
+    "TDS-tag":"/components/TDS-tag/TDS-tag"
   },
   "navigationStyle": "custom"
 }

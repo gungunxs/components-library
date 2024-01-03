@@ -17,7 +17,7 @@
 
 .toast {
   border-radius: 12rpx;
-  background: var(--Foreground-White);
+  background: var(--Background-High);
   display: flex;
   width: 666rpx;
   padding: 40rpx;

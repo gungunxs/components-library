@@ -11,7 +11,7 @@ Page({
     tagList:{
       "all":[
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -21,7 +21,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -31,7 +31,7 @@ Page({
           closeable:true
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Background-Primary_Foreground-Primary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -41,7 +41,7 @@ Page({
           closeable:true
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -51,7 +51,7 @@ Page({
           closeable:true
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -61,7 +61,7 @@ Page({
           closeable:true
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -71,7 +71,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -81,7 +81,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -91,7 +91,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -101,7 +101,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -114,7 +114,7 @@ Page({
       "fixedWidth":[
         // 图标true 固定宽度true 自适应宽度false 关闭true
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -124,7 +124,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -134,7 +134,7 @@ Page({
           closeable:true
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Background-Primary_Foreground-Primary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -144,7 +144,7 @@ Page({
           closeable:true
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -154,7 +154,7 @@ Page({
           closeable:true
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -164,7 +164,7 @@ Page({
           closeable:true
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -174,7 +174,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -184,7 +184,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -194,7 +194,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -204,7 +204,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -215,7 +215,7 @@ Page({
         },
         // 图标false 固定宽度true 自适应宽度false  关闭true
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -225,7 +225,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -235,7 +235,7 @@ Page({
           closeable:true
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -245,7 +245,7 @@ Page({
           closeable:true
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -255,7 +255,7 @@ Page({
           closeable:true
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -265,7 +265,7 @@ Page({
           closeable:true
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -275,7 +275,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -285,7 +285,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -295,7 +295,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -305,7 +305,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -316,7 +316,7 @@ Page({
         },
         // 图标true 固定宽度true 自适应宽度false  关闭false
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -326,7 +326,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -336,7 +336,7 @@ Page({
           closeable:false
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -346,7 +346,7 @@ Page({
           closeable:false
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -356,7 +356,7 @@ Page({
           closeable:false
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -366,7 +366,7 @@ Page({
           closeable:false
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -376,7 +376,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -386,7 +386,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -396,7 +396,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -406,7 +406,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:true,
@@ -417,7 +417,7 @@ Page({
         },
         // 图标false 固定宽度true 自适应宽度false  关闭false
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -427,7 +427,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -437,7 +437,7 @@ Page({
           closeable:false
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -447,7 +447,7 @@ Page({
           closeable:false
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -457,7 +457,7 @@ Page({
           closeable:false
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -467,7 +467,7 @@ Page({
           closeable:false
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -477,7 +477,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -487,7 +487,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -497,7 +497,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -507,7 +507,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:true,
@@ -520,7 +520,7 @@ Page({
       "adaptiveWidth":[
         // 图标true 固定宽度false 自适应宽度true  关闭true
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -530,7 +530,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -540,7 +540,7 @@ Page({
           closeable:true
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Background-Primary_Foreground-Primary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -550,7 +550,7 @@ Page({
           closeable:true
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -560,7 +560,7 @@ Page({
           closeable:true
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -570,7 +570,7 @@ Page({
           closeable:true
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -580,7 +580,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -590,7 +590,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -600,7 +600,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -610,7 +610,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -621,7 +621,7 @@ Page({
         },
         // 图标false 固定宽度false 自适应宽度true  关闭true
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -631,7 +631,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -641,7 +641,7 @@ Page({
           closeable:true
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -651,7 +651,7 @@ Page({
           closeable:true
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -661,7 +661,7 @@ Page({
           closeable:true
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -671,7 +671,7 @@ Page({
           closeable:true
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -681,7 +681,7 @@ Page({
           closeable:true
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -691,7 +691,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -701,7 +701,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -711,7 +711,7 @@ Page({
           closeable:true
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -722,7 +722,7 @@ Page({
         },
         // 图标true 固定宽度false 自适应宽度true  关闭false
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -732,7 +732,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -742,7 +742,7 @@ Page({
           closeable:false
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -752,7 +752,7 @@ Page({
           closeable:false
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -762,7 +762,7 @@ Page({
           closeable:false
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -772,7 +772,7 @@ Page({
           closeable:false
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -782,7 +782,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -792,7 +792,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -802,7 +802,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -812,7 +812,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -823,7 +823,7 @@ Page({
         },
         // 图标false 固定宽度false 自适应宽度true  关闭false
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -833,7 +833,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -843,7 +843,7 @@ Page({
           closeable:false
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -853,7 +853,7 @@ Page({
           closeable:false
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -863,7 +863,7 @@ Page({
           closeable:false
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -873,7 +873,7 @@ Page({
           closeable:false
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -883,7 +883,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -893,7 +893,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -903,7 +903,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -913,7 +913,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
           iconPath:"setting",
           fixedWidth:false,
@@ -925,7 +925,7 @@ Page({
       ],
       "icon":[
         {
-          color:"Foreground-Low-Contrast_Foreground-High",
+          color:"Background-Medium_Foreground-High",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -935,7 +935,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Low-Contrast_Foreground-Medium",
+          color:"Background-Medium_Foreground-Medium",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -945,7 +945,7 @@ Page({
           closeable:false
         },
         {
-          color:"Green-10_Foreground-Primary",
+          color:"Background-Primary_Foreground-Primary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -955,7 +955,7 @@ Page({
           closeable:false
         },
         {
-          color:"Blue-10_Secondary-Blue",
+          color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -965,7 +965,7 @@ Page({
           closeable:false
         },
         {
-          color:"Red-10_Secondary-Error",
+          color:"Background-Error_Foreground-Error",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -975,7 +975,7 @@ Page({
           closeable:false
         },
         {
-          color:"Yellow-10_Secondary-Yellow",
+          color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -985,7 +985,7 @@ Page({
           closeable:false
         },
         {
-          color:"Foreground-Primary_Foreground-Low-Contrast",
+          color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -995,7 +995,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Blue_Foreground-Low-Contrast",
+          color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -1005,7 +1005,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Error_Foreground-Low-Contrast",
+          color:"Foreground-Error_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,
@@ -1015,7 +1015,7 @@ Page({
           closeable:false
         },
         {
-          color:"Secondary-Yellow_Foreground-Low-Contrast",
+          color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
           iconPath:"setting",
           fixedWidth:false,

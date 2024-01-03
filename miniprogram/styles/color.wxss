@@ -2,81 +2,99 @@
   TDS全局颜色样式：所有的颜色必须从这里引用，不允许新建颜色样式
   注意：在web端开发中使用:root伪类选择器来设置全局样式，但是在小程序中采用page来作为顶层变量
  */
- [data-theme="DYWH"] {
-  --Primary: #545FBF;
-  /* secondary */
-  --Secondary-Lavender: #EAECFF;
-  --Secondary-Green: #1EFFC9;
-  --Secondary-Error: #F96262;
-  --Secondary-Highlight: #B4BCFC;
-  /* foreground */
-  --Foreground-Primary: #545FBF;
-  --Foreground-High: #3F3F46;
-  --Foreground-Medium: #7F7F8F;
-  --Foreground-Low: #BFBFC7;
-  --Foreground-Medium-Contrast: #E9E9E9;
-  --Foreground-Low-Contrast: #F5F5F5;
-  --Foreground-White: #FFFFFF;
-  --Foreground-Black: #000000;
-  --Foreground-Negative: #F96262;
-  /* gradient */
-  --Dialog-gradient: linear-gradient(180deg, #C3CBFF 0.25%, #F3F5FF 17.36%, #FFF 61.42%);
-  --Mypage-gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
- }
-[data-theme="Cat"] {
-  --Primary: #FBDE71;
-  /* secondary */
-  --Secondary-Blue: #A4E181;
-  --Secondary-Yellow: #C2F3A4;
-  --Secondary-Error: #D0F173;
-  --Secondary-Highlight: #79DBBA;
-  --Secondary-Lavender: #01CCA7;
-  /* foreground */
-  --Foreground-Primary: #FBDE71;
-  /* secondary opacity */
-  --Blue-10: #B5F0E5;
-  --Yellow-10: #FFF8E9;
-  --Red-10: #D3F4EE;
-  --Green-10: #E5F6DB;
-}
+
 /* TDS颜色 */
 page {
-  --Primary: #20C38C;
-  /* secondary */
-  --Secondary-Blue: #3EBAD0;
-  --Secondary-Yellow: #FBDE71;
-  --Secondary-Error: #F96262;
-  --Secondary-Highlight: #79DBBA;
-  --Secondary-Lavender: #EAECFF;
   /* foreground */
   --Foreground-Primary: #20C38C;
+  --Foreground-Disabled: #79DBBA;
+  --Foreground-Secondary: #3EBAD0;
+  --Foreground-Tertiary: #FBDE71;
   --Foreground-High: #292945;
   --Foreground-Medium: #7F7F8F;
-  --Foreground-Low: #BFBFC7;
-  --Foreground-Medium-Contrast: #E9E9E9;
-  --Foreground-Low-Contrast: #F5F5F5;
-  --Foreground-White: #FFFFFF;
-  --Foreground-Negative: #F96262;
+  --Foreground-Low: #FFFFFF;
+  --Foreground-Error: #F96262;
+  /* background */
+  --Background-Quaternary: #F7FFFC;
+  --Background-Primary: rgba(32, 195, 140, 0.10);
+  --Background-Secondary: rgba(62, 186, 208, 0.10);
+  --Background-Teriary: rgba(251, 222, 113, 0.10);
+  --Background-High: #FFFFFF;
+  --Background-Medium: #F5F5F5;
+  --Background-Low: #E6E6E6;
+  --Background-Error: rgba(249, 98, 98, 0.10);
   /* border */
-  --Border-Natural: #D1D1D1;
-  /* placeholder color */
-  --Placeholder-Color: rgba(255, 255, 255, 0.00);
-  /* secondary opacity */
-  --Blue-10: rgba(62, 186, 208, 0.10);
-  --Yellow-10: rgba(251, 222, 113, 0.10);
-  --Red-10: rgba(249, 98, 98, 0.10);
-  --Green-10: rgba(32, 195, 140, 0.10);
-  --Masking-Color: rgba(0, 0, 0, 0.50);
+  --Border-Bounds: #E1E1E1;
+  --Border-Focus: #20C38C;
+  --Border-Error: #F96262;
+  /* mask */
+  --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
-  --Dialog-Gradient: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
-  --Mypage-Gradient: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
-  --Foreground-Black: #000000;
+  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
 }
 
+[data-theme="Cat"] {
+  /* foreground */
+  --Foreground-Primary: #FBDE71;
+  --Foreground-Disabled: #FFEA9A;
+  --Foreground-Secondary: #A4E181;
+  --Foreground-Tertiary: #D0F173;
+  --Foreground-High: #292945;
+  --Foreground-Medium: #7F7F8F;
+  --Foreground-Low: #FFFFFF;
+  --Foreground-Error: #F96262;
+  /* background */
+  --Background-Quaternary: #F8FDFE;
+  --Background-Primary: rgba(251, 222, 113, 0.10);
+  --Background-Secondary:  rgba(164, 225, 129, 0.10);
+  --Background-Teriary: rgba(208, 241, 115, 0.10);
+  --Background-High: #FFFFFF;
+  --Background-Medium: #F5F5F5;
+  --Background-Low: #E6E6E6;
+  --Background-Error: rgba(249, 98, 98, 0.10);
+  /* border */
+  --Border-Bounds: #E1E1E1;
+  --Border-Focus: #FFBB27;
+  --Border-Error: #F96262;
+  /* mask */
+  --Mask: rgba(0, 0, 0, 0.50);
+  /* gradient */
+  --Gradients-Primary: linear-gradient(177deg, #FFCD3C -53.25%, #FFF 50%);
+}
+
+[data-theme="SL"] {
+  /* foreground */
+  --Foreground-Primary: #25B4E1;
+  --Foreground-Disabled: #B0DFEE;
+  --Foreground-Secondary: #3EBAD0;
+  --Foreground-Tertiary: #E5F6FC;
+  --Foreground-High: #272629;
+  --Foreground-Medium: #C7C7CC;
+  --Foreground-Low: #FFFFFF;
+  --Foreground-Error: #F96262;
+  /* background */
+  --Background-Quaternary: #F8FDFE;
+  --Background-Primary: rgba(37, 180, 225, 0.10);
+  --Background-Secondary: rgba(146, 217, 239, 0.10);
+  --Background-Teriary: rgba(146, 217, 239, 0.10);
+  --Background-High: #FFFFFF;
+  --Background-Medium: #F5F5F5;
+  --Background-Low: #E6E6E6;
+  --Background-Error: rgba(249, 98, 98, 0.10);
+  /* border */
+  --Border-Bounds: #E1E1E1;
+  --Border-Focus: #25B4E1;
+  --Border-Error: #F96262;
+  /* mask */
+  --Mask: rgba(0, 0, 0, 0.50);
+  /* gradient */
+  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
+ }
+
 .Thematic-gradient {
-  background: var(--Dialog-Gradient);
+  background: var(--Gradients-Primary) !important;
 }
 
 .Mypage-gradient {
-  background: var(--Mypage-Gradient);
+  background: linear-gradient(180deg, #BCBDCB 0.04%, #FFF 69.86%);
 }

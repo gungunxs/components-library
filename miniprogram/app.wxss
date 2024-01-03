@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 Page {
-  background: var(--Foreground-Low-Contrast);
+  background: var(--Background-Medium);
   overflow: hidden;
 }
 
@@ -29,9 +29,9 @@ Page {
   gap: 32rpx;
 }
 .tips {
-  color: var(--Foreground-Negative);
+  color: var(--Foreground-Error);
 }
 .gray {
-  background-color: var(--Foreground-Low);
+  background-color: var(--Border-Bounds);
 }
 

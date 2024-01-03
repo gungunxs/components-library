@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--Masking-Color);
+  background: var(--Mask);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   gap: 64rpx;
   border-radius: 30rpx;
   animation-duration: 0.2s !important;
-  background: var(--Foreground-White);
+  background: var(--Foreground-Low);
 }
 
 @keyframes popFromBottom {
@@ -60,6 +60,7 @@
 .dialog-title-sub {
   color: var(--Foreground-Medium);
   align-self: stretch;
+  text-align: left;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;

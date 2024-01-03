@@ -26,21 +26,21 @@
       5）具体细节内容可参照components文件下的TDS-toast组件
     </text>
     <text class="Paragraphs1">toast可以自定义颜色</text>
-    <TDS-toast showToast="{{true}}" bgColor="--Secondary-Error" Iconpath="loading" Message="这是一个背景色为Secondary Error，message颜色为Foreground White，loading为白色主题的toast" messageColor="--Foreground-White"></TDS-toast>
-    <TDS-toast showToast="{{true}}" bgColor="--Primary" Iconpath="loading" Message="这是一个背景色为Primary，message颜色为Foreground White，loading为白色主题的toast" messageColor="--Foreground-White"></TDS-toast>
-    <TDS-toast showToast="{{true}}" bgColor="--Secondary-Highlight" Iconpath="loading" Message="这是一个背景色为Secondary Highlight，message颜色为Foreground High，loading为白色主题的toast" showCaption="{{true}}" Caption="caption颜色为Foreground High" messageColor="--Foreground-High" captionColor="--Secondary-Error"></TDS-toast>
+    <TDS-toast showToast="{{true}}" bgColor="--Foreground-Error" Iconpath="loading" Message="这是一个背景色为Foreground-Error，message颜色为Foreground-Low，loading为白色主题的toast" messageColor="--Foreground-Low"></TDS-toast>
+    <TDS-toast showToast="{{true}}" bgColor="--Foreground-Primary" Iconpath="loading" Message="这是一个背景色为Foreground-Primary，message颜色为Foreground-Low，loading为白色主题的toast" messageColor="--Foreground-Low"></TDS-toast>
+    <TDS-toast showToast="{{true}}" bgColor="--Foreground-Disabled" Iconpath="loading" Message="这是一个背景色为Foreground-Disabled，message颜色为Foreground-High，caption颜色为Foreground-Error，loading为白色主题的toast" showCaption="{{true}}" Caption="caption颜色为Foreground-High" messageColor="--Foreground-High" captionColor="--Foreground-Error"></TDS-toast>
 
-    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast自动触发与消失 showToastAuto</text>
+    <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">toast自动触发与消失 showToastAuto</text>
     <TDS-toast id="autoToast" showToast="{{showToast1}}" style="position: {{showToast1?'':'absolute'}};"></TDS-toast>
-    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">toast手动触发与自动消失 showToast hiddenToast</text>
+    <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">toast手动触发与自动消失 showToast hiddenToast</text>
     <TDS-toast id="mannerToast" showToast="{{showToast}}" style="position: {{showToast?'':'absolute'}};"></TDS-toast>
     <view class="button-group-horizon">
       <TDS-button Label="点击关闭" class="fill" buttonStyle="tertiary" bind:tap="hiddenToast"></TDS-button>
       <TDS-button Label="点击触发" class="fill" bind:tap="showToast"></TDS-button>
     </view>
-    <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">Message为必填属性，默认显示</text>
+    <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">Message为必填属性，默认显示</text>
     <view wx:for="{{toastListKey}}" wx:key="index" class="fill flex-center column button-group-vertical">
-      <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">{{item=="icon"?'Message显示 icon显示':'Message显示 icon不显示'}}</text>
+      <text class="H3 fill flex-center" style="background-color: var(--Background-Low);">{{item=="icon"?'Message显示 icon显示':'Message显示 icon不显示'}}</text>
       <TDS-toast wx:for="{{toastList[item]}}" wx:key="index" showToast="{{true}}" Message="{{item.message}}" showCaption="{{item.showCaption}}" Caption="{{item.message}}" Icon="{{item.Icon}}" Iconpath="{{item.iconPath}}"></TDS-toast>
     </view>
     <view class="fill" style="height: 50rpx;"></view>

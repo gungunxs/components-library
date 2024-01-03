@@ -1,6 +1,6 @@
 <!--pages/input/input.wxml-->
 <TDS-topbar title="Input 输入框" immersion="{{true}}" Threshold="0.1" speed="2" data-theme="{{theme}}">
-  <view class="flex-center column content" style="background-color: var(--Foreground-White);">
+  <view class="flex-center column content" style="background-color: var(--Background-High);">
     <text class="tips Paragraphs2 fill">tips:
       1）TDS-input组件和其他组件使用方法一致，在需要使用的page文件夹的.json文件中引入即可。但需要注意的是input组件有两个插槽（与UX不太一样，并没有把输入框与icon写死，而是采用了灵活的前端插槽，可以在input所在的slot中插入任何组件，比如输入框、下拉框、选择器等常用form表单组件。另外icon也采用了slot形式，在插槽中插入icon相应的代码即可）
       2）TDS-input具有以下属性：
@@ -18,7 +18,7 @@
       6）具体细节内容参照components下的TDS-input组件内容。
     </text>
     <!--标准用法-->
-    <text class="Paragraphs2" style="background-color: var(--Border-Natural);">点击input组件，从default状态切换为active状态，点击其他位置，假如input中有值则切换为filled状态，没有值则切换为default状态</text>
+    <text class="Paragraphs2" style="background-color: var(--Border-Bounds);">点击input组件，从default状态切换为active状态，点击其他位置，假如input中有值则切换为filled状态，没有值则切换为default状态</text>
     <TDS-input IconPlacement="trailing" bind:tap="focusInput" State="{{isFocus?'active':(inputValue?'filled':'default')}}">
       <view slot="input" class="input fill">
         <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInput"/>
@@ -27,10 +27,10 @@
         <image src="/static/svg/setting.svg" class="large"></image>
       </view>
     </TDS-input>
-    <text class="Paragraphs2" style="background-color: var(--Border-Natural);">input组件上方文字均为属性值拼接，对应格式为State/Title/Hint/showHint/IconPlacement</text>
+    <text class="Paragraphs2" style="background-color: var(--Border-Bounds);">input组件上方文字均为属性值拼接，对应格式为State/Title/Hint/showHint/IconPlacement</text>
     <view wx:for="{{inputListKey}}" wx:key="index">
       <view wx:for="{{inputList[item]}}" wx:key="index">
-        <text class="Paragraphs2" style="background-color: var(--Secondary-Highlight);">{{item.state+'/'+item.title+'/'+item.hint+'/'+item.showHint+'/'+item.iconPlacement}}</text>
+        <text class="Paragraphs2" style="background-color: var(--Foreground-Disabled);">{{item.state+'/'+item.title+'/'+item.hint+'/'+item.showHint+'/'+item.iconPlacement}}</text>
         <view class="fill" style="height: 20rpx;"></view>
         <TDS-input Title="{{item.title}}" Hint="{{item.hint}}" showHint="{{item.showHint}}" IconPlacement="{{item.iconPlacement}}" State="{{item.state}}">
           <view slot="input" class="gray fill">

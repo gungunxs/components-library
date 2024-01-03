@@ -36,16 +36,16 @@
 }
 
 .checkbox-check-default {
-  border: 4rpx solid var(--Foreground-Low);
+  border: 4rpx solid var(--Foreground-Medium);
   transition: ease-in 0.2s;
 }
 .checkbox-check-selected {
-  border: 4rpx solid var(--Primary);
-  background-color: var(--Primary);
+  border: 4rpx solid var(--Foreground-Primary);
+  background-color: var(--Foreground-Primary);
   animation: fadeInGrow 0.2s;
 }
 .checkbox-check-error {
-  border: 4rpx solid var(--Secondary-Error);
+  border: 4rpx solid var(--Foreground-Error);
   transition: all ease 0.2s;
 }
 .checkbox-icon-selected {

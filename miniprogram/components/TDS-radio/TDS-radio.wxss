@@ -37,21 +37,21 @@
 }
 
 .radio-check-default {
-  border: 4rpx solid var(--Foreground-Low);
+  border: 4rpx solid var(--Foreground-Medium);
   transition: ease-in 0.2s;
 }
 .radio-check-selected {
-  border: 4rpx solid var(--Primary);
+  border: 4rpx solid var(--Foreground-Primary);
   transition: all ease-in 0.2s;
 }
 .radio-check-error {
-  border: 4rpx solid var(--Secondary-Error);
+  border: 4rpx solid var(--Foreground-Error);
   transition: all ease 0.2s;
 }
 .radio-check-icon-circle {
   width: 20rpx;
   height: 20rpx;
   border-radius: 100rpx;
-  background-color: var(--Primary);
+  background-color: var(--Foreground-Primary);
   animation: fadeInGrow 0.1s;
 }

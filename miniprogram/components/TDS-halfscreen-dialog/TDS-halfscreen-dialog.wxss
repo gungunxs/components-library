@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   animation-duration: 0.3s;
-  background: var(--Masking-Color);
+  background: var(--Mask);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -28,7 +28,7 @@
   border-radius: 28rpx 28rpx 0rpx 0rpx;
   animation-duration: 0.3s !important;
   animation-name: popFromBottom !important;
-  background-color: var(--Foreground-White);
+  background-color: var(--Foreground-Low);
 }
 
 @keyframes popFromBottom {

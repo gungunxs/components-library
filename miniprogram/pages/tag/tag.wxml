@@ -1,6 +1,6 @@
 <!--pages/tag/tag.wxml-->
 <TDS-topbar title="Tag 标签" immersion="{{true}}">
-  <view class="flex-center column content" style="background: var(--Foreground-White);">
+  <view class="flex-center column content" style="background: var(--Foreground-Low);">
     <text class="tips Paragraphs2">tips:
       1）TDS-tag为原子tag组件，此组件经常嵌套在card中配合使用。原子tag使用方法很简单，只需在需要使用的page的.json文件中引入后，即可在页面进行使用。但是需要注意的是！！close.svg必须存在于static/svg下，否则该icon不会显示，甚至产生报错。
       2）tab组件具有八大组件属性，具体内容如下：
@@ -14,16 +14,16 @@
         Closeable——是否具有关闭按钮（默认值为false）。
       3）更多具体细节可参考components目录下的TDS-tag组件代码。
     </text>
-    <text class="Paragraphs1 fill" style="background-color: var(--Border-Natural);">每个tag原子组件上方文字格式对应属性值格式
+    <text class="Paragraphs1 fill" style="background-color: var(--Border-Bounds);">每个tag原子组件上方文字格式对应属性值格式
       Color/showIcon/IconPath/FixedWidth/
       FixedLabel/AdaptiveWidth/AdaptiveLabel/
       Closeable
     </text>
     <!-- 标准用法-->
-    <TDS-tag IconPath="line_smile_gray" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本棍棍先生自定义的不定长文本" Color="Secondary-Blue_Foreground-Low-Contrast"></TDS-tag>
-    <TDS-tag Color="Foreground-Primary_Foreground-Low-Contrast" IconPath="setting" FixedLabel="11" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本" Closeable="{{true}}"></TDS-tag>
+    <TDS-tag IconPath="line_smile_gray" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本棍棍先生自定义的不定长文本" Color="Foreground-Secondary_Foreground-Low"></TDS-tag>
+    <TDS-tag Color="Foreground-Primary_Foreground-Low" IconPath="setting" FixedLabel="11" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本" Closeable="{{true}}"></TDS-tag>
     <view wx:for="{{tagListKey}}" wx:key="index" class="flex column fill">
-      <text class="Paragraphs1 fill" style="background-color: var(--Border-Natural);">{{item}}</text>
+      <text class="Paragraphs1 fill" style="background-color: var(--Border-Bounds);">{{item}}</text>
       <view class="fill" style="height: 10rpx;"></view>
       <view class="fill" wx:for="{{tagList[item]}}" wx:key="index">
         <view class="fill" style="height: 10rpx;"></view>
