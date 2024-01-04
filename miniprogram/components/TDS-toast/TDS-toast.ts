@@ -42,7 +42,7 @@ Component({
     // 背景颜色
     bgColor:{
       type:String,
-      value:"--Foreground-White"
+      value:"--Background-High"
     },
     // 字体颜色
     messageColor:{
