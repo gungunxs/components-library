@@ -36,9 +36,9 @@ Page({
       gridValue:"fill"
      },
      {
-      gridName:"fill-available 宽度自适应填充容器",
+      gridName:"fill-available 宽度自适应填充容器 可视范围内",
       gridValue:"fill-available"
-     },
+     }
     ]
   },
 

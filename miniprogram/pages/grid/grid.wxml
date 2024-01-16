@@ -2,7 +2,7 @@
 <TDS-topbar title="Grid 布局格式" immersion="{{true}}">
   <view class="flex-center column content">
   <text class="tips Paragraphs2">tips:
-    1）grid布局格式包含常见的一些布局方式，包括以下的flex布局，flex-center，flex-spacebetween，stretch，row，column，fill，fill-available。用法与typography字体排印一致，在class的值中直接添加即可（前提：grid.wxss全局注册在app.wxss和组件内部的.wxss文件中）。一旦选择器值写错，该样式不生效。
+    1）grid布局格式包含常见的一些布局方式，包括以下的flex布局，flex-center，flex-spacebetween，stretch，row，column，fill，fill-available，gap8，wrap，fit。用法与typography字体排印一致，在class的值中直接添加即可（前提：grid.wxss全局注册在app.wxss和组件内部的.wxss文件中）。一旦选择器值写错，该样式不生效。
     2）具体代码可查看styles文件下的grid.wxss文件。
   </text>
     <view wx:for="{{gridList}}" wx:key="index" class="flex-center column fill" style="padding: 5rpx;background-color: var(--Foreground-Primary);">
@@ -11,6 +11,57 @@
         <view wx:for="{{cardList}}" wx:key="index" class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
       </view>
       <view wx:else class="{{item.gridValue}}" style="background-color: var(--Background-Low);height: 156rpx;">
+      </view>
+    </view>
+
+    <view class="fill flex-center column" style="padding: 5rpx;background-color: var(--Foreground-Primary);">
+      <text class="Paragraphs1">flex+fit 等价于fit-content 自适应子元素宽度</text>
+      <view class="flex fit" style="background-color: var(--Background-Low);">
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+      </view>
+    </view>
+
+    <view class="fill flex-center column" style="padding: 5rpx;background-color: var(--Foreground-Primary);">
+      <text class="Paragraphs1">flex+wrap 等价于flex-wrap 自适应父容器宽度换行</text>
+      <view class="flex wrap" style="background-color: var(--Background-Low);">
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+      </view>
+    </view>
+
+    <view class="fill flex-center column" style="padding: 5rpx;background-color: var(--Foreground-Primary);">
+      <text class="Paragraphs1">flex+gap8 等价于gap:16rpx常用间距</text>
+      <view class="flex wrap gap8" style="background-color: var(--Background-Low);">
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+      </view>
+    </view>
+
+    <view class="fill flex-center column" style="padding: 5rpx;background-color: var(--Foreground-Primary);">
+      <text class="Paragraphs1">flex-spacebetween+wrap 间距自适应父容器宽高 自适应换行</text>
+      <view class="flex-spacebetween wrap" style="height:700rpx; background-color: var(--Background-Low);">
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
+        <view class="photoItem duoduo-card-shadow" style="background-color: var(--Foreground-Disabled);"></view>
       </view>
     </view>
   </view>
