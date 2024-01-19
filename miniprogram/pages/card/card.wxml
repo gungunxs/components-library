@@ -7,7 +7,7 @@
     2.针对需要点击卡片实现一些逻辑（比如跳转），要求触发区域为整个卡片时，将组件的两个点击事件（bind:title catch:sub）绑定为同一个函数即可。
     ----------------------------------------
     整个卡片的默认状态为只有序号和标题（Text1和Text2）
-    1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可（使用前提是TDS组件库的loading-primary需要移植过去，否则会导致默认的icon路径错误）。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
+    1）TDS-card组件用法与其他TDS组件用法一致，只需要在需要使用的page下的.json文件中引入即可（使用前提是TDS组件库的loading_green_line需要移植过去，否则会导致默认的icon路径错误）。但需要注意的是，card组件具有四个swap插槽，用于插入其他组件。
 
     2）TDS-card组件具有以下属性：
     ShadowType——卡片阴影属性（默认没有投影），default（默认黑色投影），theme（主题颜色投影）
@@ -100,42 +100,42 @@
     
     <TDS-card class="fill">
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="line_smile_gray" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
+        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" Text1Color="--Foreground-High">
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="line_smile_gray" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
+        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill">
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="line_smile_gray" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
+        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}">
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="line_smile_gray" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
+        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}" SubTitle="点击为此班级添加成员吧~" >
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="0"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="0"></TDS-tag>
         <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}" SubTitle="点击为此班级添加成员吧~" Text2="棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍">
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="0"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="0"></TDS-tag>
         <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
@@ -145,37 +145,37 @@
         <TDS-tag showIcon="{{false}}" FixedLabel="01"></TDS-tag>
       </view>
       <view slot="swap2" class="flex-center fit gap8">
-        <TDS-tag IconPath="line_edit_gray" FixedWidth="{{false}}"></TDS-tag>
+        <TDS-tag IconPath="edit_gray_line" FixedWidth="{{false}}"></TDS-tag>
         <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill">
       <view slot="swap2" class="flex fit">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="22"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="22"></TDS-tag>
       </view>
       <view slot="swap3" class="flex fill-available stretch gap8 wrap">
-        <TDS-tag IconPath="line_loaction_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="信-105B"></TDS-tag>
-        <TDS-tag IconPath="line_schedule_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生棍棍先生棍"></TDS-tag>
+        <TDS-tag IconPath="location_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="信-105B"></TDS-tag>
+        <TDS-tag IconPath="schedule_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生棍棍先生棍"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}">
       <view slot="swap2" class="flex fit">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="22"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="22"></TDS-tag>
       </view>
       <view slot="swap3" class="flex fill-available stretch gap8 wrap">
-        <TDS-tag IconPath="line_loaction_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="教学楼A308"></TDS-tag>
-        <TDS-tag IconPath="line_schedule_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="毛泽东思想和中国特色社会主义理论体系概论"></TDS-tag>
+        <TDS-tag IconPath="location_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="教学楼A308"></TDS-tag>
+        <TDS-tag IconPath="schedule_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="毛泽东思想和中国特色社会主义理论体系概论"></TDS-tag>
       </view>
     </TDS-card>
     <TDS-card class="fill" showSubTitle="{{true}}">
       <view slot="swap2" class="flex fit">
-        <TDS-tag IconPath="line_smile_gray" FixedLabel="22"></TDS-tag>
+        <TDS-tag IconPath="smile_gray_line" FixedLabel="22"></TDS-tag>
       </view>
       <view slot="swap3" class="flex fill-available stretch gap8">
-        <TDS-tag IconPath="line_loaction_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="教学楼A308"></TDS-tag>
-        <TDS-tag IconPath="line_schedule_primary" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="毛泽东思想和中国特色社会主义理论体系概论"></TDS-tag>
+        <TDS-tag IconPath="location_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="教学楼A308"></TDS-tag>
+        <TDS-tag IconPath="schedule_green_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="毛泽东思想和中国特色社会主义理论体系概论"></TDS-tag>
       </view>
     </TDS-card>
     <view class="fill" style="height: 100rpx;"></view>
