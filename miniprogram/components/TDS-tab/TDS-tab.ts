@@ -26,7 +26,7 @@ Component({
     },
     IconPath:{
       type:String,
-      value:"loading-primary"
+      value:"loading_green_line"
     }
   },
 

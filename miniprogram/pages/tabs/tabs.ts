@@ -13,34 +13,34 @@ Page({
         {
           showIcon:true,
           state:"default",
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
         },
         {
           showIcon:true,
           state:"default",
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
         },
         {
           showIcon:false,
           state:"default",
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
         },
       ],
       "active":[
         {
           showIcon:true,
           state:"active",
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
         },
         {
           showIcon:true,
           state:"active",
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
         },
         {
           showIcon:false,
           state:"active",
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
         },
       ]
     },

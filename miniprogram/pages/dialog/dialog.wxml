@@ -9,7 +9,7 @@
             <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInputValue" placeholder="为班级添加备注，最多12个字" placeholder-class="placeholder"/>
           </view>
           <view slot="icon" class="large">
-            <image src="/static/svg/setting.svg" class="large"></image>
+            <image src="/static/svg/setting_gray_line.svg" class="large"></image>
           </view>
         </TDS-input>
       </view>

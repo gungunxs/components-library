@@ -6,7 +6,7 @@
       2）tab组件具有八大组件属性，具体内容如下：
         Color——tab的主题颜色，一共有十种颜色。具体值详见TDS-tag组件内部代码说明。需要特别说明的是，属性值必须正确，否则样式不会生效，我这里对UX的color值进行了处理，将两个不同元素锁着及到的颜色之间用下划线_连接，颜色变量本身之间的空格用-连接，以避免class选择器错误。
         showIcon——是否展示icon（默认值为true）。需要注意的是，如果showIcon的属性值为true，而IconPath为空，tag组件会理解此时icon为空即不显示icon。因此需要显示icon时，需要showIcon和IconPath都存在。
-        IconPath——icon路径（默认为loading-primary）。需要注意的是icon路径只需要传/static/svg之后.svg之前的部分。
+        IconPath——icon路径（默认为loading_green_line）。需要注意的是icon路径只需要传/static/svg之后.svg之前的部分。
         FixedWidth——是否显示固定宽度区域（默认值为true）。固定宽度区域一旦元素内容超出范围则自动隐藏。
         FixedLabel——固定宽度区域的内容（默认为"22"）。显示改内容的前提是FixedWidth值为true。
         AdaptiveWidth——是否显示自适应宽度（不定长）区域（默认值为false）。
@@ -20,8 +20,8 @@
       Closeable
     </text>
     <!-- 标准用法-->
-    <TDS-tag IconPath="line_smile_gray" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本棍棍先生自定义的不定长文本" Color="Foreground-Secondary_Foreground-Low"></TDS-tag>
-    <TDS-tag Color="Foreground-Primary_Foreground-Low" IconPath="setting" FixedLabel="11" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本" Closeable="{{true}}"></TDS-tag>
+    <TDS-tag IconPath="smile_gray_line" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本棍棍先生自定义的不定长文本" Color="Foreground-Secondary_Foreground-Low"></TDS-tag>
+    <TDS-tag Color="Foreground-Primary_Foreground-Low" IconPath="setting_gray_line" FixedLabel="11" AdaptiveWidth="{{true}}" AdaptiveLabel="棍棍先生自定义的不定长文本" Closeable="{{true}}"></TDS-tag>
     <view wx:for="{{tagListKey}}" wx:key="index" class="flex column fill">
       <text class="Paragraphs1 fill" style="background-color: var(--Border-Bounds);">{{item}}</text>
       <view class="fill" style="height: 10rpx;"></view>

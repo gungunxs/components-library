@@ -5,6 +5,6 @@
     <text class="checkbox-text-caption" wx:if="{{showCaption&&Caption}}">{{Caption}}</text>
   </view>
   <view class="checkbox-check checkbox-check-{{State}} flex-center">
-    <image class="checkbox-icon-selected" wx:if="{{State=='selected'}}" src="/static/svg/yeah-white.svg"></image>
+    <image class="checkbox-icon-selected" wx:if="{{State=='selected'}}" src="/static/svg/yeah_white_line.svg"></image>
   </view>
 </view>

@@ -3,5 +3,5 @@
   <image class="medium" src="/static/svg/{{IconPath}}.svg" wx:if="{{showIcon&&IconPath}}"></image>
   <text class="tag-fixed flex-center" wx:if="{{FixedWidth}}">{{FixedLabel}}</text>
   <text class="tag-adaptive" wx:if="{{AdaptiveWidth}}">{{AdaptiveLabel}}</text>
-  <image class="close" src="/static/svg/close.svg" wx:if="{{Closeable}}"></image>
+  <image class="close" src="/static/svg/close_gray_line.svg" wx:if="{{Closeable}}"></image>
 </view>

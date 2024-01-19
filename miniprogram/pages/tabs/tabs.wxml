@@ -3,17 +3,17 @@
   <view class="flex-center column content">
     <text class="tips Paragraphs2">tips:
     1）TDS-tab为原子tab组件，tabs为组合的tab组。原子tab使用方法很简单，只需在需要使用的page的.json文件中引入后，即可在页面进行使用。
-    2）tab组件具有四个属性，分别是ShowIcon——icon是否展示（这里UX的属性名为showIcon，我这里组件属性名均为大写）、State——选中状态（分为选中——active和未选中——default两种状态）、IconPath——icon的路径（需要注意，icon只需要传"/static/svg/"后面".svg"前面的内容即可，默认值为loading，例如IconPath="loading-primary"）、Label——tabs文字。
+    2）tab组件具有四个属性，分别是ShowIcon——icon是否展示（这里UX的属性名为showIcon，我这里组件属性名均为大写）、State——选中状态（分为选中——active和未选中——default两种状态）、IconPath——icon的路径（需要注意，icon只需要传"/static/svg/"后面".svg"前面的内容即可，默认值为loading，例如IconPath="loading_green_line"）、Label——tabs文字。
     3）当选择不显示icon时，传icon的值也不会显示icon。需要使用icon时，则需要相应传值，ShowIcon="true"，组件内部icon的默认为loading，如需自定义则执行按照规范传值即可。
     4）tab组即tabs，具有自己本身的padding，这里在使用tabs组时直接在class中写入tabs即可，至于这个值究竟定为多少，需不需要使用padding，要根据UX的规范更改。大概率是需要加padding的。
     5）tabs的点击切换效果如下，可以参考相应逻辑与源码。当然tabs切换时，具有细微过渡动画，来源于组件内部，因此更多细节内容可以查看components文件下的TDS-tab。
   </text>
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">最底层的原子化tab</text>
     <view class="flex row">
-      <TDS-tab IconPath="setting" State="active" Label="示例"></TDS-tab>
-      <TDS-tab IconPath="setting" Label="原始icon"></TDS-tab>
-      <TDS-tab IconPath="setting" State="active" Label="自定icon"></TDS-tab>
-      <TDS-tab IconPath="setting" Label="无icon"></TDS-tab>
+      <TDS-tab IconPath="setting_gray_line" State="active" Label="示例"></TDS-tab>
+      <TDS-tab IconPath="setting_gray_line" Label="原始icon"></TDS-tab>
+      <TDS-tab IconPath="setting_gray_line" State="active" Label="自定icon"></TDS-tab>
+      <TDS-tab IconPath="setting_gray_line" Label="无icon"></TDS-tab>
     </view>
     <view wx:key="index" wx:for="{{tabListKey}}" class="flex-center row">
       <text class="Paragraphs1">{{item}}</text>
@@ -24,7 +24,7 @@
     <text class="H3 fill flex-center" style="background-color: var(--Foreground-Low);">组合循环出来的tabs组</text>
     <view class="fill">
       <view class="fill-available flex row tabs">
-      <TDS-tab wx:for="{{tabsList}}" wx:key="index" bind:tap="switchTabs" data-tabIndex="{{index}}" Label="标签{{index+1}}" State="{{tabSelected==index?'active':'default'}}" ShowIcon="{{true}}" IconPath="setting"></TDS-tab>
+      <TDS-tab wx:for="{{tabsList}}" wx:key="index" bind:tap="switchTabs" data-tabIndex="{{index}}" Label="标签{{index+1}}" State="{{tabSelected==index?'active':'default'}}" ShowIcon="{{true}}" IconPath="setting_gray_line"></TDS-tab>
     </view>
     <view class="fill-available flex row tabs">
       <TDS-tab wx:for="{{tabsList}}" wx:key="index" bind:tap="switchTabs" data-tabIndex="{{index}}" Label="标签{{index+1}}" State="{{tabSelected==index?'active':'default'}}"></TDS-tab>

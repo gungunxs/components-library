@@ -35,7 +35,7 @@ Component({
     // icon路径
     IconPath:{
       type:String,
-      value:"loading-primary"
+      value:"loading_green_line"
     },
     // 是否开启固定宽度部分 默认开启
     FixedWidth:{

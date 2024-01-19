@@ -32,7 +32,7 @@ Component({
     // icon路径
     Iconpath: {
       type:String,
-      value:"loading-primary"
+      value:"loading_green_line"
     },
     //显示蒙版
     showMask: {

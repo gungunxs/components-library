@@ -14,28 +14,28 @@ Page({
       "icon":[
         {
           Icon:true,
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
           message:"Message显示 Capition不显示 Icon显示且默认",
           caption:"",
           showCapition:false
         },
         {
           Icon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           message:"Message显示 Capition不显示 Icon显示为自定义",
           showCaption:false,
           caption:""
         },
         {
           Icon:true,
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
           message:"Message显示 Capition显示 Icon显示为默认",
           showCaption:true,
           caption:"Message显示 Capition显示 Icon显示为默认"
         },
         {
           Icon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           message:"Message显示 Capition不显示 Icon显示为自定义",
           showCaption:true,
           caption:"Message显示 Capition不显示 Icon显示为自定义"
@@ -45,28 +45,28 @@ Page({
       "no-icon":[
         {
           Icon:false,
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
           message:"Message显示 Capition不显示 Icon显示且默认",
           caption:"",
           showCapition:false
         },
         {
           Icon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           message:"Message显示 Capition不显示 Icon显示为自定义",
           showCaption:false,
           caption:""
         },
         {
           Icon:false,
-          iconPath:"loading-primary",
+          iconPath:"loading_green_line",
           message:"Message显示 Capition显示 Icon显示为默认",
           showCaption:true,
           caption:"Message显示 Capition显示 Icon显示为默认"
         },
         {
           Icon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           message:"Message显示 Capition不显示 Icon显示为自定义",
           showCaption:true,
           caption:"Message显示 Capition不显示 Icon显示为自定义"
@@ -82,7 +82,7 @@ Page({
     this.setData({
       showToast:true
     })
-    toast.showToast("手动触发toast 通过设置showToast方法，配合showToast赋值","需要通过showToast来延时控制，否则消失时无动画","loading-primary")
+    toast.showToast("手动触发toast 通过设置showToast方法，配合showToast赋值","需要通过showToast来延时控制，否则消失时无动画","loading_green_line")
   },
   hiddenToast(){
     let toast = this.selectComponent("#mannerToast")
@@ -101,7 +101,7 @@ Page({
     this.setData({
       showToast1:true
     })
-    toast.showToastAuto("toast自动弹出，在onShow或onLoad中初始化，调用showToastAuto方法","关闭toast的延时为(duration+0.25)*1000","loading-primary",5)
+    toast.showToastAuto("toast自动弹出，在onShow或onLoad中初始化，调用showToastAuto方法","关闭toast的延时为(duration+0.25)*1000","loading_green_line",5)
     setTimeout(()=>{
       this.setData({
         showToast1:false

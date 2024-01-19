@@ -24,7 +24,7 @@
         <input focus="{{isFocus}}" bindblur="unFoucsInput" value="{{inputValue}}" bindinput="focusInput"/>
       </view>
       <view slot="icon" class="large">
-        <image src="/static/svg/setting.svg" class="large"></image>
+        <image src="/static/svg/setting_gray_line.svg" class="large"></image>
       </view>
     </TDS-input>
     <text class="Paragraphs2" style="background-color: var(--Border-Bounds);">input组件上方文字均为属性值拼接，对应格式为State/Title/Hint/showHint/IconPlacement</text>

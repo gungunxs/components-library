@@ -13,7 +13,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -23,7 +23,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -33,7 +33,7 @@ Page({
         {
           color:"Background-Primary_Foreground-Primary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -43,7 +43,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -53,7 +53,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -63,7 +63,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -73,7 +73,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -83,7 +83,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -93,7 +93,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -103,7 +103,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -116,7 +116,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -126,7 +126,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -136,7 +136,7 @@ Page({
         {
           color:"Background-Primary_Foreground-Primary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -146,7 +146,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -156,7 +156,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -166,7 +166,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -176,7 +176,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -186,7 +186,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -196,7 +196,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -206,7 +206,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -217,7 +217,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -227,7 +227,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -237,7 +237,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -247,7 +247,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -257,7 +257,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -267,7 +267,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -277,7 +277,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -287,7 +287,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -297,7 +297,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -307,7 +307,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -318,7 +318,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -328,7 +328,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -338,7 +338,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -348,7 +348,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -358,7 +358,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -368,7 +368,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -378,7 +378,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -388,7 +388,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -398,7 +398,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -408,7 +408,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -419,7 +419,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -429,7 +429,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -439,7 +439,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -449,7 +449,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -459,7 +459,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -469,7 +469,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -479,7 +479,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -489,7 +489,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -499,7 +499,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -509,7 +509,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:true,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -522,7 +522,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -532,7 +532,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -542,7 +542,7 @@ Page({
         {
           color:"Background-Primary_Foreground-Primary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -552,7 +552,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -562,7 +562,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -572,7 +572,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -582,7 +582,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -592,7 +592,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -602,7 +602,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -612,7 +612,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -623,7 +623,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -633,7 +633,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -643,7 +643,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -653,7 +653,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -663,7 +663,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -673,7 +673,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -683,7 +683,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -693,7 +693,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -703,7 +703,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -713,7 +713,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -724,7 +724,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -734,7 +734,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -744,7 +744,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -754,7 +754,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -764,7 +764,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -774,7 +774,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -784,7 +784,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -794,7 +794,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -804,7 +804,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -814,7 +814,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -825,7 +825,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -835,7 +835,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -845,7 +845,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -855,7 +855,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -865,7 +865,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -875,7 +875,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -885,7 +885,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -895,7 +895,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -905,7 +905,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -915,7 +915,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:false,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:true,
@@ -927,7 +927,7 @@ Page({
         {
           color:"Background-Medium_Foreground-High",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -937,7 +937,7 @@ Page({
         {
           color:"Background-Medium_Foreground-Medium",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -947,7 +947,7 @@ Page({
         {
           color:"Background-Primary_Foreground-Primary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -957,7 +957,7 @@ Page({
         {
           color:"Background-Secondary_Foreground-Secondary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -967,7 +967,7 @@ Page({
         {
           color:"Background-Error_Foreground-Error",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -977,7 +977,7 @@ Page({
         {
           color:"Background-Tertiary_Foreground-Tertiary",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -987,7 +987,7 @@ Page({
         {
           color:"Foreground-Primary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -997,7 +997,7 @@ Page({
         {
           color:"Foreground-Secondary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -1007,7 +1007,7 @@ Page({
         {
           color:"Foreground-Error_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
@@ -1017,7 +1017,7 @@ Page({
         {
           color:"Foreground-Tertiary_Foreground-Low",
           showIcon:true,
-          iconPath:"setting",
+          iconPath:"setting_gray_line",
           fixedWidth:false,
           fixedLabel:"22",
           adaptiveWidth:false,
