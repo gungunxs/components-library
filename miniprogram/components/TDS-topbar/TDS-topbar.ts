@@ -58,7 +58,7 @@ Component({
     },
     BackIcon:{ // 返回icon
       type:String,
-      value:"/static/svg/direction/back_black_line.svg"
+      value:"/static/svg/direction/left_black_line.svg"
     },
     returnButton:{
       type:Boolean,
@@ -70,7 +70,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    BackIcon:"/static/svg/direction/back_black_line.svg",
+    BackIcon:"/static/svg/direction/left_black_line.svg",
     rgba:"0",
     screenHeight:0
   },

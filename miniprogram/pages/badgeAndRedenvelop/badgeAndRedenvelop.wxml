@@ -1,0 +1,50 @@
+<!--pages/badgeAndRedenvelop/badgeAndRedenvelop.wxml-->
+<TDS-topbar title="徽章弹窗&红包弹窗" immersion="{{true}}" Threshold="0.1" speed="2">
+  <view class="content">
+    <text class="tips Paragraphs2" bind:tap="showNoBadgeDialog" style="padding-bottom: 1000rpx;">
+      1.关于此页面
+        ①进入此页面默认弹出红包，随机显示有徽章可以领取和无徽章领取两种状态
+        ②在有徽章领取的条件下，徽章个数为1~100之间的随机数，点击立即领取按钮，触发徽章弹窗，点击我知道了，关闭弹窗，结束
+        ③在无徽章领取的条件下，显示无徽章领取的状态，点击我知道了按钮，关闭弹窗，结束
+        ④关于如何测试无徽章情况下的徽章弹窗，点击这段文字即可。
+      2.组件介绍
+        此页面由两个组件构成——红包封面弹窗、徽章弹窗
+        代码文件夹分别对应components下的redenvelopDialog和badgeDialog
+        1）红包封面弹窗
+          ①isSuccess：true/false 是否还有徽章可以领取。（红包会依此变换两种状态）
+          ②title：string 红包标题（默认为成功状态下的文字）
+          ③subtitleText: string 红包副标题文本（只有在失败状态下副标题才文本有效，成功状态显示为"枚徽章"，配合徽章数显示）
+          ④badgesNum: number 徽章个数（此页面的徽章个数为1~100的随机数，方便展示和测试）
+          ⑤bgColor: button的背景颜色 默认为TDS颜色库Foreground-Tertiary
+          ⑥borderColor: button的边框色 默认为TDS颜色库Foreground-Tertiary
+          ⑦labelColor: button的文本色 默认为TDS颜色库Foreground-High
+          ⑧butonLabel: string button的文本文字（默认为成功状态下的"立即领取"）
+          ⑨description: string 描述文字
+          ⑩showRedenvelop: true/false 是否显示红包弹窗（此页面设置为默认弹出，方便展示和测试）
+          
+          红包弹窗注意事项：
+          ①点击蒙版不可关闭，不允许外部添加点击蒙版关闭和其他自定义事件
+          ②button在有徽章可以领取的情况下抛出自定义事件，在外调用此组件时，在标签中使用bind:custom即可，如涉及到徽章变动事件，写在此处即可。
+          ③组件内部自带点击button关闭弹窗，无需也不允许在外部添加任何方法
+          ④使用该组件时，必须将相关文件全部移植，包括组件本身文件，动画文件和样式文件
+          ⑤组件内部涉及三段动画，如需改变时间，需要考虑三段动画的联系。有问题联系gungunxs
+
+        2）徽章弹窗
+          ①isSuccess：true/false 是否还有徽章可以领取。（弹窗会依此变换两种状态）
+          ②title：string 弹窗标题（默认为成功状态下的文字，相对应的icon也会自动切换）
+          ③subtitleText: string 弹窗副标题文本（只有在失败状态下副标题才文本有效，成功状态显示为"枚徽章"，配合徽章数显示）
+          ④badgesNum: number 徽章个数（此页面的徽章个数为1~100的随机数，方便展示和测试，且与红包中显示的徽章个数是一个变量）
+          ⑤butonLabel: string button的文本文字（默认为成功状态下的"我知道了(*^▽^*)"）
+          ⑥description: string 描述文字
+          ⑦showRedenvelop: true/false 是否显示徽章弹窗（组件内默认值为false，此页面只有在红包有徽章可以领取的状态下点击立即领取按钮后，才会触发）
+          
+          徽章弹窗注意事项：
+          ①点击蒙版不可关闭，不允许外部添加点击蒙版关闭和其他自定义事件
+          ②组件内部自带点击button关闭弹窗，无需也不允许在外部添加任何方法
+          ③使用该组件时，必须将相关文件全部移植，包括组件本身文件，动画文件和样式文件
+          ④有问题联系gungunxs
+    </text>
+    <badgeDialog isSuccess="{{isSuccess}}" badgesNum="{{badgesNum}}" showBadgeDialog="{{showBadgeDialog}}"></badgeDialog>
+    <redenvelop isSuccess="{{isSuccess}}" badgesNum="{{badgesNum}}" showRedenvelop="{{showRedenvelop}}" bind:custom="showBadgeDialog"></redenvelop>
+  </view>
+</TDS-topbar>

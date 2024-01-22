@@ -1,0 +1,24 @@
+<!--components/badgeDialog/badgeDialog.wxml-->
+<view class="mask flex-center" wx:if="{{showBadgeDialog}}" style="z-index:999999" catchtouchmove="true" bind:tap="tapMask">
+  <view class="badgesDialog__border flex-center" style="animation-name: {{animationName}}" catchtap="true">
+    <view class="badgesDialog flex">
+      <image class="badgesDialog__backgroundBadge" src="{{backgroundBadgeUrl}}"></image>
+      <view class="badgesDialog__content flex-center column fill-available">
+        <view class="badgesDialog__content__title flex-center row gap8 fill-available">
+          <image class="badgesDialog__content__title__icon" src="{{isSuccess? happyIconUrl : sadIconUrl}}"></image>
+          <view class="badgesDialog__content__title__text H1">{{isSuccess?title:"来晚一步"}}</view>
+        </view>
+        <view class="badgesDialog__content__subtitle flex fill-available">
+          <view class="badgesDialog__content__subtitle__num flex-center" wx:if="{{isSuccess}}">
+            <text>{{badgesNum}}</text>
+          </view>
+          <view class="badgesDialog__content__subtitle__text H2 flex">
+            <text>{{!isSuccess?subtitleText:"枚徽章"}}</text>
+          </view>
+        </view>
+        <view class="badgesDialog__content__description flex-center Paragraphs2 fill-available">{{description}}</view>
+        <TDS-button class="fill-available" Label="{{isSuccess?buttonLabel:'我知道了o(╥﹏╥)o'}}" bind:tap="close"></TDS-button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 /*
-  TDS组件库icon设计尺寸 常用的为large medium small 分别对应24 22 18很少情况出现large-XL
+  TDS组件库icon设计尺寸 常用的为large small mini分别对应24 18 16很少情况出现large-XL
   所有的icon使用时需要更改尺寸 均必须使用icon.wxss中尺寸样式 不允许新建新写其他样式
  */
 .large-XL{

@@ -33,6 +33,13 @@ Page({
         url:"pages/grid/grid"
       },
       {
+        buttonStyle:"tertiary",
+        size:"large",
+        state:"default",
+        label:"徽章弹窗&红包弹窗",
+        url:"pages/badgeAndRedenvelop/badgeAndRedenvelop"
+      },
+      {
         buttonStyle:"primary",
         size:"large",
         state:"default",

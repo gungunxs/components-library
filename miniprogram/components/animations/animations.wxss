@@ -33,4 +33,65 @@
   }
 }
 
+/* Q弹3d旋转动画 */
+@keyframes elastic3d{
+  0% {
+    transform: scale3d(1, 1, 1); 
+    opacity: 0;
+  }
+  25% {
+    transform: scale3d(1, 1, 1); 
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale3d(0.7, 0.7, 0.7) rotateY(360deg); 
+    opacity: 0.8;
+  }
+  75% {
+    transform: scale3d(1.2, 1.2, 1.2) rotateY(360deg); 
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateY(360deg); 
+  }
+}
+
+/* Q弹动画 */
+@keyframes elastic {
+  0% {
+    transform: translateY(200%) scale3d(1, 1, 1); 
+    opacity: 0;
+  }
+  50% {
+    transform: scale3d(0.9, 0.9, 0.9); 
+    opacity: 0.8;
+  }
+  75% {
+    transform: scale3d(1.1, 1.1, 1.1); 
+  }
+  100% {
+    transform: scale3d(1, 1, 1); 
+  }
+}
+
+@keyframes opacity0 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 放大向上 缩小向下还原 */
+@keyframes upInDown {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
 
