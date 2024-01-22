@@ -124,42 +124,42 @@
     <TDS-card class="fill">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" Text1Color="--Foreground-High">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="14"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" IconPath="smile_gray_line" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}" SubTitle="点击为此班级添加成员吧~" >
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="0"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
     <TDS-card class="fill" showSubTitle="{{true}}" SubTitle="点击为此班级添加成员吧~" Text2="棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍">
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="smile_gray_line" FixedLabel="0"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
@@ -169,7 +169,7 @@
       </view>
       <view slot="swap2" class="flex-center fit gap8">
         <TDS-tag IconPath="edit_gray_line" FixedWidth="{{false}}"></TDS-tag>
-        <TDS-tag Color="Red-10_Secondary-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
+        <TDS-tag Color="Background-Error_Foreground-Error" showIcon="{{false}}" FixedWidth="{{false}}" AdaptiveWidth="{{true}}" AdaptiveLabel="删除"></TDS-tag>
       </view>
     </TDS-card>
 
