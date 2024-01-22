@@ -24,7 +24,7 @@
 	height: 620rpx;
 	background: linear-gradient(219deg, #FFF7D9 0%, #20C38C 100%);
 	border-radius: 50rpx;
-	overflow: hidden;
+  overflow: hidden;
 	animation-duration: 1s;
 }
 
