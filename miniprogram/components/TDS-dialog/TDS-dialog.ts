@@ -36,9 +36,13 @@ Component({
       value: false
     },
     // 是否主题渐变
-    gradient:{
+    gradient: {
       type:Boolean,
       value:true
+    },
+    layout: {
+      type: String,
+      value: "center"
     }
   },
 

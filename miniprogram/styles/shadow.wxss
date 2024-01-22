@@ -20,3 +20,6 @@
 .card-theme-shadow {
   box-shadow: 0rpx 8rpx 24rpx 0rpx rgba(32, 195, 140, 0.18);
 }
+.theme-shadow {
+  box-shadow: 0rpx 16rpx 48rpx 0rpx rgba(75, 220, 171, 0.14);
+}

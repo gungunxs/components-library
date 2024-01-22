@@ -8,12 +8,12 @@
 @import "../../styles/icon.wxss";
 
 .card {
-  background-color: var(--Foreground-Low);
+  background-color: var(--Background-High);
   padding: 16rpx 12rpx;
   gap:12rpx;
   border-radius: 10rpx;
   z-index: 0 !important;
-  border: 2rpx solid var(--Foreground-Low);
+  border: 2rpx solid var(--Background-High);
 }
 .card__border--bounds {
   border: 2rpx solid var(--Border-Bounds);

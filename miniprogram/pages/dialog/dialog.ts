@@ -11,6 +11,8 @@ Page({
     meetLength:true,
     showNormalDialog: false,
     showHalfScreenDialog: false,
+    headTitle:"主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行",
+    subTitle:"副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行"
   },
 
   /**
@@ -59,6 +61,16 @@ Page({
   openNormalDialog() {
     this.setData({
       showNormalDialog:true
+    })
+  },
+  openLeftLayoutDialog() {
+    this.setData({
+      showLeftLayoutDialog:true
+    })
+  },
+  closeLeftLayoutDialog() {
+    this.setData({
+      showLeftLayoutDialog:false
     })
   },
   closeHalfScreenDialog(){

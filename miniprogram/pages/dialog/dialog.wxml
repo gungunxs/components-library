@@ -1,7 +1,7 @@
 <!--pages/dialog/dialog.wxml-->
 <TDS-topbar title="Dialog 弹窗" immersion="{{true}}">
   <view class="flex-center column content">
-    <TDS-button Label="触发居中输入弹窗" bind:tap="openDialog"></TDS-button>
+    <TDS-button Label="触发居中输入弹窗 居中对齐" bind:tap="openDialog"></TDS-button>
     <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog" gradient="{{fasle}}">
       <view slot="swap" class="fill">
         <TDS-input bind:tap="focusInput" State="{{isFocus?(meetLength?'active':'error'):(inputValue?(meetLength?'filled':'error'):'default')}}" showHint="{{false}}">
@@ -19,8 +19,16 @@
       </view>
     </TDS-dialog>
 
-    <TDS-button Label="触发居中普通弹窗" Background="--Foreground-Tertiary" borderColor="--Foreground-Tertiary" bind:tap="openNormalDialog"></TDS-button>
+    <TDS-button Label="触发居中普通弹窗 居中对齐" Background="--Foreground-Tertiary" borderColor="--Foreground-Tertiary" bind:tap="openNormalDialog"></TDS-button>
     <TDS-dialog showDialog="{{showNormalDialog}}" bind:tap="closeNormalDialog" gradient="{{true}}">
+      <view slot="button" class="button-group-horizon fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
+        <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
+      </view>
+    </TDS-dialog>
+
+    <TDS-button Label="触发居中普通弹窗 居左对齐" buttonStyle="tertiary" bind:tap="openLeftLayoutDialog"></TDS-button>
+    <TDS-dialog showDialog="{{showLeftLayoutDialog}}" bind:tap="closeLeftLayoutDialog" gradient="{{true}}" layout="left" headTitle="{{headTitle}}" subTitle="{{subTitle}}">
       <view slot="button" class="button-group-horizon fill">
         <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
         <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>

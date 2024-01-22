@@ -30,7 +30,7 @@ page {
   /* mask */
   --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
-  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
+  --Gradients-Primary: linear-gradient(180deg, #8BEECC 0.3%, #DDF8EF 21.57%, #FCFCFC 45.92%);
 }
 
 [data-theme="Cat"] {
@@ -117,7 +117,7 @@ page {
   /* mask */
   --Mask: rgba(0, 0, 0, 0.30);
   /* gradient */
-  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
+  --Gradients-Primary: linear-gradient(180deg, #8BEECC 0.3%, #DDF8EF 21.57%, #FCFCFC 45.92%);
  }
 
 .Thematic-gradient {
