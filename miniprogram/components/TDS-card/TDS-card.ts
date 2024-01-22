@@ -119,6 +119,21 @@ Component({
       type:String,
       value:"https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
     },
+    // 卡片边框颜色
+    borderType: {
+      type:String,
+      value:""
+    },
+    // 有限制标题Title2的Text2字体变化
+    title1Text2Typography: {
+      type:String,
+      value:"Button-Label"
+    },
+    // 无限制的Title2的Text2字体变化
+    title2Text2Typography: {
+      type:String,
+      value:"Button-Label"
+    }
   },
 
   /**

@@ -95,7 +95,7 @@
 }
 
 .Link {
-  color: var(--Secondary-Highlight);
+  color: var(--Foreground-Disabled) !important;
   font-family: PingFang SC;
   font-size: 20rpx;
   font-style: normal;

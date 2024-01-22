@@ -78,6 +78,29 @@
       </view>
     </TDS-card>
 
+    <TDS-card class="fill" showText1="{{false}}" Text2="有限制标题文字为默认的Button-Label" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="H1" Text2="有限制标题文字为默认的H1" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="H2" Text2="有限制标题文字为默认的H2" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="H3" Text2="有限制标题文字为默认的H3" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="Paragraphs1" Text2="有限制标题文字为默认的Paragraphs1" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="Paragraphs2" Text2="有限制标题文字为默认的Paragraphs2" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="Paragraphs3" Text2="有限制标题文字为默认的Paragraphs3" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+    <TDS-card class="fill" showText1="{{false}}" title1Text2Typography="Link" Text2="有限制标题文字为默认的Link" showTitleList2="{{true}}" showText1="{{false}}"></TDS-card>
+
+    <TDS-card class="fill" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的Button-Label"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="H1" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的H1"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="H2" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的H2"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="H3" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的H3"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="Paragraphs1" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的Paragraphs1"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="Paragraphs2" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的Paragraphs2"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="Paragraphs3" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的Paragraphs3"></TDS-card>
+    <TDS-card class="fill" title2Text2Typography="Link" showTitleList2="{{true}}" showText1="{{false}}" Text2="无限制标题文字为默认的Link"></TDS-card>
+   
+
+    <TDS-card borderType="bounds" class="fill"></TDS-card>
+    <TDS-card borderType="focus" class="fill"></TDS-card>
+    <TDS-card borderType="error" class="fill"></TDS-card>
+
     <TDS-card class="fill" Text1Color="--Secondary-Error" showText2="{{true}}" Text2="这是一个showSubTitle为true但值为空的卡片" SubTitle=" "></TDS-card>
     
     <TDS-card class="fill" ShadowType="theme" showText1="{{false}}" Text2="棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍棍">
