@@ -1,0 +1,85 @@
+/* components/badgeDialog/badgeDialog.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
+@import "../../styles/icon.wxss";
+
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--Mask);
+  animation-duration: 0.5s !important;
+  animation-name: popFromBottom !important;
+}
+
+.badgesDialog__border {
+	width: 554rpx;
+	height: 620rpx;
+	background: linear-gradient(219deg, #FFF7D9 0%, #20C38C 100%);
+	border-radius: 50rpx;
+	overflow: hidden;
+	animation-duration: 1s;
+}
+
+.badgesDialog {
+	width: 538rpx;
+	height: 604rpx;
+	border-radius: 45rpx;
+	background: linear-gradient(221deg, #FFFAE6 0%, #FFF 38.4%, #D2FFF0 100%);
+	overflow: hidden;
+	position: relative;
+}
+
+.badgesDialog__backgroundBadge {
+	position: absolute;
+	width: 520rpx;
+	height: 520rpx;
+	top: -88rpx;
+	right: -172rpx;
+}
+
+.badgesDialog__content {
+	gap: 60rpx;
+	padding: 0 36rpx;
+}
+
+.badgesDialog__content__title__icon {
+	width: 60rpx;
+	height: 60rpx;
+}
+.badgesDialog__content__title__text {
+	color: var(--Foreground-High)
+}
+
+.badgesDialog__content__description {
+	color: var(--Foreground-Medium);
+}
+
+.badgesDialog__content__subtitle {
+	justify-content: center;
+	color: var(--Foreground-Primary);
+}
+
+.badgesDialog__content__subtitle__num {
+	height: 120rpx;
+	font-family: PingFang SC;
+	font-size: 140rpx;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 1.634rpx;
+	padding-right: 8rpx;
+}
+
+.badgesDialog__content__subtitle__text {
+	padding: 6rpx 0;
+  text-align: center;
+  align-items: flex-end;
+}

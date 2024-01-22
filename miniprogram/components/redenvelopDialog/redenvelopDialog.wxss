@@ -1,0 +1,104 @@
+/* components/redenvelopDialog/redenvelopDialog.wxss */
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/shadow.wxss";
+@import "../animations/animations.wxss";
+@import "../../styles/slot.wxss";
+@import "../../styles/grid.wxss";
+@import "../../styles/icon.wxss";
+@import "../../styles/button.wxss";
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--Mask);
+  animation-duration: 1s !important;
+  animation-name: popFromBottom !important;
+}
+
+.redenvelop__border {
+  width: 594rpx;
+  height: 844rpx;
+  border-radius: 38rpx;
+  background: linear-gradient(48deg, #FF99AB 23.98%, #FFF2BF 90.06%);
+  z-index: 0;
+  animation-duration: 1s;
+}
+
+.redenvelop {
+  width: 582rpx;
+  height: 832rpx;
+  border-radius: 32rpx;
+  background: linear-gradient(180deg, #FF5F86 0%, #DD455A 10.55%, #E1132F 34.86%);
+  position: relative;
+  z-index: 1;
+}
+
+.redenvelop__cover {
+  width: 582rpx;
+  height: 608rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.redenvelop__badge {
+  width: 444rpx;
+  height: 444rpx;
+  position: absolute;
+  top: -44rpx;
+  left: 69rpx;
+  z-index: 2;
+  animation: opacity0 1s,upInDown 0.5s ease-out 1s;
+}
+
+.redenvelop__badge__bling {
+  width: 88.92rpx;
+  height: 83rpx;
+  position: absolute;
+  top: -67.58rpx;
+  right: 41.64rpx;
+  animation: opacity0 1.5s,fadeInGrow 0.3s ease-out 1.5s
+}
+
+.redenvelop__content {
+  z-index: 3;
+  padding: 0 72rpx;
+  position: absolute;
+  top: 332rpx;
+}
+
+.redenvelop__content__title {
+  color: var(--Foreground-Low);
+  text-align: center;
+}
+
+.redenvelop__content__subtitle {
+  padding-top: 32rpx;
+  color: var(--Foreground-Low);
+  justify-content: center;
+  align-items: center;
+  height: 104rpx;
+}
+.redenvelop__content__subtitle__num {
+  font-family: PingFang SC;
+  font-size: 120rpx;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  height: 104rpx;
+}
+
+.redenvelop__content__subtitle__text {
+  text-align: center;
+  padding: 6rpx 0;
+}
+
+.redenvelop__content__description {
+  color: var(--Foreground-Tertiary)
+}
+
