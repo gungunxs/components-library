@@ -27,12 +27,20 @@
   width: 490rpx;
   padding: 48rpx 34rpx;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 64rpx;
   border-radius: 30rpx;
   animation-duration: 0.2s !important;
   background: var(--Foreground-Low);
+}
+
+.dialog--center {
+  justify-content: center;
+  text-align: center;
+}
+.dialog--left {
+  justify-content: left;
+  text-align: left;
 }
 
 @keyframes popFromBottom {
@@ -51,16 +59,13 @@
 .dialog-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30rpx;
   align-self: stretch;
-  text-align: center;
 }
 
 .dialog-title-sub {
   color: var(--Foreground-Medium);
   align-self: stretch;
-  text-align: left;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -70,6 +75,10 @@
 
 .dialog-title-head {
   color: var(--Foreground-High);
-  text-align: center;
+  display: -webkit-box;
+  overflow: hidden;
   align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
 }
