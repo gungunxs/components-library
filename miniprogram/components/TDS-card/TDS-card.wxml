@@ -1,19 +1,19 @@
 <!--components/TDS-card/TDS-card.wxml-->
-<view class="card flex-center column card-{{ShadowType}}-shadow" bind:tap="tapTitle" data-theme="{{theme}}">
+<view class="card flex-center column card-{{ShadowType}}-shadow card__border--{{borderType}}" bind:tap="tapTitle" data-theme="{{theme}}">
   <image class="card-coverImg fill" src="{{CoverImgUrl}}" wx:if="{{showCoverImg}}" mode="aspectFill"></image>
-  <view class="card-title Button-Label flex-spacebetween stretch fill-available" wx:if="{{showTitleList1}}">  
+  <view class="card-title {{title1Text2Typography}} flex-spacebetween stretch fill-available" wx:if="{{showTitleList1}}">  
     <view class="card-title-main flex stretch">
       <slot name="swap1"></slot>
       <view class="card-title-main-content flex gap8">
         <view class="card-title-main-content-text1" wx:if="{{showText1}}">
           <text class="stretch" style="color:var({{Text1Color}})">{{Text1}}</text>
         </view>
-        <text class="card-title-main-content-text2" wx:if="{{showText2}}">{{Text2}}</text>
+        <text class="card-title-main-content-text2 {{title1Text2Typography}}" wx:if="{{showText2}}">{{Text2}}</text>
       </view>
     </view>
     <slot name="swap2"></slot>
   </view>
-  <view class="card-title2 Button-Label flex stretch fill-available gap8" wx:if="{{showTitleList2}}">  
+  <view class="card-title2 {{title2Text2Typography}} flex stretch fill-available gap8" wx:if="{{showTitleList2}}">  
     <view class="card-title-main-content-text1" wx:if="{{showTitle2Text1}}">
       <text class="stretch" style="color:var({{Title2Text1Color}})">{{Title2Text1}}</text>
     </view>

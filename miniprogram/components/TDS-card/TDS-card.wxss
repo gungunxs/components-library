@@ -9,11 +9,22 @@
 
 .card {
   background-color: var(--Foreground-Low);
-  padding: 20rpx 16rpx;
+  padding: 16rpx 12rpx;
   gap:12rpx;
   border-radius: 10rpx;
   z-index: 0 !important;
+  border: 2rpx solid var(--Foreground-Low);
 }
+.card__border--bounds {
+  border: 2rpx solid var(--Border-Bounds);
+}
+.card__border--focus {
+  border: 2rpx solid var(--Border-Focus);
+}
+.card__border--error {
+  border: 2rpx solid var(--Border-Error);
+}
+
 .card-coverImg {
   height: 300rpx;
   border-radius: 10rpx;
