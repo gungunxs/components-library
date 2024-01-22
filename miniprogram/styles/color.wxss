@@ -89,6 +89,35 @@ page {
   --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
   --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
+}
+
+[data-theme="NBS"] {
+  /* foreground */
+  --Foreground-Primary: #2D2927;
+  --Foreground-Disabled: #B3B0AF;
+  --Foreground-Secondary: #F9E370;
+  --Foreground-Tertiary: #928E8C;
+  --Foreground-High: #2D2927;
+  --Foreground-Medium: #5E5A54;
+  --Foreground-Low: #FFFFF4;
+  --Foreground-Error: #F96262;
+  /* background */
+  --Background-Quaternary: #F8FFFE;
+  --Background-Primary: rgba(181, 240, 229, 0.10);
+  --Background-Secondary: rgba(231, 252, 247, 0.10);
+  --Background-Teriary: rgba(255, 234, 154, 0.10);
+  --Background-High: #FFFFFF;
+  --Background-Medium: #F5F5F5;
+  --Background-Low: #E6E6E6;
+  --Background-Error: rgba(249, 98, 98, 0.10);
+  /* border */
+  --Border-Bounds: #928E8C;
+  --Border-Focus: #2D2927;
+  --Border-Error: #F96262;
+  /* mask */
+  --Mask: rgba(0, 0, 0, 0.30);
+  /* gradient */
+  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
  }
 
 .Thematic-gradient {

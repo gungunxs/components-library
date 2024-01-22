@@ -7,7 +7,7 @@ Page({
    */
   data: {
     theme:"",
-    themeList:['','Cat','SL'],
+    themeList:['','Cat','SL','NBS'],
     themeNum:0,
     menuButtonTop:0,
     buttonList:[
@@ -125,7 +125,7 @@ Page({
     let themeNum = this.data.themeNum
     let themeList = this.data.themeList
     themeNum++
-    app.globalData.themeMode = themeList[themeNum%3]
+    app.globalData.themeMode = themeList[themeNum%4]
     this.setData({
       themeNum:themeNum,
       theme:app.globalData.themeMode
