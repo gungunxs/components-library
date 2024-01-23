@@ -35,8 +35,24 @@
       </view>
     </TDS-dialog>
 
-    <TDS-button Label="触发底部半屏弹窗" Background="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openHalfScreenDialog" ></TDS-button>
-    <TDS-halfscreen-dialog showDialog="{{showHalfScreenDialog}}" bind:tap="closeHalfScreenDialog" >
+    <TDS-button Label="触发底部半屏弹窗 居中对齐" Background="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openHalfScreenDialog" ></TDS-button>
+    <TDS-halfscreen-dialog showDialog="{{showHalfScreenDialog}}" bind:tap="closeHalfScreenDialog" hint="{{hint}}">
+      <view slot="avatar" class="button-group-vertical button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽1"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽1"></TDS-button>
+      </view>
+      <view slot="slot1" class="button-group-vertical button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽2"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽2"></TDS-button>
+      </view>
+      <view slot="slot2" class="button-group-vertical button-group-padding fill">
+        <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽3"></TDS-button>
+        <TDS-button class="fill" Label="这个button组是插槽3"></TDS-button>
+      </view>
+    </TDS-halfscreen-dialog>
+
+    <TDS-button Label="触发底部半屏弹窗 居左对齐" buttonStyle="tertiary" buttonColor="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openLeftHalfScreenDialog" ></TDS-button>
+    <TDS-halfscreen-dialog layout="left" showDialog="{{showLeftHalfScreenDialog}}" bind:tap="closeLeftHalfScreenDialog" hint="{{hint}}">
       <view slot="avatar" class="button-group-vertical button-group-padding fill">
         <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽1"></TDS-button>
         <TDS-button class="fill" Label="这个button组是插槽1"></TDS-button>

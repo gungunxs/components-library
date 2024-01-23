@@ -28,6 +28,11 @@ Component({
     showDialog:{
       type:Boolean,
       value:false
+    },
+    // 对齐方式
+    layout: {
+      type: String,
+      value: "center"
     }
   },
 

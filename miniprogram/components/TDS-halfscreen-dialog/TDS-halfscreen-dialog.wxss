@@ -45,12 +45,16 @@
 }
 
 .halfscreen-dialog-text {
-  display: flex;
   padding: 16rpx 0rpx;
-  justify-content: flex-start;
-  align-items: center;
   gap: 20rpx;
   align-self: stretch;
+}
+
+.halfscreen-dialog-text--center {
+  text-align: center !important;
+}
+.halfscreen-dialog-text--left {
+  text-align: left !important;
 }
 
 .halfscreen-dialog-text-label {
@@ -59,4 +63,17 @@
 
 .halfscreen-dialog-text-hint {
   color: var(--Foreground-Medium);
+  display: -webkit-box;
+  overflow: hidden;
+  align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+.halfscreen-dialog-text-hint--center {
+  text-align: center !important;
+}
+.halfscreen-dialog-text-hint--left {
+  text-align: left !important;
 }

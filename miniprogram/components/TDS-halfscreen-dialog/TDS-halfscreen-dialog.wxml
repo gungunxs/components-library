@@ -2,10 +2,10 @@
 <view class="mask" wx:if="{{showOut}}" bindtap="close" style="animation-name: {{animationName}};" catchtouchmove="true">
   <view class="halfscreen-dialog" catch:tap="catch">
     <slot name="avatar"></slot>
-    <view class="halfscreen-dialog-text H3" wx:if="{{showLabel}}">
+    <view class="halfscreen-dialog-text flex-center H3 fill-available halfscreen-dialog-text--{{layout}}" wx:if="{{showLabel}}">
       <text class="halfscreen-dialog-text-label">{{label}}</text>
     </view>
-    <view class="halfscreen-dialog-text Paragraphs1" wx:if="{{showHint}}">
+    <view class="halfscreen-dialog-text Paragraphs1 fill-available halfscreen-dialog-text--{{layout}}" wx:if="{{showHint}}">
       <text class="halfscreen-dialog-text-hint">{{hint}}</text>
     </view>
     <slot name="slot1" style="z-index:9999"></slot>

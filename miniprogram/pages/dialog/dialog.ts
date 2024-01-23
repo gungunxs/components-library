@@ -11,6 +11,7 @@ Page({
     meetLength:true,
     showNormalDialog: false,
     showHalfScreenDialog: false,
+    hint:"限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行限三行获取你的公开信息（昵称、头像等）",
     headTitle:"主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行主标题限两行",
     subTitle:"副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行副标题限三行"
   },
@@ -81,6 +82,16 @@ Page({
   openHalfScreenDialog() {
     this.setData({
       showHalfScreenDialog:true
+    })
+  },
+  closeLeftHalfScreenDialog(){
+    this.setData({
+      showLeftHalfScreenDialog:false
+    })
+  },
+  openLeftHalfScreenDialog() {
+    this.setData({
+      showLeftHalfScreenDialog:true
     })
   },
   /**
