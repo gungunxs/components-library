@@ -20,11 +20,11 @@
 }
 
 .input-title-default {
-  display: none;
+  color: var(--Foreground-Medium);
 }
 
 .input-title-error {
-  display: none;
+  color: var(--Foreground-Error);
 }
 
 .input-title-active {

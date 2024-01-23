@@ -17,6 +17,7 @@ Page({
       "default":[
         // 是否显示hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -24,6 +25,15 @@ Page({
           state:"default"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:true,
+          iconPlacement:"none",
+          state:"default"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"可以自定义的hint文字",
           showHint:true,
@@ -31,6 +41,7 @@ Page({
           state:"default"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -38,6 +49,7 @@ Page({
           state:"default"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -46,6 +58,15 @@ Page({
         },
         // 无hint
         {
+          showTitle: false,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:false,
+          iconPlacement:"none",
+          state:"default"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -54,6 +75,7 @@ Page({
         },
         // 无hint
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -62,6 +84,7 @@ Page({
         },
         // 无hint
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -72,6 +95,7 @@ Page({
       "active":[
         // 是否显示hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -79,6 +103,15 @@ Page({
           state:"active"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:true,
+          iconPlacement:"none",
+          state:"active"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -86,6 +119,7 @@ Page({
           state:"active"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -94,6 +128,7 @@ Page({
         },
         // 无hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -101,6 +136,15 @@ Page({
           state:"active"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:false,
+          iconPlacement:"none",
+          state:"active"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -108,6 +152,7 @@ Page({
           state:"active"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -118,6 +163,7 @@ Page({
       "filled":[
         // 是否显示hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -125,6 +171,15 @@ Page({
           state:"filled"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:true,
+          iconPlacement:"none",
+          state:"filled"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -132,6 +187,7 @@ Page({
           state:"filled"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -140,6 +196,7 @@ Page({
         },
         // 无hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -147,6 +204,15 @@ Page({
           state:"filled"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:false,
+          iconPlacement:"none",
+          state:"filled"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -154,6 +220,7 @@ Page({
           state:"filled"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -164,6 +231,7 @@ Page({
       "readonly":[
         // 是否显示hint
         {
+          showTitle: false,
           title:"Label",
           hint:"自定义hint",
           showHint:true,
@@ -171,6 +239,15 @@ Page({
           state:"readonly"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"自定义hint",
+          showHint:true,
+          iconPlacement:"none",
+          state:"readonly"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"自定义hint",
           showHint:true,
@@ -178,6 +255,7 @@ Page({
           state:"readonly"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"自定义hint",
           showHint:true,
@@ -186,6 +264,7 @@ Page({
         },
         // 无hint
         {
+          showTitle: false,
           title:"Label",
           hint:"自定义hint",
           showHint:false,
@@ -193,6 +272,15 @@ Page({
           state:"readonly"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"自定义hint",
+          showHint:false,
+          iconPlacement:"none",
+          state:"readonly"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"自定义hint",
           showHint:false,
@@ -200,6 +288,7 @@ Page({
           state:"readonly"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"自定义hint",
           showHint:false,
@@ -210,6 +299,7 @@ Page({
       "error":[
         // 是否显示hint
         {
+          showTitle: false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -217,6 +307,15 @@ Page({
           state:"error"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:true,
+          iconPlacement:"none",
+          state:"error"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -224,6 +323,7 @@ Page({
           state:"error"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:true,
@@ -232,6 +332,7 @@ Page({
         },
         // 无hint
         {
+          showTitle:false,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -239,6 +340,15 @@ Page({
           state:"error"
         },
         {
+          showTitle: true,
+          title:"Label",
+          hint:"Hint or Error Message",
+          showHint:false,
+          iconPlacement:"none",
+          state:"error"
+        },
+        {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
@@ -246,6 +356,7 @@ Page({
           state:"error"
         },
         {
+          showTitle: true,
           title:"Label",
           hint:"Hint or Error Message",
           showHint:false,
