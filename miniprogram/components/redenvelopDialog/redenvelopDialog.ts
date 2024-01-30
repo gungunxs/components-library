@@ -42,7 +42,7 @@ Component({
     // 描述文字
     description: {
       type: String,
-      value: "探索小程序更多功能，发现惊喜红包～"
+      value: "探索小程序更多功能，发现惊喜红包～发现惊"
     },
     // 是否显示
     showRedenvelop:{

@@ -68,6 +68,10 @@ Component({
       this.setData({
         showBadgeDialog:false
       })
+      if(this.properties.isSuccess) {
+        // 抛出自定义事件
+        this.triggerEvent("custom")
+      }
     },
     // 点击蒙版不可关闭
     tapMask(){
