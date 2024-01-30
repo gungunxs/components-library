@@ -2,7 +2,7 @@
 <TDS-topbar title="Dialog 弹窗" immersion="{{true}}">
   <view class="flex-center column content">
     <TDS-button Label="触发居中输入弹窗 居中对齐" bind:tap="openDialog"></TDS-button>
-    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tap="closeDialog" gradient="{{fasle}}">
+    <TDS-dialog showDialog="{{showDialog}}" isSub="{{false}}" bind:tapBg="closeDialog" gradient="{{fasle}}">
       <view slot="swap" class="fill">
         <TDS-input showTitle="{{false}}" bind:tap="focusInput" State="{{isFocus?(meetLength?'active':'error'):(inputValue?(meetLength?'filled':'error'):'default')}}" showHint="{{false}}">
           <view slot="input" class="input fill">
@@ -14,29 +14,29 @@
         </TDS-input>
       </view>
       <view slot="button" class="button-group-horizon fill">
-        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
-        <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
+        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消" bind:tap="closeDialog"></TDS-button>
+        <TDS-button class="fill" Size="medium" Label="确定" bind:tap="closeDialog" State="{{inputValue?'default':'disabled'}}"></TDS-button>
       </view>
     </TDS-dialog>
 
     <TDS-button Label="触发居中普通弹窗 居中对齐" Background="--Foreground-Tertiary" borderColor="--Foreground-Tertiary" bind:tap="openNormalDialog"></TDS-button>
-    <TDS-dialog showDialog="{{showNormalDialog}}" bind:tap="closeNormalDialog" gradient="{{true}}">
+    <TDS-dialog showDialog="{{showNormalDialog}}" bind:tapBg="closeNormalDialog" gradient="{{true}}">
       <view slot="button" class="button-group-horizon fill">
-        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
-        <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
+        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消" bind:tap="closeNormalDialog"></TDS-button>
+        <TDS-button class="fill" Size="medium" Label="确定" bind:tap="closeNormalDialog"></TDS-button>
       </view>
     </TDS-dialog>
 
     <TDS-button Label="触发居中普通弹窗 居左对齐" buttonStyle="tertiary" bind:tap="openLeftLayoutDialog"></TDS-button>
-    <TDS-dialog showDialog="{{showLeftLayoutDialog}}" bind:tap="closeLeftLayoutDialog" gradient="{{true}}" layout="left" headTitle="{{headTitle}}" subTitle="{{subTitle}}">
+    <TDS-dialog showDialog="{{showLeftLayoutDialog}}" bind:tapBg="closeLeftLayoutDialog" gradient="{{true}}" layout="left" headTitle="{{headTitle}}" subTitle="{{subTitle}}">
       <view slot="button" class="button-group-horizon fill">
-        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消"></TDS-button>
-        <TDS-button class="fill" Size="medium" Label="确定"></TDS-button>
+        <TDS-button class="fill" buttonStyle="tertiary" Size="medium" Label="取消" bind:tap="closeLeftLayoutDialog"></TDS-button>
+        <TDS-button class="fill" Size="medium" Label="确定" bind:tap="closeLeftLayoutDialog"></TDS-button>
       </view>
     </TDS-dialog>
 
     <TDS-button Label="触发底部半屏弹窗 居中对齐" Background="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openHalfScreenDialog" ></TDS-button>
-    <TDS-halfscreen-dialog showDialog="{{showHalfScreenDialog}}" bind:tap="closeHalfScreenDialog" hint="{{hint}}">
+    <TDS-halfscreen-dialog showDialog="{{showHalfScreenDialog}}" bind:tapBg="closeHalfScreenDialog" hint="{{hint}}">
       <view slot="avatar" class="button-group-vertical button-group-padding fill">
         <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽1"></TDS-button>
         <TDS-button class="fill" Label="这个button组是插槽1"></TDS-button>
@@ -52,7 +52,7 @@
     </TDS-halfscreen-dialog>
 
     <TDS-button Label="触发底部半屏弹窗 居左对齐" buttonStyle="tertiary" buttonColor="--Foreground-Secondary" borderColor="--Foreground-Secondary" bind:tap="openLeftHalfScreenDialog" ></TDS-button>
-    <TDS-halfscreen-dialog layout="left" showDialog="{{showLeftHalfScreenDialog}}" bind:tap="closeLeftHalfScreenDialog" hint="{{hint}}">
+    <TDS-halfscreen-dialog layout="left" showDialog="{{showLeftHalfScreenDialog}}" bind:tapBg="closeLeftHalfScreenDialog" hint="{{hint}}">
       <view slot="avatar" class="button-group-vertical button-group-padding fill">
         <TDS-button class="fill" buttonStyle="tertiary" Label="这个button组是插槽1"></TDS-button>
         <TDS-button class="fill" Label="这个button组是插槽1"></TDS-button>
@@ -66,5 +66,45 @@
         <TDS-button class="fill" Label="这个button组是插槽3"></TDS-button>
       </view>
     </TDS-halfscreen-dialog>
+    <text class="tips Paragraphs2">
+      1.关于此页面
+        ①此页面包含两个dialog组件，分别展示了五种组件变体，分别为
+          a.居中弹窗 嵌套输入框 不展示二级内部文字居中对齐 无主题渐变背景
+          b.居中弹窗 无嵌套 展示二级标题 内部文字居中对齐 有主题渐变背景
+          c.居中弹窗 无嵌套 展示二级标题 超出文本限制隐藏 内部文字居左对齐 有主题渐变背景
+          d.半屏弹窗 嵌套三个swap 展示二级标题 超出文本限制隐藏 内部文字居中对齐 无主题渐变背景
+          e.半屏弹窗 嵌套三个swap 展示二级标题 超出文本限制隐藏 内部文字居左对齐 无主题渐变背景
+        ②此页面只是展示样例，特别是半屏弹窗，点击蒙版可以消失，点击按钮和其他部位无效。对于居中弹窗可以点击蒙版关闭，也可以点击按钮关闭。
+      2.关于组件的使用方法和说明
+        1）居中弹窗
+          ①theme：组件所属的主题颜色 默认颜色为TDS 该数据从小程序的app.ts的全局变量中获取，若需更改只需更改全部变量themeMode的值即可
+          ②Label: 一级标题 默认值为“一级标题”，限制行数为两行，超出宽度自动隐藏
+          ③subTitle：二级标题 默认值为“二级标题二级标题二级标题二级标题二级标题” ，限制行数为两行，超出部分隐藏
+          ③isHead：一级标题是否显示 默认值为true
+          ④isSub：二级标题是否显示 默认值为true 但需要保证subTitle不为空
+          ⑤showDialog：是否显示弹窗 默认值为false
+          ⑥gradient：是否运用主题色渐变背景 默认值为true
+          ⑦layout：内容文字对齐格式 默认为center 居中对齐
+
+          ▲▲在外部调用组件时，严禁wx:if直接控制弹窗，要求使用组件自带的showDialog属性进行控制▲▲
+          点击蒙版关闭弹窗，可以调用组件内部抛出方法tagBg，在对应的页面编写逻辑即可
+          点击按钮关闭弹窗，在组件内部使用插槽，在按钮上单独添加逻辑即可
+
+          弹窗组件具有两个插槽，分别叫做swap和button，可以插入任意组件和元素
+        2）半屏弹窗
+          ①theme：组件所属的主题颜色 默认颜色为TDS 该数据从小程序的app.ts的全局变量中获取，若需更改只需更改全部变量themeMode的值即可
+          ②label: 一级标题 默认值为“申请获得以下权限”
+          ③hint：二级标题 默认值为“获取你的公开信息（昵称、头像等）” ，限制行数为三行，超出部分隐藏
+          ③showLabel：一级标题是否显示 默认值为true
+          ④showHint：二级标题是否显示 默认值为true
+          ⑤showDialog：是否显示弹窗 默认值为false
+          ⑥layout：内容文字对齐格式 默认为center 居中对齐
+
+          ▲▲在外部调用组件时，严禁wx:if直接控制弹窗，要求使用组件自带的showDialog属性进行控制▲▲
+          点击蒙版关闭弹窗，可以调用组件内部抛出方法tagBg，在对应的页面编写逻辑即可
+          点击按钮关闭弹窗，在组件内部使用插槽，在按钮上单独添加逻辑即可
+
+          弹窗组件具有三个插槽，一个名为avatar，通常存放头像标题等元素，一个名为slot1，一个名为slot2.分别对应样例中的三个插槽。
+    </text>
   </view>
 </TDS-topbar>

@@ -1,5 +1,5 @@
 <!--components/DYWH-halfscreen-dialog/DYWH-halfscreen-dialog.wxml-->
-<view class="mask" wx:if="{{showOut}}" bindtap="close" style="animation-name: {{animationName}};" catchtouchmove="true">
+<view class="mask" wx:if="{{showOut}}" bindtap="close" style="animation-name: {{animationName}};" catchtouchmove="true" data-theme="{{theme}}">
   <view class="halfscreen-dialog" catch:tap="catch">
     <slot name="avatar"></slot>
     <view class="halfscreen-dialog-text flex-center H3 fill-available halfscreen-dialog-text--{{layout}}" wx:if="{{showLabel}}">
