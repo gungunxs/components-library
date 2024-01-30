@@ -13,6 +13,9 @@
     ShadowType——卡片阴影属性（默认没有投影），default（默认黑色投影），theme（主题颜色投影）
     showCoverImg——是否显示封面图片（默认值为false）。如需使用，赋值为true即可。
     CoverImgUrl——封面图片url（默认为棍棍先生头像地址）。使用网络图片时建议使用DYWH中对于图片上传的优化方式，加快图片加载速度和体验。
+
+    borderType——卡片边框色 默认为无描边 值为bounds focus error 分别对应TDS组件库的border的三种颜色 
+
     showTitleList1——是否展示一级标题（默认为true）
     showText1——是否显示Text1（默认值为true）。组件内部对Text1设置了初始值，因此会默认展示默认值Text1。
     Text1Color——Text1的字体颜色（默认值为Primary，即主题色），常用颜色为Foreground-High，Secondary-Error。
@@ -23,6 +26,7 @@
     SubTitle——副标题文字内容（默认值为一大串文字）。此处文字设置了超过四行自动截断省略效果。
     showSubImg——是否显示副标题区域中的图片（默认值为false）。
     SubImgUrl——副标题区域中的图片地址（默认值为棍棍先生的头像地址）。
+    title1Text2Typography——卡片标题一限制性文本标题字号 默认为Button-Label 值为TDS组件的所有字体排印
 
     showTitleList2——是否显示二级标题（二级标题为没有tag的部分，只是一个简单的用于展示序号和文字的区域）
     Title2Text1——titleList2中的"01"，二级标题文本字数不限
@@ -31,6 +35,7 @@
     SubTitle2——二级副标题中的文字，文字不限字数，高度自适应变化
     showSubImg2——是否显示二级副标题中的图片（默认值为true，不显示副标题时，即使该属性值为true也不显示）
     SubImgUrl2——二级标题中图片地址（默认地址同一级副标题中图片地址）
+    title2Text2Typography——卡片标题二非限制性文本标题字号 默认为Button-Label 值为TDS组件的所有字体排印
 
     3）组件内方法（特别注意必须按照此方法配合使用，否则会出现严重的点击冒泡）：
     title——配合bind使用（bind:title=""），此函数出发区域为整个卡片组件。但是不包含一些有点击事件的元素。此方法通常用于编辑修改卡片的标题文字

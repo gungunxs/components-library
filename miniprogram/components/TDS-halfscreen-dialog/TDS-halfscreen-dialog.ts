@@ -1,10 +1,16 @@
 // components/DYWH-halfscreen-dialog/DYWH-halfscreen-dialog.ts
+var app = getApp() as IAppOption
 Component({
 
   /**
    * 组件的属性列表
    */
   properties: {
+    // 主题mode
+    theme:{
+      type:String,
+      value:app.globalData.themeMode
+    },
     // 是否展示label
     showLabel:{
       type:Boolean,
@@ -49,10 +55,11 @@ Component({
    */
   methods: {
     close(){
-      this.setData({
-        showOut:false,
-        animationName:"fadeIn"
-      })
+      this.triggerEvent('tapBg');
+      // this.setData({
+      //   showOut:false,
+      //   animationName:"fadeIn"
+      // })
     },
     // 用于防止像父组件冒泡事件
     catch(){
@@ -96,6 +103,11 @@ Component({
     // 生命周期函数
     ready: function() {
 
+    },
+    attached() {
+      this.setData({
+        theme:app.globalData.themeMode
+      })
     },
   },
 })
