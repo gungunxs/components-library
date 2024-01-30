@@ -21,7 +21,7 @@
           <TDS-button class="fill-available" bind:tap="close" Label="{{isSuccess?buttonLabel:'我知道了o(╥﹏╥)o'}}" borderColor="{{bgColor}}" Background="{{bgColor}}" buttonColor="{{labelColor}}"></TDS-button>
         </view>
         <view class="redenvelop__content__description fill-available flex-center Paragraphs2">
-          <text class="fill-available">{{description}}</text>
+          <text>{{description}}</text>
         </view>
       </view>
     </view>
