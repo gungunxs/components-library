@@ -5,19 +5,19 @@
       <image class="badgesDialog__backgroundBadge" src="{{backgroundBadgeUrl}}"></image>
       <view class="badgesDialog__content flex-center column fill-available">
         <view class="badgesDialog__content__title flex-center row gap8 fill-available">
-          <image class="badgesDialog__content__title__icon" src="{{isSuccess? happyIconUrl : sadIconUrl}}"></image>
-          <view class="badgesDialog__content__title__text H1">{{isSuccess?title:"来晚一步"}}</view>
+          <image class="badgesDialog__content__title__icon" src="{{happyIconState? happyIconUrl : sadIconUrl}}"></image>
+          <view class="badgesDialog__content__title__text H1">{{title}}</view>
         </view>
         <view class="badgesDialog__content__subtitle flex fill-available">
-          <view class="badgesDialog__content__subtitle__num flex-center" wx:if="{{isSuccess}}">
+          <view class="badgesDialog__content__subtitle__num flex-center" wx:if="{{isSuccess == 'existence'}}">
             <text>{{badgesNum}}</text>
           </view>
           <view class="badgesDialog__content__subtitle__text H2 flex">
-            <text>{{!isSuccess?subtitleText:"枚徽章"}}</text>
+            <text>{{subtitleText}}</text>
           </view>
         </view>
         <view class="badgesDialog__content__description flex-center Paragraphs2 fill-available">{{description}}</view>
-        <TDS-button class="fill-available" Label="{{isSuccess?buttonLabel:'我知道了o(╥﹏╥)o'}}" bind:tap="close"></TDS-button>
+        <TDS-button class="fill-available" Label="{{buttonLabel}}" bind:tap="close"></TDS-button>
       </view>
     </view>
   </view>

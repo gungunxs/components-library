@@ -11,7 +11,7 @@
         此页面由两个组件构成——红包封面弹窗、徽章弹窗
         代码文件夹分别对应components下的redenvelopDialog和badgeDialog
         1）红包封面弹窗
-          ①isSuccess：true/false 是否还有徽章可以领取。（红包会依此变换两种状态）
+          ①isSuccess：existence/inexistence/repeat 是否还有徽章可以领取或重复领取。（红包会依此变换三种状态）
           ②title：string 红包标题（默认为成功状态下的文字）
           ③subtitleText: string 红包副标题文本（只有在失败状态下副标题才文本有效，成功状态显示为"枚徽章"，配合徽章数显示）
           ④badgesNum: number 徽章个数（此页面的徽章个数为1~100的随机数，方便展示和测试）
@@ -30,7 +30,7 @@
           ⑤组件内部涉及三段动画，如需改变时间，需要考虑三段动画的联系。有问题联系gungunxs
 
         2）徽章弹窗
-          ①isSuccess：true/false 是否还有徽章可以领取。（弹窗会依此变换两种状态）
+          ①isSuccess：existence/inexistence/repeat 是否还有徽章可以领取或重复领取。（弹窗会依此变换三种状态）
           ②title：string 弹窗标题（默认为成功状态下的文字，相对应的icon也会自动切换）
           ③subtitleText: string 弹窗副标题文本（只有在失败状态下副标题才文本有效，成功状态显示为"枚徽章"，配合徽章数显示）
           ④badgesNum: number 徽章个数（此页面的徽章个数为1~100的随机数，方便展示和测试，且与红包中显示的徽章个数是一个变量）
