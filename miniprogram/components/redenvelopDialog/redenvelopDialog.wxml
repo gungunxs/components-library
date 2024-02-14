@@ -7,21 +7,21 @@
       <image class="redenvelop__badge__bling" src="{{blingUrl}}"></image>
       <view class="redenvelop__content flex-center column fill-available">
         <view class="redenvelop__content__title flex-center H1">
-          <text>{{isSuccess?title:"来晚一步，红包被抢光了"}}</text>
+          <text>{{title}}</text>
         </view>
-        <view class="redenvelop__content__subtitle flex fill-available" style="align-items: {{isSuccess?'flex-end':'center'}};">
-          <view class="redenvelop__content__subtitle__num flex-center" wx:if="{{isSuccess}}">
+        <view class="redenvelop__content__subtitle flex fill-available" style="align-items: {{isSuccess == 'existence'?'flex-end':'center'}};">
+          <view class="redenvelop__content__subtitle__num flex-center" wx:if="{{isSuccess == 'existence'}}">
             <text>{{badgesNum}}</text>
           </view>
-          <view class="redenvelop__content__subtitle__text flex fill-availale H1" style="align-items: {{isSuccess?'flex-end':'center'}};">
-            <text class="fill-available">{{isSuccess?"枚徽章":subtitleText}}</text>
+          <view class="redenvelop__content__subtitle__text flex fill-availale H1" style="align-items: {{isSuccess == 'existence'?'flex-end':'center'}};">
+            <text class="fill-available">{{subtitleText}}</text>
           </view>
         </view>
         <view class="redenvelop__content__button button-group-padding fill-available">
-          <TDS-button class="fill-available" bind:tap="close" Label="{{isSuccess?buttonLabel:'我知道了o(╥﹏╥)o'}}" borderColor="{{bgColor}}" Background="{{bgColor}}" buttonColor="{{labelColor}}"></TDS-button>
+          <TDS-button class="fill-available" bind:tap="close" Label="{{buttonLabel}}" borderColor="{{bgColor}}" Background="{{bgColor}}" buttonColor="{{labelColor}}"></TDS-button>
         </view>
         <view class="redenvelop__content__description fill-available flex-center Paragraphs2">
-          <text>{{description}}</text>
+          <text class="fill-available">{{description}}</text>
         </view>
       </view>
     </view>

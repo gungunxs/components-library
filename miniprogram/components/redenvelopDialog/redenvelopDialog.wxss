@@ -67,6 +67,7 @@
 
 .redenvelop__content {
   z-index: 3;
+  padding: 0 72rpx;
   position: absolute;
   top: 332rpx;
 }
@@ -74,7 +75,6 @@
 .redenvelop__content__title {
   color: var(--Foreground-Low);
   text-align: center;
-  padding: 0 72rpx;
 }
 
 .redenvelop__content__subtitle {
@@ -93,16 +93,12 @@
   height: 104rpx;
 }
 
-.redenvelop__content__button {
-  padding-left: 72rpx;
-  padding-right: 72rpx;
-}
-
 .redenvelop__content__subtitle__text {
+  text-align: center;
   padding: 6rpx 0;
 }
 
 .redenvelop__content__description {
-  color: var(--Foreground-Tertiary);
+  color: var(--Foreground-Tertiary)
 }
 
