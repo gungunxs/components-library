@@ -5,25 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showRedenvelop:false, // 是否弹出红包
-    isSuccess: false, // 是否还有徽章可以领取
+    showRedenvelop: false, // 是否弹出红包
+    isSuccess: "", // 是否还有徽章可以领取
     showBadgeDialog: false, // 是否弹出领取成功的徽章弹窗
+    badgesNum: 2,//显示的徽章枚数
   },
   /**
    * 弹出徽章
    */
   showBadgeDialog() {
     this.setData({
-      showBadgeDialog:true
+      showBadgeDialog: true
     })
   },
   /**
    * 弹出没有徽章的dialog
    */
   showNoBadgeDialog() {
+    let isSuccess = this.data.isSuccess
+    isSuccess = Math.random() < 0.5 ? 'inexistence' : 'repeat'
     this.setData({
-      isSuccess:false,
-      showBadgeDialog:true
+      isSuccess: isSuccess,
+      showBadgeDialog: true
     })
   },
   /**
@@ -31,11 +34,15 @@ Page({
    */
   onLoad() {
     let showRedenvelop = this.data.showRedenvelop
+    let isSuccess = this.data.isSuccess
+    let badgesNum = this.data.badgesNum
+    isSuccess = Math.random() < 0.5 ? 'inexistence' : 'existence'
     showRedenvelop = true
+    badgesNum = Math.floor(Math.random() * 100) + 1
     this.setData({
-      showRedenvelop:showRedenvelop,
-      isSuccess:Math.random() < 0.5,
-      badgesNum:Math.floor(Math.random() * 100) + 1
+      showRedenvelop: showRedenvelop,
+      isSuccess: isSuccess,
+      badgesNum: badgesNum
     })
   },
 
