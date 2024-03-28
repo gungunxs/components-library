@@ -61,6 +61,10 @@ Component({
     Closeable:{
       type:Boolean,
       value:false,
+    },
+    IconSize:{
+      type:String,
+      value:'medium'
     }
   },
 
