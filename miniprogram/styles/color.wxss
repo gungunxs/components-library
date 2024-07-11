@@ -46,7 +46,7 @@ page {
   /* background */
   --Background-Quaternary: #F8FDFE;
   --Background-Primary: rgba(251, 222, 113, 0.10);
-  --Background-Secondary:  rgba(164, 225, 129, 0.10);
+  --Background-Secondary: rgba(164, 225, 129, 0.10);
   --Background-Teriary: rgba(208, 241, 115, 0.10);
   --Background-High: #FFFFFF;
   --Background-Medium: #F5F5F5;
@@ -118,7 +118,36 @@ page {
   --Mask: rgba(0, 0, 0, 0.30);
   /* gradient */
   --Gradients-Primary: linear-gradient(180deg, #8BEECC 0.3%, #DDF8EF 21.57%, #FCFCFC 45.92%);
- }
+}
+
+[data-theme="SMP"] {
+  /* foreground */
+  --Foreground-Primary: #19A365;
+  --Foreground-Disabled: #7BCBF6;
+  --Foreground-Secondary: #FDBE71;
+  --Foreground-Tertiary: #77D0A0;
+  --Foreground-High: #292945;
+  --Foreground-Medium: #7F7F8F;
+  --Foreground-Low: #FFFFFF;
+  --Foreground-Error: #F96262;
+  /* background */
+  --Background-Quaternary: #F8F6F0;
+  --Background-Primary: #F2FAFE;
+  --Background-Secondary: #FFFCF1;
+  --Background-Teriary: #F4FAF7;
+  --Background-High: #FFFFFF;
+  --Background-Medium: #F5F5F5;
+  --Background-Low: #E6E6E6;
+  --Background-Error: #FFF0F0;
+  /* border */
+  --Border-Bounds: #E1E1E1;
+  --Border-Focus: #19A365;
+  --Border-Error: #F96262;
+  /* mask */
+  --Mask: #B3B3B3;
+  /* gradient */
+  --Gradients-Primary: linear-gradient(180deg, #77D0A0 0.04%, #FCFCFC 30%);
+}
 
 .Thematic-gradient {
   background: var(--Gradients-Primary) !important;
