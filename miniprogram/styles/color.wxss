@@ -131,10 +131,10 @@ page {
   --Foreground-Low: #FFFFFF;
   --Foreground-Error: #F96262;
   /* background */
-  --Background-Quaternary: #F8F6F0;
+  --Background-Quaternary: #E8F6F0;
   --Background-Primary: #F2FAFE;
   --Background-Secondary: #FFFCF1;
-  --Background-Teriary: #F4FAF7;
+  --Background-Tertiary: #F4FAF7;
   --Background-High: #FFFFFF;
   --Background-Medium: #F5F5F5;
   --Background-Low: #E6E6E6;
