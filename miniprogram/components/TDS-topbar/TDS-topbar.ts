@@ -99,7 +99,7 @@ Component({
       var myShow =  (parseInt(heighTop)/parseInt(screenHeight as unknown as string));
       // console.log(myShow)
       if(myShow > this.data.Threshold){
-        rgba = myShow * (2 * this.data.speed) as unknown as string;
+        rgba = (myShow - this.data.Threshold) * (2 * this.data.speed) as unknown as string;
       }else{
         rgba = "0";
       }
