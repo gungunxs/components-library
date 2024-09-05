@@ -6,9 +6,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    theme:{
-      type:String,
-      value:app.globalData.themeMode
+    theme: {
+      type: String,
+      value: app.globalData.themeMode
     },
     /*
       颜色模式:背景色 文字色
@@ -22,49 +22,55 @@ Component({
       Foreground-Secondary_Foreground-Low
       Foreground-Error_Foreground-Low
       Foreground-Tertiary_Foreground-Low
-     */ 
-    Color:{
-      type:String,
-      value:"Background-Medium_Foreground-High"
-    }, 
+     */
+    Color: {
+      type: String,
+      value: "Background-Medium_Foreground-High"
+    },
     // 是否显示icon
-    showIcon:{
-      type:Boolean,
-      value:true,
+    showIcon: {
+      type: Boolean,
+      value: true,
     },
     // icon路径
-    IconPath:{
-      type:String,
-      value:"loading_green_line"
+    IconPath: {
+      type: String,
+      value: "loading_green_line"
     },
     // 是否开启固定宽度部分 默认开启
-    FixedWidth:{
-      type:Boolean,
-      value:true,
+    FixedWidth: {
+      type: Boolean,
+      value: true,
     },
     // 固定宽度模块内容Label
-    FixedLabel:{
-      type:String,
-      value:"22"
+    FixedLabel: {
+      type: String,
+      value: "22"
     },
     // 是否开启不定长宽度部分 默认开启
-    AdaptiveWidth:{
-      type:Boolean,
-      value:false,
+    AdaptiveWidth: {
+      type: Boolean,
+      value: false,
     },
     // 不定长宽度模块内容Label
-    AdaptiveLabel:{
-      type:String,
-      value:"这是一个不定长文本区"
-    }, 
-    // 是否具有关闭功能
-    Closeable:{
-      type:Boolean,
-      value:false,
+    AdaptiveLabel: {
+      type: String,
+      value: "这是一个不定长文本区"
     },
-    IconSize:{
-      type:String,
-      value:'medium'
+    // 是否具有关闭功能
+    Closeable: {
+      type: Boolean,
+      value: false,
+    },
+    // icon的大小
+    IconStyle: {
+      type: String,
+      value: "medium"
+    },
+    // 网络图片路径
+    networkPicturePath: {
+      type: String,
+      value: ""
     }
   },
 
@@ -81,10 +87,10 @@ Component({
   methods: {
 
   },
-  lifetimes:{
+  lifetimes: {
     attached() {
       this.setData({
-        theme:app.globalData.themeMode
+        theme: app.globalData.themeMode
       })
     },
   }
