@@ -8,7 +8,9 @@
         <view class="card-title-main-content-text1" wx:if="{{showText1}}">
           <text class="stretch" style="color:var({{Text1Color}})">{{Text1}}</text>
         </view>
-        <text class="card-title-main-content-text2 {{title1Text2Typography}}" wx:if="{{showText2}}">{{Text2}}</text>
+        <view class="card-title-main-content-text2">
+            <text class="{{title1Text2Typography}}" wx:if="{{showText2}}">{{Text2}}</text>
+        </view>
       </view>
     </view>
     <slot name="swap2"></slot>
