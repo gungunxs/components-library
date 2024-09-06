@@ -8,80 +8,112 @@
 @import "../../styles/icon.wxss";
 
 .card {
-  background-color: var(--Background-High);
-  padding: 16rpx 12rpx;
-  gap:12rpx;
-  border-radius: 10rpx;
-  z-index: 0 !important;
-  border: 2rpx solid var(--Background-High);
+    background-color: var(--Background-High);
+    padding: 16rpx 12rpx;
+    gap: 12rpx;
+    border-radius: 10rpx;
+    z-index: 0 !important;
+    border: 2rpx solid var(--Background-High);
 }
+
 .card__border--bounds {
-  border: 2rpx solid var(--Border-Bounds);
+    border: 2rpx solid var(--Border-Bounds);
 }
+
 .card__border--focus {
-  border: 2rpx solid var(--Border-Focus);
+    border: 2rpx solid var(--Border-Focus);
 }
+
 .card__border--error {
-  border: 2rpx solid var(--Border-Error);
+    border: 2rpx solid var(--Border-Error);
+}
+
+.card__border--primary {
+    border: 2rpx solid var(--Foreground-Primary);
+}
+
+.card__border--secondary {
+    border: 2rpx solid var(--Foreground-Secondary);
+}
+
+.card__border--tertiary {
+    border: 2rpx solid var(--Foreground-Tertiary);
 }
 
 .card-coverImg {
-  height: 300rpx;
-  border-radius: 10rpx;
+    height: 300rpx;
+    border-radius: 10rpx;
 }
+
 .card-title {
-align-items: center;
-align-content: center;
-row-gap:16rpx;
-flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    row-gap: 16rpx;
+    flex-wrap: wrap;
 }
+
 .card-title2 {
-  align-items: flex-start;
-  align-content: flex-start;
-  row-gap:16rpx;
-  flex-wrap: wrap;
-  color:var(--Foreground-High)
-  }
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 16rpx;
+    flex-wrap: wrap;
+    color: var(--Foreground-High)
+}
+
 .card-title-main {
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap:8rpx;
-  color:var(--Foreground-High)
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 8rpx;
+    color: var(--Foreground-High)
 }
+
 .card-title-main-content-text1 {
-  color:var(--Foreground-Primary);
-  width: 36rpx;
-  overflow: hidden;
-  height: 40rpx;
+    color: var(--Foreground-Primary);
+    width: 36rpx;
+    overflow: hidden;
+    height: 40rpx;
 }
+
 .card-title-main-content-text1 text {
-  word-wrap: normal;
+    word-wrap: normal;
 }
+
 .card-title-main-content-text2 {
-  display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 1;
-text-overflow: ellipsis;
-overflow: hidden;
+    width: 280rpx;
 }
+
+.card-title-main-content-text2 text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .card-subTitle {
-  gap:20rpx;
-  flex:1 1 0;
-  color: var(--Foreground-Medium);
+    gap: 20rpx;
+    flex: 1 1 0;
+    color: var(--Foreground-Medium);
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
 .card-subTitle-text {
-  display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 4;
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
+
 .card-subTitle-image {
-  width: 150rpx;
-  height: 150rpx;
-  min-width: 150rpx;
-min-height: 150rpx;
-border-radius: 10rpx;
+    width: 150rpx;
+    height: 150rpx;
+    min-width: 150rpx;
+    min-height: 150rpx;
+    border-radius: 10rpx;
 }
