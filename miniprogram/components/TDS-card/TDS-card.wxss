@@ -80,7 +80,7 @@
 }
 
 .card-title-main-content-text2 {
-    width: 370rpx;
+    max-width: 370rpx;
 }
 
 .card-title-main-content-text2 text {
