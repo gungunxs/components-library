@@ -4,7 +4,7 @@
  */
 
 /* TDS颜色 */
-page {
+[data-theme="SY"] {
   /* foreground */
   --Foreground-Primary: #20C38C;
   --Foreground-Disabled: #79DBBA;
@@ -32,7 +32,6 @@ page {
   /* gradient */
   --Gradients-Primary: linear-gradient(180deg, #8BEECC 0.3%, #DDF8EF 21.57%, #FCFCFC 45.92%);
 }
-
 [data-theme="Cat"] {
   /* foreground */
   --Foreground-Primary: #FBDE71;
