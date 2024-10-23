@@ -30,7 +30,7 @@ page {
   /* mask */
   --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
-  --Gradients-Primary: linear-gradient(180deg, #8BEECC 0.3%, #DDF8EF 21.57%, #FCFCFC 45.92%);
+  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
 }
 
 [data-theme="Cat"] {
@@ -66,7 +66,7 @@ page {
   /* foreground */
   --Foreground-Primary: #25B4E1;
   --Foreground-Disabled: #B0DFEE;
-  --Foreground-Secondary: #3EBAD0;
+  --Foreground-Secondary: #92D9EF;
   --Foreground-Tertiary: #E5F6FC;
   --Foreground-High: #272629;
   --Foreground-Medium: #C7C7CC;
@@ -78,8 +78,8 @@ page {
   --Background-Secondary: rgba(146, 217, 239, 0.10);
   --Background-Teriary: rgba(146, 217, 239, 0.10);
   --Background-High: #FFFFFF;
-  --Background-Medium: #F5F5F5;
-  --Background-Low: #E6E6E6;
+  --Background-Medium: #FAFAFA;
+  --Background-Low: #F1F1F1;
   --Background-Error: rgba(249, 98, 98, 0.10);
   /* border */
   --Border-Bounds: #E1E1E1;
@@ -88,8 +88,8 @@ page {
   /* mask */
   --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
-  --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
-}
+  --Gradients-Primary: linear-gradient(177deg, #25B4E1 -53.25%, #FFF 50%);
+} 
 
 [data-theme="NBS"] {
   /* foreground */
@@ -144,7 +144,7 @@ page {
   --Border-Focus: #19A365;
   --Border-Error: #F96262;
   /* mask */
-  --Mask: #B3B3B3;
+  --Mask: rgba(0, 0, 0, 0.50);
   /* gradient */
   --Gradients-Primary: linear-gradient(180deg, #77D0A0 0.04%, #FCFCFC 30%);
 }
