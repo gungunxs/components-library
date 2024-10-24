@@ -6,8 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    theme: "",
-    themeList: ['', 'Cat', 'SL', 'NBS', "SMP"],
+    theme: "SY",
+    themeList: ['SY', 'Cat', 'SL', 'NBS', "SMP"],
     themeNum: 0,
     menuButtonTop: 0,
     buttonList: [
@@ -146,6 +146,7 @@ Page({
   onLoad() {
     const menuButton = wx.getMenuButtonBoundingClientRect()
     const menuButtonTop = menuButton.top;
+    app.globalData.themeMode = 'SY';
     this.setData({
       menuButtonTop: menuButtonTop,
     })
