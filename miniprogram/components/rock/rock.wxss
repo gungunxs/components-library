@@ -1,0 +1,42 @@
+@import "../../styles/color.wxss";
+@import "../../styles/typography.wxss";
+@import "../../styles/grid.wxss";
+
+
+.rock{
+	padding: 0 34rpx 0 34rpx;
+	gap: 32rpx;
+}
+
+.rock-icon{
+	gap: 14rpx;
+}
+
+.rock-icon image{
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.rock-recode{
+  gap: 14rpx;
+  overflow: hidden;
+}
+
+.rock-recode text{
+	white-space: nowrap;
+}
+
+.rock-recode-line{
+  height: 0rpx;
+  border-bottom: 2rpx solid var(--Border-Bounds);
+  padding: 1rpx;
+}
+
+.rock-user view{
+	color: var(--Foreground-Medium);
+	padding: 0 42rpx 0 42rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+}
