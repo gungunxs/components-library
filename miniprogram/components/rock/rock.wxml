@@ -1,4 +1,4 @@
-<view class="rock flex-center column fill-available" style="height: 100vh;" data-theme="{{theme}}">
+<view class="rock flex-center column fill-available" data-theme="{{theme}}">
 	<view class="rock-icon flex-center column">
 		<image src="{{rockIcon}}" mode="" />
 		<text class="Paragraphs2" style="{{rockSwitch ? 'color: var(--Border-Error);' : 'color: var(--Foreground-Medium);'}}" wx:if="{{rockTitle.length}}">{{rockTitle}}</text>
