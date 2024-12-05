@@ -62,7 +62,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+    /**
+    * 点击RockIcon时候触发  (使用时：bind:icon="func")
+    */
+	 tapIcon(){
+		this.triggerEvent('icon')
+	 }
   },
   lifetimes:{
     attached() {
