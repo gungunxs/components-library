@@ -8,7 +8,7 @@
 		<text class="Paragraphs2">共 {{recordNum}} 条记录</text>
 		<view class="rock-recode-line fill"></view>
 	</view>
-	<view class="rock-user fill flex-center Paragraphs2" wx:if="{{recordNum}}">
+	<view class="rock-user fill flex-center Paragraphs2" wx:if="{{recordNum && showRecord}}">
 		<view style="{{rockUserLimit ? '-webkit-line-clamp: ' + rockUserLimitNum : ''}}">{{rockUser}}</view>
 	</view>
 </view>
