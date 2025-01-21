@@ -4,7 +4,6 @@
 
 
 .rock{
-	padding: 0 34rpx 0 34rpx;
 	gap: 32rpx;
 }
 
@@ -24,6 +23,7 @@
 
 .rock-recode text{
 	white-space: nowrap;
+	color: var(--Foreground-Medium);
 }
 
 .rock-recode-line{
