@@ -1,7 +1,7 @@
 <view class="rock flex-center column fill-available" data-theme="{{theme}}">
 	<view class="rock-icon flex-center column">
 		<image src="{{rockIcon}}" mode="" bind:tap="tapIcon"/>
-		<text class="Paragraphs2" style="{{rockSwitch ? 'color: var(--Border-Error);' : 'color: var(--Foreground-Medium);'}}" wx:if="{{rockTitle.length}}">{{rockTitle}}</text>
+		<text class="Paragraphs2" style="{{rockSwitch ? 'color: var(--Border-Error);' : 'color: var(--Foreground-High);'}}" wx:if="{{rockTitle.length}}">{{rockTitle}}</text>
 	</view>
 	<view class="rock-recode flex-center fill" wx:if="{{recordNum && showRecord}}">
 		<view class="rock-recode-line fill"></view>
