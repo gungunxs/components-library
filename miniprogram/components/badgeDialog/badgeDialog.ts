@@ -51,9 +51,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    backgroundBadgeUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/346976cc-badge_green.svg",
-    happyIconUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/bd314356-party.svg",
-    sadIconUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/de00862d-tears.svg",
+    backgroundBadgeUrl: "http://introduce.mcdd.top/fmin-min-c3f1ae0b-badge_green.svg",
+    happyIconUrl: "http://introduce.mcdd.top/fmin-min-1576f452-happyIconUrl.svg",
+    sadIconUrl: "http://introduce.mcdd.top/fmin-min-23a3f382-tears.svg",
     animationName: "elastic3d"
   },
   /**

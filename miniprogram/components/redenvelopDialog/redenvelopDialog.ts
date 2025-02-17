@@ -56,9 +56,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    redenvelopCoverUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/72c207c1-redenvelopCover.svg",
-    redBadgeUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/ab996085-badge_red.svg",
-    blingUrl: "https://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/6822ad67-bling.svg",
+    redenvelopCoverUrl: "http://introduce.mcdd.top/fmin-min-e08e46ea-badge_red.svg",
+    redBadgeUrl: "http://introduce.mcdd.top/fmin-min-d03c0172-redenvelopCover.svg",
+    blingUrl: "http://introduce.mcdd.top/fmin-min-3822200b-bling.svg",
     animationName: "elastic",
     badgeAnimationName: "upInDown",
   },
