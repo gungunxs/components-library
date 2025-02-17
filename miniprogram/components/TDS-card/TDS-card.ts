@@ -22,7 +22,7 @@ Component({
     // 封面图片url 默认为gungunxs头像图片
     CoverImgUrl: {
       type: String,
-      value: "http://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
+      value: "http://introduce.mcdd.top/fmin-min-3a85cb9e-card.jpg"
     },
     // 是否展示一级标题区域
     showTitleList1: {
@@ -96,7 +96,7 @@ Component({
     // 副标题中的图片url
     SubImgUrl: {
       type: String,
-      value: "http://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
+      value: "http://introduce.mcdd.top/fmin-min-3a85cb9e-card.jpg"
     },
     // 副标题2为无限制文本区域
     // 是否显示副标题2 默认不显示
@@ -117,7 +117,7 @@ Component({
     // 副标题2中的图片url
     SubImgUrl2: {
       type: String,
-      value: "http://fmin.oss-cn-hangzhou.aliyuncs.com/fmin-ad/56d8e1ce-微信图片_20211229141800.jpg"
+      value:"http://introduce.mcdd.top/fmin-min-3a85cb9e-card.jpg"
     },
     // 卡片边框颜色
     borderType: {
