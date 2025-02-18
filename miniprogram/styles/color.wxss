@@ -2,7 +2,34 @@
   TDS全局颜色样式：所有的颜色必须从这里引用，不允许新建颜色样式
   注意：在web端开发中使用:root伪类选择器来设置全局样式，但是在小程序中采用page来作为顶层变量
  */
-
+page {
+   /* foreground */
+   --Foreground-Primary: #20C38C;
+   --Foreground-Disabled: #79DBBA;
+   --Foreground-Secondary: #3EBAD0;
+   --Foreground-Tertiary: #FBDE71;
+   --Foreground-High: #292945;
+   --Foreground-Medium: #7F7F8F;
+   --Foreground-Low: #FFFFFF;
+   --Foreground-Error: #F96262;
+   /* background */
+   --Background-Quaternary: #F7FFFC;
+   --Background-Primary: rgba(32, 195, 140, 0.10);
+   --Background-Secondary: rgba(62, 186, 208, 0.10);
+   --Background-Teriary: rgba(251, 222, 113, 0.10);
+   --Background-High: #FFFFFF;
+   --Background-Medium: #F5F5F5;
+   --Background-Low: #E6E6E6;
+   --Background-Error: rgba(249, 98, 98, 0.10);
+   /* border */
+   --Border-Bounds: #E1E1E1;
+   --Border-Focus: #20C38C;
+   --Border-Error: #F96262;
+   /* mask */
+   --Mask: rgba(0, 0, 0, 0.50);
+   /* gradient */
+   --Gradients-Primary: linear-gradient(180deg, #B9EFE1 0.04%, #FCFCFC 30%);
+}
 /* TDS颜色 */
 [data-theme="SY"] {
   /* foreground */

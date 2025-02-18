@@ -27,6 +27,7 @@ Page {
 .content {
   padding: 20rpx 42rpx;
   gap: 32rpx;
+  box-sizing: border-box;
 }
 .tips {
   color: var(--Foreground-Error);
